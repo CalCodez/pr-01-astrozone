@@ -14,3 +14,7 @@ const click = 'click';
 const keyup = 'keyup';
 const flexActive = 'flex-active';
 const flexInactive = 'flex-inactive';
+
+const cardReel = getById('cardReel');
+
+const count = Array.from(cardReel.children);

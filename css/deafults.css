@@ -30,13 +30,32 @@ a {
 }
 
 html {
-	outline: var(--olR);
 	background-color: var(--main-bg);
+	padding: 5px;
+	justify-content: center;
+	background-image: url(/assets/main_bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+	max-width: 1440px;
+	align-items: center;
+	justify-self: center;
 }
 
 h1 {
-	color: #451952;
-	text-shadow: 1px 1px 1px #d462ff;
+	color: var(--main-bg);
+	text-shadow: 2px 2px 2px #2c0cfb;
+	margin-left: 40px;
+	font-size: 80px;
+	letter-spacing: 3px;
+	margin-top: 10px;
+	font-family: 'Laandbrau', sans-serif;
+	height: 100%;
 }
 
 .test {
