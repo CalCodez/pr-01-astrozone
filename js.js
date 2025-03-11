@@ -17,4 +17,20 @@ const flexInactive = 'flex-inactive';
 
 const cardReel = getById('cardReel');
 
-const count = Array.from(cardReel.children);
+document.addEventListener('DOMContentLoaded', function () {
+	const cardReel = document.getElementById('cardReel');
+	const controls = document.querySelectorAll('.reel-control');
+	controls[0].addEventListener('click', function () {
+		// Move the last card to the front (Previous)
+		const lastCard = cardReel.lastElementChild;
+		cardReel.prepend(lastCard);
+	});
+
+	controls[1].addEventListener('click', function () {
+		// Move the next card to the front and current to the back (Next)
+		const firstCard = cardReel.firstElementChild;
+		cardReel.append(firstCard);
+	});
+});
+
+console.log(cardReel.firstElementChild.id);

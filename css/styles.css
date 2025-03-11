@@ -40,29 +40,29 @@
 	justify-content: space-between;
 	column-gap: 20px;
 	overflow: hidden;
+	transition: transform 1s ease-in-out;
 }
 
 .astro-card {
-	height: 270px;
-	width: 220px;
+	height: 260px;
+	width: 200px;
 	background-color: var(--main-bg);
 	flex-direction: column;
 	justify-content: space-around;
 	flex-shrink: 0;
-	box-shadow: 2px 2px 8px 2px var(--box-shadow);
-	border-radius: 20px;
+	box-shadow: 1px 1px 8px 1px var(--txt-shadow);
+	transition: transform 0.5s ease-in-out;
 }
 
 .astro-sign-container {
 	width: 80%;
 	height: 60%;
-	outline: var(--ol);
 	text-align: center;
 	place-content: center;
 }
 
 .astro-sign-container > i {
-	color: var(--box-shadow);
+	color: var(--font-color-main);
 	font-size: 80px;
 }
 
@@ -71,7 +71,7 @@
 	height: 20%;
 	text-align: center;
 	place-content: center;
-	color: var(--box-shadow);
+	color: var(--font-color-main);
 	font-size: 50px;
 }
 

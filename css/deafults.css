@@ -8,6 +8,8 @@
 
 	--main-bg: #151b24;
 	--box-shadow: #ff00ff;
+	--txt-shadow: #b4cfec;
+	--font-color-main: #800080;
 }
 
 * {
@@ -48,25 +50,12 @@ body {
 }
 
 h1 {
-	color: var(--main-bg);
-	text-shadow: 2px 2px 2px #2c0cfb;
+	color: var(--font-color-main);
+	text-shadow: 2px -2px 2px var(--tx-shadow);
 	margin-left: 40px;
 	font-size: 80px;
 	letter-spacing: 3px;
 	margin-top: 10px;
 	font-family: 'Laandbrau', sans-serif;
-	height: 100%;
-}
-
-.test {
-	width: 800px;
-	height: 400px;
-	margin-left: 500px;
-	box-shadow: 2px 2px 20px 2px var(--box-shadow);
-}
-
-.test img {
-	object-fit: cover;
-	width: 100%;
 	height: 100%;
 }
