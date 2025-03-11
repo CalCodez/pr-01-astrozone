@@ -121,4 +121,52 @@ const astroFacts = {
 		description:
 			'Virgos are known for being perfectionists, analytical, and detail-oriented. They are also known for being helpful, practical, and organized.',
 	},
+
+	libra: {
+		name: 'Libra',
+		traits: ['Friendly', 'Ambivert', 'Childish', 'Spontaneous', 'Flighty'],
+		date: 'September 23 - October 22',
+		planet: 'Venus',
+		Color: 'Pink',
+		icon: 'ti-zodiac-libra',
+		backSplash: { src: './assets/astro_backsplash/libra_backsplash.jpg' },
+		description:
+			'Libras are known for being diplomatic, charming, and social. They are also known for their desire for balance and harmony.',
+	},
+
+	scorpio: {
+		name: 'Scorpio',
+		traits: ['Attractive', 'Envious', 'Loyal', 'Hardworking', 'Creative'],
+		date: 'October 23 - November 21',
+		planet: 'Pluto',
+		Color: 'Black',
+		icon: 'ti-zodiac-scorpio',
+		backSplash: { src: './assets/astro_backsplash/scorpio_backsplash.jpg' },
+		description:
+			'Scorpios are known for being passionate, loyal, and secretive. They are also known for being intuitive, ambitious, and strategic.',
+	},
+
+	sagittarius: {
+		name: 'Sagittarius',
+		traits: ['Loyal', 'Irritable', 'Nervous', 'Generous', 'Hilarious'],
+		date: 'November 22 - December 21',
+		planet: 'Jupiter',
+		Color: 'Purple',
+		icon: 'ti-zodiac-sagittarius',
+		backSplash: { src: './assets/astro_backsplash/sagittarius_backsplash.jpg' },
+		description:
+			'Sagittarius is a zodiac sign for people born between November 22 and December 21. Sagittarius people are known for being adventurous, optimistic, and energetic. They are also known for being honest, blunt, and opinionated.',
+	},
+
+	capricorn: {
+		name: 'Capricorn',
+		traits: ['Loving', 'Funny', 'Kind', 'Suspicious', 'Spontaneous'],
+		date: 'December 22 - January 19',
+		planet: 'Saturn',
+		Color: 'Brown',
+		icon: 'ti-zodiac-capricorn',
+		backSplash: { src: './assets/astro_backsplash/capricorn_backsplash.jpg' },
+		description:
+			'Sagittarius is a zodiac sign for people born between November 22 and December 21. Sagittarius people are known for being adventurous, optimistic, and energetic. They are also known for being honest, blunt, and opinionated.',
+	},
 };
