@@ -7,25 +7,27 @@
 .astro-gallery-section {
 	height: auto;
 	width: 100%;
-	margin-top: 30px;
+	margin-top: 10px;
 	position: relative;
 	justify-content: flex-start;
 }
 
 .backsplash-container {
-	height: 550px;
-	width: 800px;
+	height: 400px;
+	width: 55%;
 }
 
 .backsplash-container img {
-	object-fit: cover;
+	object-fit: fill;
 	width: 100%;
 	height: 100%;
+	border: 1px outset var(--main-bg);
+	border-radius: 8px;
 }
 
 .reel-wrapper {
 	height: fit-content;
-	width: fit-content;
+	width: 60%;
 	position: absolute;
 	right: 0;
 	z-index: 2;
@@ -33,25 +35,36 @@
 	row-gap: 30px;
 }
 
-.card-reel {
-	height: 300px;
-	width: 860px;
+.reel-wrapper::after {
+	content: '';
+	position: absolute;
+	top: 0;
 	right: 0;
-	justify-content: space-between;
-	column-gap: 20px;
+	width: 200px;
+	height: 100%;
+	filter: blur(80px);
+	z-index: 3;
+	background: var(--main-bg);
+}
+
+.card-reel {
+	height: 260px;
+	width: 100%;
+	right: 0;
+	justify-content: space-evenly;
+	column-gap: 100px;
 	overflow: hidden;
-	transition: transform 1s ease-in-out;
+	padding-left: 20px;
 }
 
 .astro-card {
-	height: 260px;
-	width: 200px;
+	height: 220px;
+	width: 160px;
 	background-color: var(--main-bg);
 	flex-direction: column;
 	justify-content: space-around;
 	flex-shrink: 0;
 	box-shadow: 1px 1px 8px 1px var(--txt-shadow);
-	transition: transform 0.5s ease-in-out;
 }
 
 .astro-sign-container {
@@ -63,7 +76,7 @@
 
 .astro-sign-container > i {
 	color: var(--font-color-main);
-	font-size: 80px;
+	font-size: 4rem;
 }
 
 .astro-card-name-container {
@@ -72,7 +85,7 @@
 	text-align: center;
 	place-content: center;
 	color: var(--font-color-main);
-	font-size: 50px;
+	font-size: 1.5rem;
 }
 
 .reel-control-container {
