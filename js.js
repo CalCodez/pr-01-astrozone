@@ -15,25 +15,6 @@ const keyup = 'keyup';
 const flexActive = 'flex-active';
 const flexInactive = 'flex-inactive';
 
-const cardReel = getById('cardReel');
-
-document.addEventListener('DOMContentLoaded', function () {
-	const cardReel = document.getElementById('cardReel');
-	const controls = document.querySelectorAll('.reel-control');
-	controls[0].addEventListener('click', function () {
-		// Move the last card to the front (Previous)
-		const lastCard = cardReel.lastElementChild;
-		cardReel.prepend(lastCard);
-	});
-
-	controls[1].addEventListener('click', function () {
-		// Move the next card to the front and current to the back (Next)
-		const firstCard = cardReel.firstElementChild;
-		cardReel.append(firstCard);
-	});
-});
-
-console.log(cardReel.firstElementChild.id);
 const birthStones = {
 	jan: 'Garnet',
 	feb: 'Amethyst',
@@ -49,9 +30,13 @@ const birthStones = {
 	dec: 'Turquoise',
 };
 
+const { jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec } = birthStones;
+
 const astroFacts = {
 	aries: {
 		name: 'Aries',
+		sign: 'Fire',
+		symbol: 'The Ram',
 		traits: ['Loyal', 'Smart', 'Snappy', 'Kind', 'Moody'],
 		date: 'March 21 - April 19',
 		planet: 'Mars',
@@ -64,6 +49,8 @@ const astroFacts = {
 
 	taurus: {
 		name: 'Taurus',
+		sign: 'Earth',
+		symbol: 'The Bull',
 		traits: ['Caring', 'Ambiverted', 'Ambitious', 'Hardworking', 'Self-Centered'],
 		date: 'April 20 - May 20',
 		planet: 'Venus',
@@ -76,6 +63,8 @@ const astroFacts = {
 
 	gemini: {
 		name: 'Gemini',
+		sign: 'Air',
+		symbol: 'The Twins',
 		traits: ['Spontaneous', 'Confusing', 'Funny', 'Sociable', 'Indecisive'],
 		date: 'May 21 - June 21',
 		planet: 'Mercury',
@@ -88,18 +77,22 @@ const astroFacts = {
 
 	cancer: {
 		name: 'Cancer',
+		sign: 'Water',
+		symbol: 'The Crab',
 		traits: ['Sarcastic', 'Loveable', 'Playful', 'Warm-hearted', 'Jealous'],
 		date: 'June 22 - July 22',
 		planet: 'The Moon',
 		Color: 'Silver',
 		icon: 'ti-zodiac-cancer',
-		backSplash: { src: './assets/astro_backsplash/gemini_backsplash.jpg' },
+		backSplash: { src: './assets/astro_backsplash/cancer_backsplash.jpg' },
 		description:
 			'Cancer is the fourth sign of the zodiac and is represented by the water element. Cancers are known for being intuitive, nurturing, and emotional. They are also known for being caring, loyal, and protective of their loved ones.',
 	},
 
 	leo: {
 		name: 'Leo',
+		sign: 'Fire',
+		symbol: 'The Lion',
 		traits: ['Fun', 'Warm', 'Loving', 'Egocentric', 'Cute'],
 		date: 'July 23 - August 22',
 		planet: 'The Sun',
@@ -112,6 +105,8 @@ const astroFacts = {
 
 	virgo: {
 		name: 'Virgo',
+		sign: 'Earth',
+		symbol: 'The Maiden',
 		traits: ['Jealous', 'Indecisive', 'Intelligent', 'Loyal', 'Compromising'],
 		date: 'August 23 - September 22',
 		planet: 'Mercury',
@@ -124,6 +119,8 @@ const astroFacts = {
 
 	libra: {
 		name: 'Libra',
+		sign: 'Air',
+		symbol: 'The Scales',
 		traits: ['Friendly', 'Ambivert', 'Childish', 'Spontaneous', 'Flighty'],
 		date: 'September 23 - October 22',
 		planet: 'Venus',
@@ -136,6 +133,8 @@ const astroFacts = {
 
 	scorpio: {
 		name: 'Scorpio',
+		sign: 'Water',
+		symbol: 'The Scorpion',
 		traits: ['Attractive', 'Envious', 'Loyal', 'Hardworking', 'Creative'],
 		date: 'October 23 - November 21',
 		planet: 'Pluto',
@@ -148,6 +147,8 @@ const astroFacts = {
 
 	sagittarius: {
 		name: 'Sagittarius',
+		sign: 'Fire',
+		symbol: 'The Archer',
 		traits: ['Loyal', 'Irritable', 'Nervous', 'Generous', 'Hilarious'],
 		date: 'November 22 - December 21',
 		planet: 'Jupiter',
@@ -160,6 +161,8 @@ const astroFacts = {
 
 	capricorn: {
 		name: 'Capricorn',
+		sign: 'Earth',
+		symbol: 'The Goat',
 		traits: ['Loving', 'Funny', 'Kind', 'Suspicious', 'Spontaneous'],
 		date: 'December 22 - January 19',
 		planet: 'Saturn',
@@ -167,6 +170,97 @@ const astroFacts = {
 		icon: 'ti-zodiac-capricorn',
 		backSplash: { src: './assets/astro_backsplash/capricorn_backsplash.jpg' },
 		description:
-			'Sagittarius is a zodiac sign for people born between November 22 and December 21. Sagittarius people are known for being adventurous, optimistic, and energetic. They are also known for being honest, blunt, and opinionated.',
+			'Capricorns are known for being ambitious, disciplined, and hardworking. They are also known for being practical, determined, and good with money.',
+	},
+	aquarius: {
+		name: 'Aquarius',
+		sign: 'Air',
+		symbol: 'The Water-bearer',
+		traits: ['Restless', 'Creative', 'Egotistical', 'Altruistic', 'Positive'],
+		date: 'January 20 - February 18',
+		planet: 'Uranus',
+		Color: 'Blue',
+		icon: 'ti-zodiac-aquarius',
+		backSplash: { src: './assets/astro_backsplash/aquarius_backsplash.jpg' },
+		description:
+			'In astrology, Aquarians are known for being independent, creative, and forward-thinking. They are also known for being rule-breakers and activists who want to make the world a better place.',
+	},
+	pisces: {
+		name: 'Pisces',
+		sign: 'Water',
+		symbol: 'The Fish',
+		traits: ['Empathetic', 'Funny', 'Secretive', 'Trust Issues', 'Open-minded'],
+		date: 'February 19 - March 20',
+		planet: 'Neptune',
+		Color: 'Light Green',
+		icon: 'ti-zodiac-pisces',
+		backSplash: { src: './assets/astro_backsplash/pisces_backsplash.jpg' },
+		description:
+			'Pisces are known for being compassionate, creative, and intuitive. They are often described as the dreamers of the zodiac.',
 	},
 };
+
+const {
+	aries,
+	taurus,
+	gemini,
+	cancer,
+	leo,
+	virgo,
+	libra,
+	scorpio,
+	sagittarius,
+	capricorn,
+	aquarius,
+	pisces,
+} = astroFacts;
+
+const arrOfSigns = [
+	aries,
+	taurus,
+	gemini,
+	cancer,
+	leo,
+	virgo,
+	libra,
+	scorpio,
+	sagittarius,
+	capricorn,
+	aquarius,
+	pisces,
+];
+
+const reelControls = getByClass('reel-control');
+const [prevBtn, nextBtn] = reelControls;
+const cardReel = getById('cardReel');
+const backSplashContainer = getById('backSplashContainer');
+
+let newImg = createElement('img');
+newImg.src = aries.backSplash.src;
+backSplashContainer.append(newImg);
+
+const splash = (obj) => {
+	nextBtn.addEventListener(click, function () {
+		const currentCard = cardReel.firstElementChild;
+		cardReel.appendChild(currentCard);
+
+		for (let img of obj) {
+			if (cardReel.firstElementChild.id == img.name) {
+				newImg.src = img.backSplash.src;
+				backSplashContainer.append(newImg);
+			}
+		}
+	});
+	prevBtn.addEventListener(click, () => {
+		const lastCard = cardReel.lastElementChild;
+		cardReel.prepend(lastCard);
+		for (let img of obj) {
+			if (cardReel.firstElementChild.id == img.name) {
+				newImg.src = img.backSplash.src;
+				backSplashContainer.append(newImg);
+			}
+		}
+	});
+};
+
+splash(arrOfSigns);
