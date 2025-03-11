@@ -34,3 +34,43 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 console.log(cardReel.firstElementChild.id);
+const birthStones = {
+	jan: 'Garnet',
+	feb: 'Amethyst',
+	mar: 'Aquamarine',
+	apr: 'Diamond',
+	may: 'Emerald',
+	jun: 'Pearl',
+	jul: 'Ruby',
+	aug: 'Peridot',
+	sep: 'Sapphire',
+	oct: 'Opal',
+	nov: 'Topaz',
+	dec: 'Turquoise',
+};
+
+const astroFacts = {
+	aries: {
+		name: 'Aries',
+		traits: ['Loyal', 'Smart', 'Snappy', 'Kind', 'Moody'],
+		date: 'March 21 - April 19',
+		planet: 'Mars',
+		Color: 'Red',
+		icon: 'ti-zodiac-aries',
+		backSplash: { src: './assets/astro_backsplash/aries_backsplash.jpg' },
+		description:
+			'Aries are said to be ambitious, passionate, and energetic people who are natural leaders. They are the first sign of the zodiac and are represented by the symbol',
+	},
+
+	taurus: {
+		name: 'Taurus',
+		traits: ['Caring', 'Ambiverted', 'Ambitious', 'Hardworking', 'Self-Centered'],
+		date: 'March 21 - April 19',
+		planet: 'Venus',
+		Color: 'Green',
+		icon: 'ti-zodiac-taurus',
+		backSplash: { src: './assets/astro_backsplash/taurus_backsplash.jpg' },
+		description:
+			'Taurus is the zodiac sign for people born between April 20 and May 20. People with this sign are said to be patient, reliable, and loyal, with a strong connection to nature. They are also known for being stable and determined',
+	},
+};
