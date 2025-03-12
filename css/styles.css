@@ -4,6 +4,7 @@
 	justify-content: flex-start;
 }
 
+/* ++Astro Gallery */
 .astro-gallery-section {
 	height: auto;
 	width: 100%;
@@ -113,4 +114,111 @@
 .reel-control-container button .fa-solid {
 	color: var(--box-shadow);
 	font-size: 20px;
+}
+
+/* ++Astro Stage */
+.astro-stage {
+	width: 100%;
+	height: 800px;
+	outline: var(--ol);
+	margin-top: 100px;
+	position: relative;
+}
+
+.astro-curtain {
+	width: 100%;
+	height: 100%;
+	background-color: var(--main-bg);
+	position: absolute;
+	top: 0;
+	transition: height ease-in-out 0.5s;
+}
+
+.astro-curtain.curtain-up {
+	height: 100px;
+	background-color: var(--main-bg);
+	border-bottom-right-radius: 100px;
+	border-bottom-left-radius: 100px;
+	transition: height ease-in-out 0.5s;
+}
+
+.curtain-header-container {
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	top: 0;
+	justify-content: space-between;
+	padding: 0 20px;
+}
+
+.header-icon-container {
+	width: 80px;
+	height: 80px;
+	margin-right: 100px;
+	border-radius: 50%;
+}
+
+.header-icon-container img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+
+.header-icon-container i {
+	font-size: 60px;
+	color: var(--txt-shadow);
+}
+
+.astro-sign-select-container {
+	width: 50%;
+	height: 80%;
+	position: absolute;
+	bottom: 30px;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	gap: 15px;
+}
+
+.option-container {
+	width: 130px;
+	height: 120px;
+	border: 2px outset var(--txt-shadow);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.option-container:hover {
+	transform: scale(1.2);
+	cursor: pointer;
+}
+
+.icon-container {
+	height: 60px;
+	width: 100%;
+	text-align: center;
+	font-size: 30px;
+	color: var(--txt-shadow);
+	place-content: center;
+}
+
+.name-container {
+	height: 30px;
+	width: 100%;
+	text-align: center;
+	color: var(--txt-shadow);
+	font-size: 1.2rem;
+	place-content: center;
+}
+
+/* ++Facts Stage */
+
+.flex-active {
+	display: flex;
+}
+
+.flex-inactive {
+	display: none;
 }

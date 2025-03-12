@@ -49,7 +49,8 @@ body {
 	justify-self: center;
 }
 
-h1 {
+h1,
+h2 {
 	color: var(--font-color-main);
 	text-shadow: 2px -2px 2px var(--txt-shadow);
 	margin-left: 40px;
@@ -57,5 +58,6 @@ h1 {
 	letter-spacing: 3px;
 	margin-top: 10px;
 	font-family: 'Laandbrau', sans-serif;
-	height: 100%;
+	height: fit-content;
+	align-content: center;
 }

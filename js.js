@@ -16,7 +16,7 @@ const flexActive = 'flex-active';
 const flexInactive = 'flex-inactive';
 
 const birthStones = {
-	jan: 'Garnet',
+	jan: { stone: 'Garnet', src: '' },
 	feb: 'Amethyst',
 	mar: 'Aquamarine',
 	apr: 'Diamond',
@@ -39,8 +39,8 @@ const astroFacts = {
 		symbol: 'The Ram',
 		traits: ['Loyal', 'Smart', 'Snappy', 'Kind', 'Moody'],
 		date: 'March 21 - April 19',
-		planet: 'Mars',
-		Color: 'Red',
+		planet: { name: 'Mars', src: '' },
+		Color: { name: 'Red', hex: '' },
 		icon: 'ti-zodiac-aries',
 		backSplash: { src: './assets/astro_backsplash/aries_backsplash.jpg' },
 		description:
@@ -230,61 +230,75 @@ const arrOfSigns = [
 	pisces,
 ];
 
-const reelControls = getByClass('reel-control');
-const [prevBtn, nextBtn] = reelControls;
-const cardReel = getById('cardReel');
-const backSplashContainer = getById('backSplashContainer');
-const astroCards = getByClass('astro-card');
-console.log(astroCards);
+//Static Options Container
 
-let newImg = createElement('img');
-newImg.src = aries.backSplash.src;
-backSplashContainer.append(newImg);
+const curtainOptions = getById('curtain-options');
 
-const splash = (obj) => {
-	const right = 'slideInRight';
-	const left = 'slideInLeft';
+for (let i = 0; i < 12; i++) {
+	const optionContainer = createElement('div');
+	addClass(optionContainer, 'option-container');
+	appendChild(curtainOptions, optionContainer);
 
-	nextBtn.addEventListener(click, function () {
-		const currentCard = cardReel.firstElementChild;
-		cardReel.appendChild(currentCard);
-		for (let img of obj) {
-			if (cardReel.firstElementChild.id == img.name) {
-				newImg.src = img.backSplash.src;
-				backSplashContainer.append(newImg);
-			}
-		}
+	const iconContainer = createElement('div');
+	addClass(iconContainer, 'icon-container');
+	appendChild(optionContainer, iconContainer);
 
-		for (let card of astroCards) {
-			if (!card.classList.contains(left) || !card.classList.contains(right)) {
-				toggleClass(card, right);
-				setTimeout(() => {
-					toggleClass(card, right);
-				}, 500);
-			}
-		}
-	});
+	const signName = createElement('div');
+	addClass(signName, 'name-container');
+	appendChild(optionContainer, signName);
+}
 
-	prevBtn.addEventListener(click, () => {
-		const lastCard = cardReel.lastElementChild;
+const optionContainers = getByClass('option-container');
+const iconContainer = getByClass('icon-container');
+const nameContainer = getByClass('name-container');
 
-		cardReel.prepend(lastCard);
-		for (let img of obj) {
-			if (cardReel.firstElementChild.id == img.name) {
-				newImg.src = img.backSplash.src;
-				backSplashContainer.append(newImg);
-			}
-		}
+const names = (container, container2, obj) => {
+	const sign = createElement('i');
+	addClass(sign, 'ti');
+	addClass(sign, obj.icon);
+	appendChild(container, sign);
 
-		for (let card of astroCards) {
-			if (!card.classList.contains(left) || !card.classList.contains(right)) {
-				toggleClass(card, left);
-				setTimeout(() => {
-					toggleClass(card, left);
-				}, 500);
-			}
-		}
-	});
+	textContent(container2, obj.name);
 };
 
-splash(arrOfSigns);
+names(iconContainer[0], nameContainer[0], aries);
+names(iconContainer[1], nameContainer[1], taurus);
+names(iconContainer[2], nameContainer[2], gemini);
+names(iconContainer[3], nameContainer[3], cancer);
+names(iconContainer[4], nameContainer[4], leo);
+names(iconContainer[5], nameContainer[5], virgo);
+names(iconContainer[6], nameContainer[6], libra);
+names(iconContainer[7], nameContainer[7], scorpio);
+names(iconContainer[8], nameContainer[8], sagittarius);
+names(iconContainer[9], nameContainer[9], capricorn);
+names(iconContainer[10], nameContainer[10], aquarius);
+names(iconContainer[11], nameContainer[11], pisces);
+
+const astroCurtain = getById('astro-curtain');
+const headerIcon = getById('header-icon');
+const curtainHeaderContainer = select('.curtain-header-container');
+const curtainHeader = getById('curtain-header');
+
+//Generic Curtain lift function (main option click event)
+for (let i of optionContainers) {
+	i.addEventListener(click, function () {
+		if (!astroCurtain.classList.contains('curtain-up')) {
+			toggleClass(astroCurtain, 'curtain-up');
+			toggleClass(curtainOptions, flexInactive);
+			toggleClass(headerIcon, flexActive);
+			toggleClass(headerIcon, leo.icon);
+			textContent(curtainHeader, leo.name);
+		}
+	});
+}
+
+//Default Curtain Drop
+curtainHeaderContainer.addEventListener(click, () => {
+	if (astroCurtain.classList.contains('curtain-up')) {
+		toggleClass(astroCurtain, 'curtain-up');
+		toggleClass(curtainOptions, flexInactive);
+		toggleClass(headerIcon, flexInactive);
+
+		textContent(curtainHeader, 'Choose Your Sign...');
+	}
+});
