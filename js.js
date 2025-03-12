@@ -16,18 +16,18 @@ const flexActive = 'flex-active';
 const flexInactive = 'flex-inactive';
 
 const birthStones = {
-	jan: { stone: 'Garnet', src: '' },
-	feb: 'Amethyst',
-	mar: 'Aquamarine',
-	apr: 'Diamond',
-	may: 'Emerald',
-	jun: 'Pearl',
-	jul: 'Ruby',
-	aug: 'Peridot',
-	sep: 'Sapphire',
-	oct: 'Opal',
-	nov: 'Topaz',
-	dec: 'Turquoise',
+	jan: { month: 'January', stone: 'Garnet', src: '' },
+	feb: { month: 'February', stone: 'Amethyst', src: '' },
+	mar: { month: 'March', stone: 'Aquamarine', src: '' },
+	apr: { month: 'April', stone: 'Diamond', src: '' },
+	may: { month: 'May', stone: 'Emerald', src: '' },
+	jun: { month: 'June', stone: 'Pearl', src: '' },
+	jul: { month: 'July', stone: 'Ruby', src: '' },
+	aug: { month: 'August', stone: 'Peridot', src: '' },
+	sep: { month: 'September', stone: 'Sapphire', src: '' },
+	oct: { month: 'October', stone: 'Opal', src: '' },
+	nov: { month: 'November', stone: 'Topaz', src: '' },
+	dec: { month: 'December', stone: 'Turquoise', src: '' },
 };
 
 const { jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec } = birthStones;
