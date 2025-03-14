@@ -40,7 +40,7 @@ const astroFacts = {
 		traits: ['Loyal', 'Smart', 'Snappy', 'Kind', 'Moody'],
 		date: 'March 21 - April 19',
 		planet: { name: 'Mars', src: './assets/planets/mars.jpg' },
-		Color: { name: 'Red', hex: '' },
+		Color: { name: 'Red', hex: '#ff0000' },
 		icon: 'ti-zodiac-aries',
 		backSplash: { src: './assets/astro_backsplash/aries_backsplash.jpg' },
 		description:
@@ -54,7 +54,7 @@ const astroFacts = {
 		traits: ['Caring', 'Ambiverted', 'Ambitious', 'Hardworking', 'Self-Centered'],
 		date: 'April 20 - May 20',
 		planet: { name: 'Venus', src: './assets/planets/venus.jpg' },
-		Color: 'Green',
+		Color: { name: 'Green', hex: '#008000' },
 		icon: 'ti-zodiac-taurus',
 		backSplash: { src: './assets/astro_backsplash/taurus_backsplash.jpg' },
 		description:
@@ -68,7 +68,7 @@ const astroFacts = {
 		traits: ['Spontaneous', 'Confusing', 'Funny', 'Sociable', 'Indecisive'],
 		date: 'May 21 - June 21',
 		planet: { name: 'Mercury', src: './assets/planets/mercury.jpg' },
-		Color: 'Yellow',
+		Color: { name: 'Yellow', hex: '#ffff00' },
 		icon: 'ti-zodiac-gemini',
 		backSplash: { src: './assets/astro_backsplash/gemini_backsplash.jpg' },
 		description:
@@ -82,7 +82,7 @@ const astroFacts = {
 		traits: ['Sarcastic', 'Loveable', 'Playful', 'Warm-hearted', 'Jealous'],
 		date: 'June 22 - July 22',
 		planet: { name: 'The Moon', src: './assets/planets/moon.jpg' },
-		Color: 'Silver',
+		Color: { name: 'Sliver', hex: '#c0c0c0' },
 		icon: 'ti-zodiac-cancer',
 		backSplash: { src: './assets/astro_backsplash/cancer_backsplash.jpg' },
 		description:
@@ -96,7 +96,7 @@ const astroFacts = {
 		traits: ['Fun', 'Warm', 'Loving', 'Egocentric', 'Cute'],
 		date: 'July 23 - August 22',
 		planet: { name: 'The Sun', src: './assets/planets/sun.jpg' },
-		Color: 'Orange',
+		Color: { name: 'Orange', hex: '#ffa500' },
 		icon: 'ti-zodiac-leo',
 		backSplash: { src: './assets/astro_backsplash/leo_backsplash.webp' },
 		description:
@@ -110,7 +110,7 @@ const astroFacts = {
 		traits: ['Jealous', 'Indecisive', 'Intelligent', 'Loyal', 'Compromising'],
 		date: 'August 23 - September 22',
 		planet: { name: 'Mercury', src: './assets/planets/mercury.jpg' },
-		Color: 'Blue',
+		Color: { name: 'Blue', hex: '#0000ff' },
 		icon: 'ti-zodiac-virgo',
 		backSplash: { src: './assets/astro_backsplash/virgo_backsplash.jpg' },
 		description:
@@ -124,7 +124,7 @@ const astroFacts = {
 		traits: ['Friendly', 'Ambivert', 'Childish', 'Spontaneous', 'Flighty'],
 		date: 'September 23 - October 22',
 		planet: { name: 'Venus', src: './assets/planets/venus.jpg' },
-		Color: 'Pink',
+		Color: { name: 'Pink', hex: '#ffc0cb' },
 		icon: 'ti-zodiac-libra',
 		backSplash: { src: './assets/astro_backsplash/libra_backsplash.jpg' },
 		description:
@@ -138,7 +138,7 @@ const astroFacts = {
 		traits: ['Attractive', 'Envious', 'Loyal', 'Hardworking', 'Creative'],
 		date: 'October 23 - November 21',
 		planet: { name: 'Pluto', src: './assets/planets/pluto.jpg' },
-		Color: 'Black',
+		Color: { name: 'Black', hex: '#000000' },
 		icon: 'ti-zodiac-scorpio',
 		backSplash: { src: './assets/astro_backsplash/scorpio_backsplash.jpg' },
 		description:
@@ -152,7 +152,7 @@ const astroFacts = {
 		traits: ['Loyal', 'Irritable', 'Nervous', 'Generous', 'Hilarious'],
 		date: 'November 22 - December 21',
 		planet: { name: 'Jupiter', src: './assets/planets/jupiter.jpg' },
-		Color: 'Purple',
+		Color: { name: 'Purple', hex: '#800080' },
 		icon: 'ti-zodiac-sagittarius',
 		backSplash: { src: './assets/astro_backsplash/sagittarius_backsplash.jpg' },
 		description:
@@ -166,7 +166,7 @@ const astroFacts = {
 		traits: ['Loving', 'Funny', 'Kind', 'Suspicious', 'Spontaneous'],
 		date: 'December 22 - January 19',
 		planet: { name: 'Saturn', src: './assets/planets/saturn.jpg' },
-		Color: 'Brown',
+		Color: { name: 'Brown', hex: '#a52a2a' },
 		icon: 'ti-zodiac-capricorn',
 		backSplash: { src: './assets/astro_backsplash/capricorn_backsplash.jpg' },
 		description:
@@ -179,7 +179,7 @@ const astroFacts = {
 		traits: ['Restless', 'Creative', 'Egotistical', 'Altruistic', 'Positive'],
 		date: 'January 20 - February 18',
 		planet: { name: 'Uranus', src: './assets/planets/uranus.jpg' },
-		Color: 'Blue',
+		Color: { name: 'Blue', hex: '#0000ff' },
 		icon: 'ti-zodiac-aquarius',
 		backSplash: { src: './assets/astro_backsplash/aquarius_backsplash.jpg' },
 		description:
@@ -192,7 +192,7 @@ const astroFacts = {
 		traits: ['Empathetic', 'Funny', 'Secretive', 'Trust Issues', 'Open-minded'],
 		date: 'February 19 - March 20',
 		planet: { name: 'Neptune', src: './assets/planets/neptune.jpg' },
-		Color: 'Light Green',
+		Color: { name: 'Light Green', hex: '#90ee90' },
 		icon: 'ti-zodiac-pisces',
 		backSplash: { src: './assets/astro_backsplash/pisces_backsplash.jpg' },
 		description:
