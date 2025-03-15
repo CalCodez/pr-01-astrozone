@@ -15,7 +15,7 @@ const keyup = 'keyup';
 const flexActive = 'flex-active';
 const flexInactive = 'flex-inactive';
 
-const birthStones = {
+const stones = {
 	jan: { month: 'January', stone: 'Garnet', src: './assets/birthstones/garnet.jpg' },
 	feb: { month: 'February', stone: 'Amethyst', src: './assets/birthstones/amethyst.jpg' },
 	mar: { month: 'March', stone: 'Aquamarine', src: './assets/birthstones/aquamarine.jpg' },
@@ -30,7 +30,7 @@ const birthStones = {
 	dec: { month: 'December', stone: 'Turquoise', src: './assets/birthstones/turquoise.jpg' },
 };
 
-const { jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec } = birthStones;
+const { jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec } = stones;
 
 const astroFacts = {
 	aries: {
@@ -39,6 +39,7 @@ const astroFacts = {
 		symbol: 'The Ram',
 		traits: ['Loyal', 'Smart', 'Snappy', 'Kind', 'Moody'],
 		date: 'March 21 - April 19',
+		birthstone: { month1: mar, month2: apr },
 		planet: { name: 'Mars', src: './assets/planets/mars.jpg' },
 		Color: { name: 'Red', hex: '#ff0000' },
 		icon: { zodiac: 'ti-zodiac-aries', sign: 'ti-flame' },
@@ -53,6 +54,7 @@ const astroFacts = {
 		symbol: 'The Bull',
 		traits: ['Caring', 'Ambiverted', 'Ambitious', 'Hardworking', 'Self-Centered'],
 		date: 'April 20 - May 20',
+		birthstone: { month1: apr, month2: may },
 		planet: { name: 'Venus', src: './assets/planets/venus.jpg' },
 		Color: { name: 'Green', hex: '#008000' },
 		icon: { zodiac: 'ti-zodiac-taurus', sign: 'ti-world' },
@@ -67,6 +69,7 @@ const astroFacts = {
 		symbol: 'The Twins',
 		traits: ['Spontaneous', 'Confusing', 'Funny', 'Sociable', 'Indecisive'],
 		date: 'May 21 - June 21',
+		birthstone: { month1: may, month2: jun },
 		planet: { name: 'Mercury', src: './assets/planets/mercury.jpg' },
 		Color: { name: 'Yellow', hex: '#ffff00' },
 		icon: { zodiac: 'ti-zodiac-gemini', sign: 'ti-wind' },
@@ -81,6 +84,7 @@ const astroFacts = {
 		symbol: 'The Crab',
 		traits: ['Sarcastic', 'Loveable', 'Playful', 'Warm-hearted', 'Jealous'],
 		date: 'June 22 - July 22',
+		birthstone: { month1: jun, month2: jul },
 		planet: { name: 'The Moon', src: './assets/planets/moon.jpg' },
 		Color: { name: 'Sliver', hex: '#c0c0c0' },
 		icon: { zodiac: 'ti-zodiac-cancer', sign: 'ti-ripple' },
@@ -95,6 +99,7 @@ const astroFacts = {
 		symbol: 'The Lion',
 		traits: ['Fun', 'Warm', 'Loving', 'Egocentric', 'Cute'],
 		date: 'July 23 - August 22',
+		birthstone: { month1: jul, month2: aug },
 		planet: { name: 'The Sun', src: './assets/planets/sun.jpg' },
 		Color: { name: 'Orange', hex: '#ffa500' },
 		icon: { zodiac: 'ti-zodiac-leo', sign: 'ti-flame' },
@@ -109,6 +114,8 @@ const astroFacts = {
 		symbol: 'The Maiden',
 		traits: ['Jealous', 'Indecisive', 'Intelligent', 'Loyal', 'Compromising'],
 		date: 'August 23 - September 22',
+		birthstone: { month1: aug, month2: sep },
+
 		planet: { name: 'Mercury', src: './assets/planets/mercury.jpg' },
 		Color: { name: 'Blue', hex: '#0000ff' },
 		icon: { zodiac: 'ti-zodiac-virgo', sign: 'ti-world' },
@@ -123,10 +130,10 @@ const astroFacts = {
 		symbol: 'The Scales',
 		traits: ['Friendly', 'Ambivert', 'Childish', 'Spontaneous', 'Flighty'],
 		date: 'September 23 - October 22',
+		birthstone: { month1: sep, month2: oct },
 		planet: { name: 'Venus', src: './assets/planets/venus.jpg' },
 		Color: { name: 'Pink', hex: '#ffc0cb' },
 		icon: { zodiac: 'ti-zodiac-libra', sign: 'ti-wind' },
-
 		backSplash: { src: './assets/astro_backsplash/libra_backsplash.jpg' },
 		description:
 			'Libras are known for being diplomatic, charming, and social. They are also known for their desire for balance and harmony.',
@@ -138,10 +145,10 @@ const astroFacts = {
 		symbol: 'The Scorpion',
 		traits: ['Attractive', 'Envious', 'Loyal', 'Hardworking', 'Creative'],
 		date: 'October 23 - November 21',
+		birthstone: { month1: oct, month2: nov },
 		planet: { name: 'Pluto', src: './assets/planets/pluto.jpg' },
 		Color: { name: 'Black', hex: '#000000' },
 		icon: { zodiac: 'ti-zodiac-scorpio', sign: 'ti-ripple' },
-
 		backSplash: { src: './assets/astro_backsplash/scorpio_backsplash.jpg' },
 		description:
 			'Scorpios are known for being passionate, loyal, and secretive. They are also known for being intuitive, ambitious, and strategic.',
@@ -153,10 +160,10 @@ const astroFacts = {
 		symbol: 'The Archer',
 		traits: ['Loyal', 'Irritable', 'Nervous', 'Generous', 'Hilarious'],
 		date: 'November 22 - December 21',
+		birthstone: { month1: nov, month2: dec },
 		planet: { name: 'Jupiter', src: './assets/planets/jupiter.jpg' },
 		Color: { name: 'Purple', hex: '#800080' },
 		icon: { zodiac: 'ti-zodiac-sagittarius', sign: 'ti-flame' },
-
 		backSplash: { src: './assets/astro_backsplash/sagittarius_backsplash.jpg' },
 		description:
 			'Sagittarius is a zodiac sign for people born between November 22 and December 21. Sagittarius people are known for being adventurous, optimistic, and energetic. They are also known for being honest, blunt, and opinionated.',
@@ -168,10 +175,10 @@ const astroFacts = {
 		symbol: 'The Goat',
 		traits: ['Loving', 'Funny', 'Kind', 'Suspicious', 'Spontaneous'],
 		date: 'December 22 - January 19',
+		birthstone: { month1: dec, month2: jan },
 		planet: { name: 'Saturn', src: './assets/planets/saturn.jpg' },
 		Color: { name: 'Brown', hex: '#a52a2a' },
 		icon: { zodiac: 'ti-zodiac-capricorn', sign: 'ti-world' },
-
 		backSplash: { src: './assets/astro_backsplash/capricorn_backsplash.jpg' },
 		description:
 			'Capricorns are known for being ambitious, disciplined, and hardworking. They are also known for being practical, determined, and good with money.',
@@ -182,10 +189,10 @@ const astroFacts = {
 		symbol: 'The Water-bearer',
 		traits: ['Restless', 'Creative', 'Egotistical', 'Altruistic', 'Positive'],
 		date: 'January 20 - February 18',
+		birthstone: { month1: jan, month2: feb },
 		planet: { name: 'Uranus', src: './assets/planets/uranus.jpg' },
 		Color: { name: 'Blue', hex: '#0000ff' },
 		icon: { zodiac: 'ti-zodiac-aquarius', sign: 'ti-wind' },
-
 		backSplash: { src: './assets/astro_backsplash/aquarius_backsplash.jpg' },
 		description:
 			'In astrology, Aquarians are known for being independent, creative, and forward-thinking. They are also known for being rule-breakers and activists who want to make the world a better place.',
@@ -196,10 +203,10 @@ const astroFacts = {
 		symbol: 'The Fish',
 		traits: ['Empathetic', 'Funny', 'Secretive', 'Trust Issues', 'Open-minded'],
 		date: 'February 19 - March 20',
+		birthstone: { month1: feb, month2: mar },
 		planet: { name: 'Neptune', src: './assets/planets/neptune.jpg' },
 		Color: { name: 'Light Green', hex: '#90ee90' },
 		icon: { zodiac: 'ti-zodiac-pisces', sign: 'ti-ripple' },
-
 		backSplash: { src: './assets/astro_backsplash/pisces_backsplash.jpg' },
 		description:
 			'Pisces are known for being compassionate, creative, and intuitive. They are often described as the dreamers of the zodiac.',
