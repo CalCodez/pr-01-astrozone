@@ -261,7 +261,7 @@ const nameContainer = getByClass('name-container');
 const names = (container, container2, obj) => {
 	const sign = createElement('i');
 	addClass(sign, 'ti');
-	addClass(sign, obj.icon);
+	addClass(sign, obj.icon.zodiac);
 	appendChild(container, sign);
 
 	textContent(container2, obj.name);
@@ -286,25 +286,26 @@ const curtainHeaderContainer = select('.curtain-header-container');
 const curtainHeader = getById('curtain-header');
 
 //Generic Curtain lift function (main option click event)
-//for (let i of optionContainers) {
-//	i.addEventListener(click, function () {
-//		if (!astroCurtain.classList.contains('curtain-up')) {
-//			toggleClass(astroCurtain, 'curtain-up');
-//			toggleClass(curtainOptions, flexInactive);
-//			toggleClass(headerIcon, flexActive);
-//			toggleClass(headerIcon, leo.icon);
-//			textContent(curtainHeader, leo.name);
-//		}
-//	});
-//}
 
-////Default Curtain Drop
-//curtainHeaderContainer.addEventListener(click, () => {
-//	if (astroCurtain.classList.contains('curtain-up')) {
-//		toggleClass(astroCurtain, 'curtain-up');
-//		toggleClass(curtainOptions, flexInactive);
-//		toggleClass(headerIcon, flexInactive);
+for (let i of optionContainers) {
+	i.addEventListener(click, function () {
+		if (!astroCurtain.classList.contains('curtain-up')) {
+			toggleClass(astroCurtain, 'curtain-up');
+			toggleClass(curtainOptions, flexInactive);
+			toggleClass(headerIcon, flexActive);
+			toggleClass(headerIcon, leo.icon.zodiac);
+			textContent(curtainHeader, leo.name);
+		}
+	});
+}
 
-//		textContent(curtainHeader, 'Choose Your Sign...');
-//	}
-//});
+//Default Curtain Drop
+curtainHeaderContainer.addEventListener(click, () => {
+	if (astroCurtain.classList.contains('curtain-up')) {
+		toggleClass(astroCurtain, 'curtain-up');
+		toggleClass(curtainOptions, flexInactive);
+		toggleClass(headerIcon, flexInactive);
+
+		textContent(curtainHeader, 'Choose Your Sign...');
+	}
+});
