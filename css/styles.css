@@ -11,6 +11,7 @@
 	margin-top: 10px;
 	position: relative;
 	justify-content: flex-start;
+	display: none;
 }
 
 .backsplash-container {
@@ -119,7 +120,7 @@
 /* ++Astro Stage */
 .astro-stage {
 	width: 100%;
-	height: 800px;
+	height: 600px;
 	outline: var(--ol);
 	margin-top: 100px;
 	position: relative;
@@ -132,6 +133,7 @@
 	position: absolute;
 	top: 0;
 	transition: height ease-in-out 0.5s;
+	z-index: 2;
 }
 
 .astro-curtain.curtain-up {
@@ -151,6 +153,14 @@
 	padding: 0 20px;
 }
 
+.astro-header-btn {
+	width: 80px;
+	height: 30px;
+	background-color: var(--main-bg);
+	color: var(--txt-shadow);
+	box-shadow: 1px 1px 8px 1px var(--box-shadow);
+	border-radius: 8px;
+}
 .header-icon-container {
 	width: 80px;
 	height: 80px;
@@ -178,6 +188,7 @@
 	flex-wrap: wrap;
 	justify-content: space-around;
 	gap: 15px;
+	display: none;
 }
 
 .option-container {
@@ -214,6 +225,158 @@
 }
 
 /* ++Facts Stage */
+
+.astro-facts-stage {
+	width: 100%;
+	height: 500px;
+	outline: var(--olR);
+	position: absolute;
+	bottom: 0;
+	justify-content: space-around;
+}
+
+.astro-stage-left,
+.astro-stage-right {
+	height: 490px;
+	width: 400px;
+	flex-direction: column;
+	outline: var(--olB);
+	justify-content: flex-start;
+}
+
+.astro-stage-left {
+	justify-content: space-between;
+}
+
+.astro-stage-left > div {
+	outline: var(--ol);
+}
+
+.astro-description-container {
+	width: 100%;
+	height: 30%;
+	color: var(--txt-shadow);
+	text-align: center;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.sign-date-container {
+	width: 100%;
+	height: 15%;
+	flex-direction: column;
+	justify-content: flex-start;
+	color: var(--txt-shadow);
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.description-label-container,
+.sign-date-label-container,
+.birthstone-label-container {
+	width: 100%;
+	height: 20%;
+	text-align: center;
+	background: linear-gradient(90deg, var(--txt-shadow), var(--main-bg));
+	outline: var(--olR);
+	margin-bottom: 10px;
+}
+
+.sign-symbol-container {
+	width: 100%;
+	height: 10%;
+	flex-direction: column;
+	outline: 1px solid green;
+	justify-content: space-evenly;
+}
+
+.sign-container,
+.symbol-container {
+	width: 95%;
+	height: 40%;
+	outline: var(--olR);
+	justify-content: flex-start;
+}
+
+.sign-container div:nth-child(1),
+.symbol-container div:nth-child(1) {
+	width: 25%;
+	height: 100%;
+	outline: var(--ol);
+	background: linear-gradient(15deg, var(--txt-shadow), var(--main-bg), var(--txt-shadow));
+	color: #ffffff;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.sign-container div:nth-child(2),
+.symbol-container div:nth-child(2) {
+	height: 100%;
+	width: 60%;
+	outline: 1px solid yellow;
+	color: white;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.sign-container div:nth-child(3),
+.symbol-container div:nth-child(3) {
+	height: 100%;
+	width: 15%;
+	outline: 1px solid orange;
+	color: var(--txt-shadow);
+	font-size: 1rem;
+}
+
+.birthstone-container {
+	height: 30%;
+	width: 90%;
+	outline: 1px solid white;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.month-1-container,
+.month-2-container {
+	width: 100%;
+	height: 35%;
+	outline: var(--ol);
+	justify-content: flex-start;
+}
+
+.month-1-container div:nth-child(1),
+.month-2-container div:nth-child(1) {
+	width: 25%;
+	height: 100%;
+	outline: var(--ol);
+	background: linear-gradient(15deg, var(--txt-shadow), var(--main-bg), var(--txt-shadow));
+	color: #ffffff;
+	font-size: 1rem;
+	font-weight: 600;
+}
+.month-1-container div:nth-child(2),
+.month-2-container div:nth-child(2) {
+	width: 50%;
+	height: 100%;
+	outline: var(--ol);
+	background: linear-gradient(15deg, var(--txt-shadow), var(--main-bg), var(--txt-shadow));
+	color: #ffffff;
+	font-size: 1rem;
+	font-weight: 600;
+}
+.month-1-container div:nth-child(3),
+.month-2-container div:nth-child(3) {
+	width: 25%;
+	height: 100%;
+	outline: var(--ol);
+}
+
+.month-1-container div:nth-child(3) img,
+.month-2-container div:nth-child(3) img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
 
 .flex-active {
 	display: flex;

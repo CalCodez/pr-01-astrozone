@@ -41,7 +41,7 @@ const astroFacts = {
 		date: 'March 21 - April 19',
 		planet: { name: 'Mars', src: './assets/planets/mars.jpg' },
 		Color: { name: 'Red', hex: '#ff0000' },
-		icon: 'ti-zodiac-aries',
+		icon: { zodiac: 'ti-zodiac-aries', sign: 'ti-flame' },
 		backSplash: { src: './assets/astro_backsplash/aries_backsplash.jpg' },
 		description:
 			'Aries are said to be ambitious, passionate, and energetic people who are natural leaders. They are the first sign of the zodiac and are represented by the symbol',
@@ -55,7 +55,7 @@ const astroFacts = {
 		date: 'April 20 - May 20',
 		planet: { name: 'Venus', src: './assets/planets/venus.jpg' },
 		Color: { name: 'Green', hex: '#008000' },
-		icon: 'ti-zodiac-taurus',
+		icon: { zodiac: 'ti-zodiac-taurus', sign: 'ti-world' },
 		backSplash: { src: './assets/astro_backsplash/taurus_backsplash.jpg' },
 		description:
 			'Taurus is the zodiac sign for people born between April 20 and May 20. People with this sign are said to be patient, reliable, and loyal, with a strong connection to nature. They are also known for being stable and determined',
@@ -69,7 +69,7 @@ const astroFacts = {
 		date: 'May 21 - June 21',
 		planet: { name: 'Mercury', src: './assets/planets/mercury.jpg' },
 		Color: { name: 'Yellow', hex: '#ffff00' },
-		icon: 'ti-zodiac-gemini',
+		icon: { zodiac: 'ti-zodiac-gemini', sign: 'ti-wind' },
 		backSplash: { src: './assets/astro_backsplash/gemini_backsplash.jpg' },
 		description:
 			'Geminis are the third sign of the zodiac and are represented by twins. People born under this sign are said to be curious, communicative, and intellectual. They are also known for being adaptable, social, and enjoying change',
@@ -83,7 +83,7 @@ const astroFacts = {
 		date: 'June 22 - July 22',
 		planet: { name: 'The Moon', src: './assets/planets/moon.jpg' },
 		Color: { name: 'Sliver', hex: '#c0c0c0' },
-		icon: 'ti-zodiac-cancer',
+		icon: { zodiac: 'ti-zodiac-cancer', sign: 'ti-ripple' },
 		backSplash: { src: './assets/astro_backsplash/cancer_backsplash.jpg' },
 		description:
 			'Cancer is the fourth sign of the zodiac and is represented by the water element. Cancers are known for being intuitive, nurturing, and emotional. They are also known for being caring, loyal, and protective of their loved ones.',
@@ -97,7 +97,7 @@ const astroFacts = {
 		date: 'July 23 - August 22',
 		planet: { name: 'The Sun', src: './assets/planets/sun.jpg' },
 		Color: { name: 'Orange', hex: '#ffa500' },
-		icon: 'ti-zodiac-leo',
+		icon: { zodiac: 'ti-zodiac-leo', sign: 'ti-flame' },
 		backSplash: { src: './assets/astro_backsplash/leo_backsplash.webp' },
 		description:
 			'Leos are known for being confident, loyal, and dramatic. They are symbolized by the lion and are said to have a regal bearing.',
@@ -111,7 +111,7 @@ const astroFacts = {
 		date: 'August 23 - September 22',
 		planet: { name: 'Mercury', src: './assets/planets/mercury.jpg' },
 		Color: { name: 'Blue', hex: '#0000ff' },
-		icon: 'ti-zodiac-virgo',
+		icon: { zodiac: 'ti-zodiac-virgo', sign: 'ti-world' },
 		backSplash: { src: './assets/astro_backsplash/virgo_backsplash.jpg' },
 		description:
 			'Virgos are known for being perfectionists, analytical, and detail-oriented. They are also known for being helpful, practical, and organized.',
@@ -125,7 +125,8 @@ const astroFacts = {
 		date: 'September 23 - October 22',
 		planet: { name: 'Venus', src: './assets/planets/venus.jpg' },
 		Color: { name: 'Pink', hex: '#ffc0cb' },
-		icon: 'ti-zodiac-libra',
+		icon: { zodiac: 'ti-zodiac-libra', sign: 'ti-wind' },
+
 		backSplash: { src: './assets/astro_backsplash/libra_backsplash.jpg' },
 		description:
 			'Libras are known for being diplomatic, charming, and social. They are also known for their desire for balance and harmony.',
@@ -139,7 +140,8 @@ const astroFacts = {
 		date: 'October 23 - November 21',
 		planet: { name: 'Pluto', src: './assets/planets/pluto.jpg' },
 		Color: { name: 'Black', hex: '#000000' },
-		icon: 'ti-zodiac-scorpio',
+		icon: { zodiac: 'ti-zodiac-scorpio', sign: 'ti-ripple' },
+
 		backSplash: { src: './assets/astro_backsplash/scorpio_backsplash.jpg' },
 		description:
 			'Scorpios are known for being passionate, loyal, and secretive. They are also known for being intuitive, ambitious, and strategic.',
@@ -153,7 +155,8 @@ const astroFacts = {
 		date: 'November 22 - December 21',
 		planet: { name: 'Jupiter', src: './assets/planets/jupiter.jpg' },
 		Color: { name: 'Purple', hex: '#800080' },
-		icon: 'ti-zodiac-sagittarius',
+		icon: { zodiac: 'ti-zodiac-sagittarius', sign: 'ti-flame' },
+
 		backSplash: { src: './assets/astro_backsplash/sagittarius_backsplash.jpg' },
 		description:
 			'Sagittarius is a zodiac sign for people born between November 22 and December 21. Sagittarius people are known for being adventurous, optimistic, and energetic. They are also known for being honest, blunt, and opinionated.',
@@ -167,7 +170,8 @@ const astroFacts = {
 		date: 'December 22 - January 19',
 		planet: { name: 'Saturn', src: './assets/planets/saturn.jpg' },
 		Color: { name: 'Brown', hex: '#a52a2a' },
-		icon: 'ti-zodiac-capricorn',
+		icon: { zodiac: 'ti-zodiac-capricorn', sign: 'ti-world' },
+
 		backSplash: { src: './assets/astro_backsplash/capricorn_backsplash.jpg' },
 		description:
 			'Capricorns are known for being ambitious, disciplined, and hardworking. They are also known for being practical, determined, and good with money.',
@@ -180,7 +184,8 @@ const astroFacts = {
 		date: 'January 20 - February 18',
 		planet: { name: 'Uranus', src: './assets/planets/uranus.jpg' },
 		Color: { name: 'Blue', hex: '#0000ff' },
-		icon: 'ti-zodiac-aquarius',
+		icon: { zodiac: 'ti-zodiac-aquarius', sign: 'ti-wind' },
+
 		backSplash: { src: './assets/astro_backsplash/aquarius_backsplash.jpg' },
 		description:
 			'In astrology, Aquarians are known for being independent, creative, and forward-thinking. They are also known for being rule-breakers and activists who want to make the world a better place.',
@@ -193,7 +198,8 @@ const astroFacts = {
 		date: 'February 19 - March 20',
 		planet: { name: 'Neptune', src: './assets/planets/neptune.jpg' },
 		Color: { name: 'Light Green', hex: '#90ee90' },
-		icon: 'ti-zodiac-pisces',
+		icon: { zodiac: 'ti-zodiac-pisces', sign: 'ti-ripple' },
+
 		backSplash: { src: './assets/astro_backsplash/pisces_backsplash.jpg' },
 		description:
 			'Pisces are known for being compassionate, creative, and intuitive. They are often described as the dreamers of the zodiac.',
@@ -280,25 +286,25 @@ const curtainHeaderContainer = select('.curtain-header-container');
 const curtainHeader = getById('curtain-header');
 
 //Generic Curtain lift function (main option click event)
-for (let i of optionContainers) {
-	i.addEventListener(click, function () {
-		if (!astroCurtain.classList.contains('curtain-up')) {
-			toggleClass(astroCurtain, 'curtain-up');
-			toggleClass(curtainOptions, flexInactive);
-			toggleClass(headerIcon, flexActive);
-			toggleClass(headerIcon, leo.icon);
-			textContent(curtainHeader, leo.name);
-		}
-	});
-}
+//for (let i of optionContainers) {
+//	i.addEventListener(click, function () {
+//		if (!astroCurtain.classList.contains('curtain-up')) {
+//			toggleClass(astroCurtain, 'curtain-up');
+//			toggleClass(curtainOptions, flexInactive);
+//			toggleClass(headerIcon, flexActive);
+//			toggleClass(headerIcon, leo.icon);
+//			textContent(curtainHeader, leo.name);
+//		}
+//	});
+//}
 
-//Default Curtain Drop
-curtainHeaderContainer.addEventListener(click, () => {
-	if (astroCurtain.classList.contains('curtain-up')) {
-		toggleClass(astroCurtain, 'curtain-up');
-		toggleClass(curtainOptions, flexInactive);
-		toggleClass(headerIcon, flexInactive);
+////Default Curtain Drop
+//curtainHeaderContainer.addEventListener(click, () => {
+//	if (astroCurtain.classList.contains('curtain-up')) {
+//		toggleClass(astroCurtain, 'curtain-up');
+//		toggleClass(curtainOptions, flexInactive);
+//		toggleClass(headerIcon, flexInactive);
 
-		textContent(curtainHeader, 'Choose Your Sign...');
-	}
-});
+//		textContent(curtainHeader, 'Choose Your Sign...');
+//	}
+//});
