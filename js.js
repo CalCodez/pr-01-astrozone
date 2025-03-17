@@ -394,7 +394,6 @@ const toggleAstroFacts = (toggler, obj) => {
 				appendChild(astroTraitsContainer, li);
 			});
 		}
-		console.log(headerIcon);
 	});
 };
 
@@ -430,8 +429,6 @@ astroResetButton.addEventListener(click, () => {
 		for (let traits of traitItems) {
 			traits.remove();
 		}
-
-		console.log(headerIcon);
 	}
 });
 
