@@ -361,16 +361,21 @@ const astroResetButton = getById('astro-reset-button');
 const toggleAstroFacts = (toggler, obj) => {
 	toggler.addEventListener(click, () => {
 		if (!astroCurtain.classList.contains('curtain-up')) {
+			astroResetButton.style.visibility = 'visible';
 			toggleClass(curtainOptions, flexInactive);
 			toggleClass(astroCurtain, 'curtain-up');
-			toggleClass(headerIcon, flexActive);
+			headerIcon.style.visibility = 'visible';
+			addClass(headerIcon, 'ti');
 			toggleClass(headerIcon, obj.icon.zodiac);
 			textContent(curtainHeader, obj.name);
 			textContent(signDateContainer, obj.date);
 			textContent(astroDescription, obj.description);
 			textContent(signType, obj.sign);
+
+			addClass(signTypeIcon, 'ti');
 			toggleClass(signTypeIcon, obj.icon.sign);
 			textContent(SymbolNameContainer, obj.symbol);
+			addClass(singSymbolIcon, 'ti');
 			toggleClass(singSymbolIcon, obj.icon.zodiac);
 			textContent(month1Name, obj.birthstone.month1.month);
 			textContent(month1Birthstone, obj.birthstone.month1.stone);
@@ -389,40 +394,46 @@ const toggleAstroFacts = (toggler, obj) => {
 				appendChild(astroTraitsContainer, li);
 			});
 		}
-	});
-
-	astroResetButton.addEventListener(click, () => {
-		if (astroCurtain.classList.contains('curtain-up')) {
-			astroResetButton.style.visibility = 'visible';
-			toggleClass(curtainOptions, flexInactive);
-			toggleClass(astroCurtain, 'curtain-up');
-			toggleClass(headerIcon, flexActive);
-			toggleClass(headerIcon, obj.icon.zodiac);
-			textContent(curtainHeader, 'Choose Your Sign');
-			textContent(signDateContainer, '');
-			textContent(astroDescription, '');
-			textContent(signType, '');
-			toggleClass(signTypeIcon, obj.icon.sign);
-			textContent(SymbolNameContainer, '');
-			toggleClass(singSymbolIcon, obj.icon.zodiac);
-			textContent(month1Name, '');
-			textContent(month1Birthstone, '');
-			month1Img.src = '';
-			textContent(month2Name, '');
-			textContent(month2Birthstone, '');
-			month2Img.src = '';
-			textContent(colorName, '');
-			colorSpan.style.backgroundColor = '';
-			textContent(planetName, '');
-			planetImg.src = '';
-
-			const traitItems = astroTraitsContainer.querySelectorAll('li');
-			for (let traits of traitItems) {
-				traits.remove();
-			}
-		}
+		console.log(headerIcon);
 	});
 };
+
+astroResetButton.addEventListener(click, () => {
+	if (astroCurtain.classList.contains('curtain-up')) {
+		astroResetButton.style.visibility = 'hidden';
+		toggleClass(curtainOptions, flexInactive);
+		toggleClass(astroCurtain, 'curtain-up');
+		headerIcon.style.visibility = 'hidden';
+		headerIcon.classList.remove(...headerIcon.classList);
+
+		textContent(curtainHeader, 'Choose Your Sign');
+		textContent(signDateContainer, '');
+		textContent(astroDescription, '');
+		textContent(signType, '');
+
+		signTypeIcon.classList.remove(...signType.classList);
+		textContent(SymbolNameContainer, '');
+
+		singSymbolIcon.classList.remove(...singSymbolIcon.classList);
+		textContent(month1Name, '');
+		textContent(month1Birthstone, '');
+		month1Img.src = '';
+		textContent(month2Name, '');
+		textContent(month2Birthstone, '');
+		month2Img.src = '';
+		textContent(colorName, '');
+		colorSpan.style.backgroundColor = '';
+		textContent(planetName, '');
+		planetImg.src = '';
+
+		const traitItems = astroTraitsContainer.querySelectorAll('li');
+		for (let traits of traitItems) {
+			traits.remove();
+		}
+
+		console.log(headerIcon);
+	}
+});
 
 toggleAstroFacts(ariesToggle, aries);
 toggleAstroFacts(taurusToggle, taurus);
