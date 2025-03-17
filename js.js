@@ -41,7 +41,7 @@ const astroFacts = {
 		date: 'March 21 - April 19',
 		birthstone: { month1: mar, month2: apr },
 		planet: { name: 'Mars', src: './assets/planets/mars.jpg' },
-		Color: { name: 'Red', hex: '#ff0000' },
+		color: { name: 'Red', hex: '#ff0000' },
 		icon: { zodiac: 'ti-zodiac-aries', sign: 'ti-flame' },
 		backSplash: { src: './assets/astro_backsplash/aries_backsplash.jpg' },
 		description:
@@ -56,7 +56,7 @@ const astroFacts = {
 		date: 'April 20 - May 20',
 		birthstone: { month1: apr, month2: may },
 		planet: { name: 'Venus', src: './assets/planets/venus.jpg' },
-		Color: { name: 'Green', hex: '#008000' },
+		color: { name: 'Green', hex: '#008000' },
 		icon: { zodiac: 'ti-zodiac-taurus', sign: 'ti-world' },
 		backSplash: { src: './assets/astro_backsplash/taurus_backsplash.jpg' },
 		description:
@@ -71,7 +71,7 @@ const astroFacts = {
 		date: 'May 21 - June 21',
 		birthstone: { month1: may, month2: jun },
 		planet: { name: 'Mercury', src: './assets/planets/mercury.jpg' },
-		Color: { name: 'Yellow', hex: '#ffff00' },
+		color: { name: 'Yellow', hex: '#ffff00' },
 		icon: { zodiac: 'ti-zodiac-gemini', sign: 'ti-wind' },
 		backSplash: { src: './assets/astro_backsplash/gemini_backsplash.jpg' },
 		description:
@@ -86,7 +86,7 @@ const astroFacts = {
 		date: 'June 22 - July 22',
 		birthstone: { month1: jun, month2: jul },
 		planet: { name: 'The Moon', src: './assets/planets/moon.jpg' },
-		Color: { name: 'Sliver', hex: '#c0c0c0' },
+		color: { name: 'Sliver', hex: '#c0c0c0' },
 		icon: { zodiac: 'ti-zodiac-cancer', sign: 'ti-ripple' },
 		backSplash: { src: './assets/astro_backsplash/cancer_backsplash.jpg' },
 		description:
@@ -101,7 +101,7 @@ const astroFacts = {
 		date: 'July 23 - August 22',
 		birthstone: { month1: jul, month2: aug },
 		planet: { name: 'The Sun', src: './assets/planets/sun.jpg' },
-		Color: { name: 'Orange', hex: '#ffa500' },
+		color: { name: 'Orange', hex: '#ffa500' },
 		icon: { zodiac: 'ti-zodiac-leo', sign: 'ti-flame' },
 		backSplash: { src: './assets/astro_backsplash/leo_backsplash.webp' },
 		description:
@@ -117,7 +117,7 @@ const astroFacts = {
 		birthstone: { month1: aug, month2: sep },
 
 		planet: { name: 'Mercury', src: './assets/planets/mercury.jpg' },
-		Color: { name: 'Blue', hex: '#0000ff' },
+		color: { name: 'Blue', hex: '#0000ff' },
 		icon: { zodiac: 'ti-zodiac-virgo', sign: 'ti-world' },
 		backSplash: { src: './assets/astro_backsplash/virgo_backsplash.jpg' },
 		description:
@@ -132,7 +132,7 @@ const astroFacts = {
 		date: 'September 23 - October 22',
 		birthstone: { month1: sep, month2: oct },
 		planet: { name: 'Venus', src: './assets/planets/venus.jpg' },
-		Color: { name: 'Pink', hex: '#ffc0cb' },
+		color: { name: 'Pink', hex: '#ffc0cb' },
 		icon: { zodiac: 'ti-zodiac-libra', sign: 'ti-wind' },
 		backSplash: { src: './assets/astro_backsplash/libra_backsplash.jpg' },
 		description:
@@ -147,7 +147,7 @@ const astroFacts = {
 		date: 'October 23 - November 21',
 		birthstone: { month1: oct, month2: nov },
 		planet: { name: 'Pluto', src: './assets/planets/pluto.jpg' },
-		Color: { name: 'Black', hex: '#000000' },
+		color: { name: 'Black', hex: '#000000' },
 		icon: { zodiac: 'ti-zodiac-scorpio', sign: 'ti-ripple' },
 		backSplash: { src: './assets/astro_backsplash/scorpio_backsplash.jpg' },
 		description:
@@ -162,7 +162,7 @@ const astroFacts = {
 		date: 'November 22 - December 21',
 		birthstone: { month1: nov, month2: dec },
 		planet: { name: 'Jupiter', src: './assets/planets/jupiter.jpg' },
-		Color: { name: 'Purple', hex: '#800080' },
+		color: { name: 'Purple', hex: '#800080' },
 		icon: { zodiac: 'ti-zodiac-sagittarius', sign: 'ti-flame' },
 		backSplash: { src: './assets/astro_backsplash/sagittarius_backsplash.jpg' },
 		description:
@@ -177,7 +177,7 @@ const astroFacts = {
 		date: 'December 22 - January 19',
 		birthstone: { month1: dec, month2: jan },
 		planet: { name: 'Saturn', src: './assets/planets/saturn.jpg' },
-		Color: { name: 'Brown', hex: '#a52a2a' },
+		color: { name: 'Brown', hex: '#a52a2a' },
 		icon: { zodiac: 'ti-zodiac-capricorn', sign: 'ti-world' },
 		backSplash: { src: './assets/astro_backsplash/capricorn_backsplash.jpg' },
 		description:
@@ -191,7 +191,7 @@ const astroFacts = {
 		date: 'January 20 - February 18',
 		birthstone: { month1: jan, month2: feb },
 		planet: { name: 'Uranus', src: './assets/planets/uranus.jpg' },
-		Color: { name: 'Blue', hex: '#0000ff' },
+		color: { name: 'Blue', hex: '#0000ff' },
 		icon: { zodiac: 'ti-zodiac-aquarius', sign: 'ti-wind' },
 		backSplash: { src: './assets/astro_backsplash/aquarius_backsplash.jpg' },
 		description:
@@ -205,7 +205,7 @@ const astroFacts = {
 		date: 'February 19 - March 20',
 		birthstone: { month1: feb, month2: mar },
 		planet: { name: 'Neptune', src: './assets/planets/neptune.jpg' },
-		Color: { name: 'Light Green', hex: '#90ee90' },
+		color: { name: 'Light Green', hex: '#90ee90' },
 		icon: { zodiac: 'ti-zodiac-pisces', sign: 'ti-ripple' },
 		backSplash: { src: './assets/astro_backsplash/pisces_backsplash.jpg' },
 		description:
@@ -245,47 +245,62 @@ const arrOfSigns = [
 
 //Static Options Container
 
-//const curtainOptions = getById('curtain-options');
+const curtainOptions = getById('curtain-options');
 
-//for (let i = 0; i < 12; i++) {
-//	const optionContainer = createElement('div');
-//	addClass(optionContainer, 'option-container');
-//	appendChild(curtainOptions, optionContainer);
+for (let i = 0; i < 12; i++) {
+	const optionContainer = createElement('div');
+	addClass(optionContainer, 'option-container');
+	appendChild(curtainOptions, optionContainer);
 
-//	const iconContainer = createElement('div');
-//	addClass(iconContainer, 'icon-container');
-//	appendChild(optionContainer, iconContainer);
+	const iconContainer = createElement('div');
+	addClass(iconContainer, 'icon-container');
+	appendChild(optionContainer, iconContainer);
 
-//	const signName = createElement('div');
-//	addClass(signName, 'name-container');
-//	appendChild(optionContainer, signName);
-//}
+	const signName = createElement('div');
+	addClass(signName, 'name-container');
+	appendChild(optionContainer, signName);
+}
 
-//const optionContainers = getByClass('option-container');
-//const iconContainer = getByClass('icon-container');
-//const nameContainer = getByClass('name-container');
+const optionContainers = getByClass('option-container');
+const iconContainer = getByClass('icon-container');
+const nameContainer = getByClass('name-container');
 
-//const names = (container, container2, obj) => {
-//	const sign = createElement('i');
-//	addClass(sign, 'ti');
-//	addClass(sign, obj.icon.zodiac);
-//	appendChild(container, sign);
+const [
+	ariesToggle,
+	taurusToggle,
+	geminiToggle,
+	cancerToggle,
+	leoToggle,
+	virgoToggle,
+	libraToggle,
+	scorpioToggle,
+	sagittariusToggle,
+	capricornToggle,
+	aquariusToggle,
+	piscesToggle,
+] = optionContainers;
 
-//	textContent(container2, obj.name);
-//};
+const names = (container, container2, obj) => {
+	const sign = createElement('i');
+	addClass(sign, 'ti');
+	addClass(sign, obj.icon.zodiac);
+	appendChild(container, sign);
 
-//names(iconContainer[0], nameContainer[0], aries);
-//names(iconContainer[1], nameContainer[1], taurus);
-//names(iconContainer[2], nameContainer[2], gemini);
-//names(iconContainer[3], nameContainer[3], cancer);
-//names(iconContainer[4], nameContainer[4], leo);
-//names(iconContainer[5], nameContainer[5], virgo);
-//names(iconContainer[6], nameContainer[6], libra);
-//names(iconContainer[7], nameContainer[7], scorpio);
-//names(iconContainer[8], nameContainer[8], sagittarius);
-//names(iconContainer[9], nameContainer[9], capricorn);
-//names(iconContainer[10], nameContainer[10], aquarius);
-//names(iconContainer[11], nameContainer[11], pisces);
+	textContent(container2, obj.name);
+};
+
+names(iconContainer[0], nameContainer[0], aries);
+names(iconContainer[1], nameContainer[1], taurus);
+names(iconContainer[2], nameContainer[2], gemini);
+names(iconContainer[3], nameContainer[3], cancer);
+names(iconContainer[4], nameContainer[4], leo);
+names(iconContainer[5], nameContainer[5], virgo);
+names(iconContainer[6], nameContainer[6], libra);
+names(iconContainer[7], nameContainer[7], scorpio);
+names(iconContainer[8], nameContainer[8], sagittarius);
+names(iconContainer[9], nameContainer[9], capricorn);
+names(iconContainer[10], nameContainer[10], aquarius);
+names(iconContainer[11], nameContainer[11], pisces);
 
 //const astroCurtain = getById('astro-curtain');
 //const headerIcon = getById('header-icon');
@@ -316,3 +331,108 @@ const arrOfSigns = [
 //		textContent(curtainHeader, 'Choose Your Sign...');
 //	}
 //});
+
+//Generate Astro Facts Vars and Function
+
+const astroCurtain = getById('astro-curtain');
+const headerIcon = getById('header-icon');
+const curtainHeaderContainer = select('.curtain-header-container');
+const curtainHeader = getById('curtain-header');
+
+const signDateContainer = select('.sign-date-container');
+const astroDescription = select('.astro-description-container');
+const signType = select('.sign-type-container');
+const signTypeIcon = getById('sign-type-icon');
+const SymbolNameContainer = select('.symbol-name-container');
+const singSymbolIcon = getById('sign-symbol-icon');
+const month1Name = select('.month-1-name');
+const month1Birthstone = select('.month-1-birthstone');
+const month1Img = getById('month-1-img');
+const month2Name = select('.month-2-name');
+const month2Birthstone = select('.month-2-birthstone');
+const month2Img = getById('month-2-img');
+const colorName = select('.color-name-container');
+const colorSpan = select('.color-span');
+const planetName = select('.planet-name-container');
+const planetImg = getById('planet-img');
+const astroTraitsContainer = select('.astro-traits-container');
+const astroResetButton = getById('astro-reset-button');
+
+const toggleAstroFacts = (toggler, obj) => {
+	toggler.addEventListener(click, () => {
+		if (!astroCurtain.classList.contains('curtain-up')) {
+			toggleClass(curtainOptions, flexInactive);
+			toggleClass(astroCurtain, 'curtain-up');
+			toggleClass(headerIcon, flexActive);
+			toggleClass(headerIcon, obj.icon.zodiac);
+			textContent(curtainHeader, obj.name);
+			textContent(signDateContainer, obj.date);
+			textContent(astroDescription, obj.description);
+			textContent(signType, obj.sign);
+			toggleClass(signTypeIcon, obj.icon.sign);
+			textContent(SymbolNameContainer, obj.symbol);
+			toggleClass(singSymbolIcon, obj.icon.zodiac);
+			textContent(month1Name, obj.birthstone.month1.month);
+			textContent(month1Birthstone, obj.birthstone.month1.stone);
+			month1Img.src = obj.birthstone.month1.src;
+			textContent(month2Name, obj.birthstone.month2.month);
+			textContent(month2Birthstone, obj.birthstone.month2.stone);
+			month2Img.src = obj.birthstone.month2.src;
+			textContent(colorName, obj.color.name);
+			colorSpan.style.backgroundColor = obj.color.hex;
+			textContent(planetName, obj.planet.name);
+			planetImg.src = obj.planet.src;
+
+			obj.traits.map((trait) => {
+				const li = createElement('li');
+				textContent(li, trait);
+				appendChild(astroTraitsContainer, li);
+			});
+		}
+	});
+
+	astroResetButton.addEventListener(click, () => {
+		if (astroCurtain.classList.contains('curtain-up')) {
+			astroResetButton.style.visibility = 'visible';
+			toggleClass(curtainOptions, flexInactive);
+			toggleClass(astroCurtain, 'curtain-up');
+			toggleClass(headerIcon, flexActive);
+			toggleClass(headerIcon, obj.icon.zodiac);
+			textContent(curtainHeader, 'Choose Your Sign');
+			textContent(signDateContainer, '');
+			textContent(astroDescription, '');
+			textContent(signType, '');
+			toggleClass(signTypeIcon, obj.icon.sign);
+			textContent(SymbolNameContainer, '');
+			toggleClass(singSymbolIcon, obj.icon.zodiac);
+			textContent(month1Name, '');
+			textContent(month1Birthstone, '');
+			month1Img.src = '';
+			textContent(month2Name, '');
+			textContent(month2Birthstone, '');
+			month2Img.src = '';
+			textContent(colorName, '');
+			colorSpan.style.backgroundColor = '';
+			textContent(planetName, '');
+			planetImg.src = '';
+
+			const traitItems = astroTraitsContainer.querySelectorAll('li');
+			for (let traits of traitItems) {
+				traits.remove();
+			}
+		}
+	});
+};
+
+toggleAstroFacts(ariesToggle, aries);
+toggleAstroFacts(taurusToggle, taurus);
+toggleAstroFacts(geminiToggle, gemini);
+toggleAstroFacts(cancerToggle, cancer);
+toggleAstroFacts(leoToggle, leo);
+toggleAstroFacts(virgoToggle, virgo);
+toggleAstroFacts(libraToggle, libra);
+toggleAstroFacts(scorpioToggle, scorpio);
+toggleAstroFacts(sagittariusToggle, sagittarius);
+toggleAstroFacts(capricornToggle, capricorn);
+toggleAstroFacts(aquariusToggle, aquarius);
+toggleAstroFacts(piscesToggle, pisces);
