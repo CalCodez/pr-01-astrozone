@@ -11,6 +11,7 @@
 	margin-top: 10px;
 	position: relative;
 	justify-content: flex-start;
+	display: none;
 }
 
 .backsplash-container {
@@ -119,12 +120,252 @@
 /* ++Astro Stage */
 .astro-stage {
 	width: 100%;
-	height: 800px;
+	height: 100vh;
 	outline: var(--ol);
 	margin-top: 100px;
 	position: relative;
 }
 
+/* ++Facts Stage */
+
+.astro-stage-left,
+.astro-stage-right {
+	height: 83%;
+	width: 50%;
+	flex-direction: column;
+	justify-content: space-around;
+	/*outline: var(--olB);*/
+	position: absolute;
+	bottom: 0;
+	justify-content: space-around;
+	padding-bottom: 15px;
+}
+
+.astro-stage-left {
+	justify-content: space-between;
+	left: 0;
+}
+
+.astro-stage-right {
+	right: 0;
+}
+
+.sign-date-container {
+	width: 50%;
+	height: 5%;
+	justify-content: flex-start;
+	color: var(--txt-shadow);
+	font-size: 1.2rem;
+	font-weight: 600;
+	place-content: center;
+	border: 2px outset var(--txt-shadow);
+	border-radius: 2px;
+	box-shadow: 1px 1px 8px 1px var(--txt-shadow);
+}
+
+.astro-description-container {
+	width: 60%;
+	height: 35%;
+	color: var(--txt-shadow);
+	text-align: center;
+	flex-direction: column;
+	justify-content: flex-start;
+	border-radius: 2px;
+	box-shadow: 1px 1px 8px 1px var(--txt-shadow);
+}
+
+.astro-label {
+	width: 100%;
+	height: 20%;
+	text-align: center;
+	background: linear-gradient(90deg, var(--txt-shadow), var(--main-bg));
+	margin-bottom: 10px;
+	place-content: center;
+	color: var(--txt-shadow);
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+.birthstone-label {
+	margin-bottom: 0;
+}
+
+.sign-symbol-container {
+	width: 60%;
+	height: 15%;
+	flex-direction: column;
+	justify-content: space-evenly;
+	border-radius: 2px;
+	box-shadow: 1px 1px 8px 1px var(--txt-shadow);
+}
+
+.sign-container,
+.symbol-container {
+	width: 95%;
+	height: 40%;
+	justify-content: flex-start;
+	border: 2px inset var(--txt-shadow);
+}
+
+.sign-container div:nth-child(1),
+.symbol-container div:nth-child(1) {
+	width: 25%;
+	height: 100%;
+	background: linear-gradient(15deg, var(--txt-shadow), var(--main-bg), var(--txt-shadow));
+	color: #ffffff;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.sign-container div:nth-child(2),
+.symbol-container div:nth-child(2) {
+	height: 100%;
+	width: 60%;
+	color: white;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.sign-container div:nth-child(3),
+.symbol-container div:nth-child(3) {
+	height: 100%;
+	width: 15%;
+	color: var(--txt-shadow);
+	font-size: 1rem;
+	border: 1px solid var(--txt-shadow);
+}
+
+.birthstone-container {
+	height: 30%;
+	width: 60%;
+	flex-direction: column;
+	justify-content: space-between;
+	box-shadow: 1px 1px 8px 1px var(--txt-shadow);
+}
+
+.month-1-container,
+.month-2-container {
+	width: 100%;
+	height: 35%;
+	justify-content: flex-start;
+}
+
+.month-1-container div:nth-child(1),
+.month-2-container div:nth-child(1) {
+	width: 15%;
+	height: 100%;
+	background: linear-gradient(15deg, var(--txt-shadow), var(--main-bg), var(--txt-shadow));
+	color: #ffffff;
+	font-size: 1rem;
+	font-weight: 600;
+}
+.month-1-container div:nth-child(2),
+.month-2-container div:nth-child(2) {
+	width: 70%;
+	height: 100%;
+	background: linear-gradient(15deg, var(--txt-shadow), var(--main-bg), var(--txt-shadow));
+	color: #ffffff;
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+.month-1-container div:nth-child(3),
+.month-2-container div:nth-child(3) {
+	width: 15%;
+	height: 100%;
+}
+
+.month-1-container div:nth-child(3) img,
+.month-2-container div:nth-child(3) img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+/*++ AstroStage Right */
+
+.astro-color-container {
+	width: 40%;
+	height: 20%;
+	box-shadow: 1px 1px 8px 1px var(--txt-shadow);
+	flex-direction: column;
+}
+
+.color-wrapper-container {
+	height: 80%;
+	width: 100%;
+}
+
+.color-name-container {
+	width: 50%;
+	height: 100%;
+	color: var(--txt-shadow);
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+.color-span-container {
+	width: 50%;
+	height: 100%;
+}
+
+.color-span {
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	background-color: #90ee90;
+}
+
+.astro-planet-container {
+	width: 60%;
+	height: 30%;
+	box-shadow: 1px 1px 8px 1px var(--txt-shadow);
+	flex-direction: column;
+}
+
+.planet-wrapper-container {
+	height: 80%;
+	width: 100%;
+	justify-content: space-around;
+}
+
+.planet-name-container {
+	width: 40%;
+	height: 50%;
+	color: var(--txt-shadow);
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.planet-img-container {
+	height: 100%;
+	width: 30%;
+}
+
+.planet-img-container img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.astro-traits-container {
+	width: 60%;
+	height: 40%;
+	box-shadow: 1px 1px 8px 1px var(--txt-shadow);
+
+	flex-direction: column;
+	justify-content: flex-start;
+	row-gap: 10px;
+}
+
+.astro-traits-container li {
+	color: var(--txt-shadow);
+	width: 100%;
+	text-align: center;
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+/* ++AstroCurtain */
 .astro-curtain {
 	width: 100%;
 	height: 100%;
@@ -197,6 +438,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	display: none;
 }
 
 .option-container:hover {
@@ -220,165 +462,6 @@
 	color: var(--txt-shadow);
 	font-size: 1.2rem;
 	place-content: center;
-}
-
-/* ++Facts Stage */
-
-.astro-facts-stage {
-	width: 100%;
-	height: 695px;
-	outline: var(--olR);
-	position: absolute;
-	bottom: 0;
-	justify-content: space-around;
-}
-
-.astro-stage-left,
-.astro-stage-right {
-	height: 650px;
-	width: 380px;
-	flex-direction: column;
-	justify-content: space-around;
-	outline: var(--olB);
-}
-
-.astro-stage-left {
-	justify-content: space-between;
-}
-
-.astro-description-container {
-	width: 90%;
-	height: 30%;
-	color: var(--txt-shadow);
-	text-align: center;
-	flex-direction: column;
-	justify-content: flex-start;
-	border-radius: 2px;
-	box-shadow: 1px 1px 8px 1px var(--txt-shadow);
-}
-
-.sign-date-container {
-	width: 80%;
-	height: 5%;
-	justify-content: flex-start;
-	color: var(--txt-shadow);
-	font-size: 1.2rem;
-	font-weight: 600;
-	place-content: center;
-	border: 2px outset var(--txt-shadow);
-	border-radius: 2px;
-	box-shadow: 1px 1px 8px 1px var(--txt-shadow);
-}
-
-.description-label-container,
-.birthstone-label-container {
-	width: 100%;
-	height: 20%;
-	text-align: center;
-	background: linear-gradient(90deg, var(--txt-shadow), var(--main-bg));
-	margin-bottom: 10px;
-	place-content: center;
-	color: var(--txt-shadow);
-	font-size: 1.2rem;
-	font-weight: 600;
-}
-
-.birthstone-label-container {
-	margin-bottom: 0;
-}
-
-.sign-symbol-container {
-	width: 80%;
-	height: 10%;
-	flex-direction: column;
-	justify-content: space-evenly;
-	border-radius: 2px;
-	box-shadow: 1px 1px 8px 1px var(--txt-shadow);
-}
-
-.sign-container,
-.symbol-container {
-	width: 95%;
-	height: 40%;
-	justify-content: flex-start;
-	border: 2px inset var(--txt-shadow);
-}
-
-.sign-container div:nth-child(1),
-.symbol-container div:nth-child(1) {
-	width: 25%;
-	height: 100%;
-	background: linear-gradient(15deg, var(--txt-shadow), var(--main-bg), var(--txt-shadow));
-	color: #ffffff;
-	font-size: 1rem;
-	font-weight: 600;
-}
-
-.sign-container div:nth-child(2),
-.symbol-container div:nth-child(2) {
-	height: 100%;
-	width: 60%;
-	color: white;
-	font-size: 1rem;
-	font-weight: 600;
-}
-
-.sign-container div:nth-child(3),
-.symbol-container div:nth-child(3) {
-	height: 100%;
-	width: 15%;
-	color: var(--txt-shadow);
-	font-size: 1rem;
-	border: 1px solid var(--txt-shadow);
-}
-
-.birthstone-container {
-	height: 40%;
-	width: 90%;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.month-1-container,
-.month-2-container {
-	width: 100%;
-	height: 35%;
-	justify-content: flex-start;
-}
-
-.month-1-container {
-	margin-bottom: 20px;
-}
-
-.month-1-container div:nth-child(1),
-.month-2-container div:nth-child(1) {
-	width: 25%;
-	height: 100%;
-	background: linear-gradient(15deg, var(--txt-shadow), var(--main-bg), var(--txt-shadow));
-	color: #ffffff;
-	font-size: 1rem;
-	font-weight: 600;
-}
-.month-1-container div:nth-child(2),
-.month-2-container div:nth-child(2) {
-	width: 50%;
-	height: 100%;
-	background: linear-gradient(15deg, var(--txt-shadow), var(--main-bg), var(--txt-shadow));
-	color: #ffffff;
-	font-size: 1rem;
-	font-weight: 600;
-}
-.month-1-container div:nth-child(3),
-.month-2-container div:nth-child(3) {
-	width: 25%;
-	height: 100%;
-}
-
-.month-1-container div:nth-child(3) img,
-.month-2-container div:nth-child(3) img {
-	object-fit: cover;
-	width: 100%;
-	height: 100%;
 }
 
 .flex-active {

@@ -245,74 +245,74 @@ const arrOfSigns = [
 
 //Static Options Container
 
-const curtainOptions = getById('curtain-options');
+//const curtainOptions = getById('curtain-options');
 
-for (let i = 0; i < 12; i++) {
-	const optionContainer = createElement('div');
-	addClass(optionContainer, 'option-container');
-	appendChild(curtainOptions, optionContainer);
+//for (let i = 0; i < 12; i++) {
+//	const optionContainer = createElement('div');
+//	addClass(optionContainer, 'option-container');
+//	appendChild(curtainOptions, optionContainer);
 
-	const iconContainer = createElement('div');
-	addClass(iconContainer, 'icon-container');
-	appendChild(optionContainer, iconContainer);
+//	const iconContainer = createElement('div');
+//	addClass(iconContainer, 'icon-container');
+//	appendChild(optionContainer, iconContainer);
 
-	const signName = createElement('div');
-	addClass(signName, 'name-container');
-	appendChild(optionContainer, signName);
-}
+//	const signName = createElement('div');
+//	addClass(signName, 'name-container');
+//	appendChild(optionContainer, signName);
+//}
 
-const optionContainers = getByClass('option-container');
-const iconContainer = getByClass('icon-container');
-const nameContainer = getByClass('name-container');
+//const optionContainers = getByClass('option-container');
+//const iconContainer = getByClass('icon-container');
+//const nameContainer = getByClass('name-container');
 
-const names = (container, container2, obj) => {
-	const sign = createElement('i');
-	addClass(sign, 'ti');
-	addClass(sign, obj.icon.zodiac);
-	appendChild(container, sign);
+//const names = (container, container2, obj) => {
+//	const sign = createElement('i');
+//	addClass(sign, 'ti');
+//	addClass(sign, obj.icon.zodiac);
+//	appendChild(container, sign);
 
-	textContent(container2, obj.name);
-};
+//	textContent(container2, obj.name);
+//};
 
-names(iconContainer[0], nameContainer[0], aries);
-names(iconContainer[1], nameContainer[1], taurus);
-names(iconContainer[2], nameContainer[2], gemini);
-names(iconContainer[3], nameContainer[3], cancer);
-names(iconContainer[4], nameContainer[4], leo);
-names(iconContainer[5], nameContainer[5], virgo);
-names(iconContainer[6], nameContainer[6], libra);
-names(iconContainer[7], nameContainer[7], scorpio);
-names(iconContainer[8], nameContainer[8], sagittarius);
-names(iconContainer[9], nameContainer[9], capricorn);
-names(iconContainer[10], nameContainer[10], aquarius);
-names(iconContainer[11], nameContainer[11], pisces);
+//names(iconContainer[0], nameContainer[0], aries);
+//names(iconContainer[1], nameContainer[1], taurus);
+//names(iconContainer[2], nameContainer[2], gemini);
+//names(iconContainer[3], nameContainer[3], cancer);
+//names(iconContainer[4], nameContainer[4], leo);
+//names(iconContainer[5], nameContainer[5], virgo);
+//names(iconContainer[6], nameContainer[6], libra);
+//names(iconContainer[7], nameContainer[7], scorpio);
+//names(iconContainer[8], nameContainer[8], sagittarius);
+//names(iconContainer[9], nameContainer[9], capricorn);
+//names(iconContainer[10], nameContainer[10], aquarius);
+//names(iconContainer[11], nameContainer[11], pisces);
 
-const astroCurtain = getById('astro-curtain');
-const headerIcon = getById('header-icon');
-const curtainHeaderContainer = select('.curtain-header-container');
-const curtainHeader = getById('curtain-header');
+//const astroCurtain = getById('astro-curtain');
+//const headerIcon = getById('header-icon');
+//const curtainHeaderContainer = select('.curtain-header-container');
+//const curtainHeader = getById('curtain-header');
 
-//Generic Curtain lift function (main option click event)
+////Generic Curtain lift function (main option click event)
 
-for (let i of optionContainers) {
-	i.addEventListener(click, function () {
-		if (!astroCurtain.classList.contains('curtain-up')) {
-			toggleClass(astroCurtain, 'curtain-up');
-			toggleClass(curtainOptions, flexInactive);
-			toggleClass(headerIcon, flexActive);
-			toggleClass(headerIcon, leo.icon.zodiac);
-			textContent(curtainHeader, leo.name);
-		}
-	});
-}
+//for (let i of optionContainers) {
+//	i.addEventListener(click, function () {
+//		if (!astroCurtain.classList.contains('curtain-up')) {
+//			toggleClass(astroCurtain, 'curtain-up');
+//			toggleClass(curtainOptions, flexInactive);
+//			toggleClass(headerIcon, flexActive);
+//			toggleClass(headerIcon, leo.icon.zodiac);
+//			textContent(curtainHeader, leo.name);
+//		}
+//	});
+//}
 
-//Default Curtain Drop
-curtainHeaderContainer.addEventListener(click, () => {
-	if (astroCurtain.classList.contains('curtain-up')) {
-		toggleClass(astroCurtain, 'curtain-up');
-		toggleClass(curtainOptions, flexInactive);
-		toggleClass(headerIcon, flexInactive);
+////Default Curtain Drop
+//curtainHeaderContainer.addEventListener(click, () => {
+//	if (astroCurtain.classList.contains('curtain-up')) {
+//		toggleClass(astroCurtain, 'curtain-up');
+//		toggleClass(curtainOptions, flexInactive);
+//		toggleClass(headerIcon, flexInactive);
 
-		textContent(curtainHeader, 'Choose Your Sign...');
-	}
-});
+//		textContent(curtainHeader, 'Choose Your Sign...');
+//	}
+//});
