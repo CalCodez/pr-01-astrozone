@@ -45,7 +45,7 @@ const astroFacts = {
 		icon: { zodiac: 'ti-zodiac-aries', sign: 'ti-flame' },
 		backSplash: { src: './assets/astro_backsplash/aries_backsplash.jpg' },
 		description:
-			'Aries are said to be ambitious, passionate, and energetic people who are natural leaders. They are the first sign of the zodiac and are represented by the symbol',
+			'Bold and energetic, Aries is a fiery leader driven by passion and ambition. Confident and competitive, they thrive on challenges and take initiative. Independent and courageous, they act quickly but can be impulsive. Their enthusiasm and determination make them natural pioneers, always ready to blaze new trails.',
 	},
 
 	taurus: {
@@ -60,7 +60,7 @@ const astroFacts = {
 		icon: { zodiac: 'ti-zodiac-taurus', sign: 'ti-world' },
 		backSplash: { src: './assets/astro_backsplash/taurus_backsplash.jpg' },
 		description:
-			'Taurus is the zodiac sign for people born between April 20 and May 20. People with this sign are said to be patient, reliable, and loyal, with a strong connection to nature. They are also known for being stable and determined',
+			'Grounded and reliable, Taurus values stability, comfort, and perseverance. Patient and hardworking, they appreciate beauty, luxury, and sensual pleasures. Stubborn yet deeply loyal, they commit fully to relationships and goals. Practical and determined, they build strong foundations, seeking security in all aspects of life while embracing life’s simple joys.',
 	},
 
 	gemini: {
@@ -75,7 +75,7 @@ const astroFacts = {
 		icon: { zodiac: 'ti-zodiac-gemini', sign: 'ti-wind' },
 		backSplash: { src: './assets/astro_backsplash/gemini_backsplash.jpg' },
 		description:
-			'Geminis are the third sign of the zodiac and are represented by twins. People born under this sign are said to be curious, communicative, and intellectual. They are also known for being adaptable, social, and enjoying change',
+			'Curious and adaptable, Gemini thrives on communication and intellectual stimulation. Quick-witted and sociable, they easily connect with others. Playful and versatile, they enjoy variety and change. Ruled by Mercury, they excel in expressing ideas but can be restless. Their dual nature makes them both charming conversationalists and deep thinkers.',
 	},
 
 	cancer: {
@@ -90,7 +90,7 @@ const astroFacts = {
 		icon: { zodiac: 'ti-zodiac-cancer', sign: 'ti-ripple' },
 		backSplash: { src: './assets/astro_backsplash/cancer_backsplash.jpg' },
 		description:
-			'Cancer is the fourth sign of the zodiac and is represented by the water element. Cancers are known for being intuitive, nurturing, and emotional. They are also known for being caring, loyal, and protective of their loved ones.',
+			'Deeply emotional and intuitive, Cancer is nurturing and protective. Loyal and sensitive, they value family and close relationships. Their strong intuition helps them connect with others, but they can be guarded. Compassionate and sentimental, they seek emotional security, creating a warm, caring environment wherever they go.',
 	},
 
 	leo: {
@@ -105,7 +105,7 @@ const astroFacts = {
 		icon: { zodiac: 'ti-zodiac-leo', sign: 'ti-flame' },
 		backSplash: { src: './assets/astro_backsplash/leo_backsplash.webp' },
 		description:
-			'Leos are known for being confident, loyal, and dramatic. They are symbolized by the lion and are said to have a regal bearing.',
+			'Charismatic and confident, Leo shines with passion and creativity. Bold and ambitious, they love attention and thrive as leaders. Generous and warm-hearted, they inspire others with enthusiasm. Loyal and courageous, they defend loved ones fiercely. Their vibrant energy and determination make them natural stars, always striving for greatness.',
 	},
 
 	virgo: {
@@ -121,7 +121,7 @@ const astroFacts = {
 		icon: { zodiac: 'ti-zodiac-virgo', sign: 'ti-world' },
 		backSplash: { src: './assets/astro_backsplash/virgo_backsplash.jpg' },
 		description:
-			'Virgos are known for being perfectionists, analytical, and detail-oriented. They are also known for being helpful, practical, and organized.',
+			'Analytical and detail-oriented, Virgo values precision, logic, and service. Hardworking and practical, they seek efficiency and personal growth. Loyal and reliable, they thrive on structure and organization. Perfectionists by nature, they can be critical but always aim for excellence. Their grounded, methodical approach ensures success in everything they do.',
 	},
 
 	libra: {
@@ -136,7 +136,7 @@ const astroFacts = {
 		icon: { zodiac: 'ti-zodiac-libra', sign: 'ti-wind' },
 		backSplash: { src: './assets/astro_backsplash/libra_backsplash.jpg' },
 		description:
-			'Libras are known for being diplomatic, charming, and social. They are also known for their desire for balance and harmony.',
+			'Charming and diplomatic, Libra seeks balance, harmony, and fairness. Social and artistic, they appreciate beauty and deep connections. Intelligent and persuasive, they navigate relationships with grace. Indecisive at times, they strive to please others. Their natural sense of justice and elegance makes them skilled mediators and peacemakers.',
 	},
 
 	scorpio: {
@@ -151,7 +151,7 @@ const astroFacts = {
 		icon: { zodiac: 'ti-zodiac-scorpio', sign: 'ti-ripple' },
 		backSplash: { src: './assets/astro_backsplash/scorpio_backsplash.jpg' },
 		description:
-			'Scorpios are known for being passionate, loyal, and secretive. They are also known for being intuitive, ambitious, and strategic.',
+			'Intense and mysterious, Scorpio is deeply emotional and passionate. Loyal and determined, they value depth and authenticity. Magnetic and intuitive, they read people effortlessly. Protective and sometimes secretive, they guard their emotions fiercely. Their resilience and ambition make them powerful forces, unafraid to transform and rise from challenges.',
 	},
 
 	sagittarius: {
@@ -166,7 +166,7 @@ const astroFacts = {
 		icon: { zodiac: 'ti-zodiac-sagittarius', sign: 'ti-flame' },
 		backSplash: { src: './assets/astro_backsplash/sagittarius_backsplash.jpg' },
 		description:
-			'Sagittarius is a zodiac sign for people born between November 22 and December 21. Sagittarius people are known for being adventurous, optimistic, and energetic. They are also known for being honest, blunt, and opinionated.',
+			'Adventurous and optimistic, Sagittarius loves freedom, exploration, and new experiences. Independent and intellectual, they seek knowledge and truth. Honest and humorous, they uplift those around them. Restless and energetic, they resist constraints and embrace spontaneity. Their adventurous spirit and open-mindedness make them natural explorers and lifelong learners.',
 	},
 
 	capricorn: {
@@ -181,7 +181,7 @@ const astroFacts = {
 		icon: { zodiac: 'ti-zodiac-capricorn', sign: 'ti-world' },
 		backSplash: { src: './assets/astro_backsplash/capricorn_backsplash.jpg' },
 		description:
-			'Capricorns are known for being ambitious, disciplined, and hardworking. They are also known for being practical, determined, and good with money.',
+			'Ambitious and disciplined, Capricorn is hardworking and goal-oriented. Practical and responsible, they value structure and perseverance. Patient and determined, they steadily climb toward success. Reserved yet deeply loyal, they take commitments seriously. Their strategic mindset and resilience ensure long-term achievements, making them strong, dependable leaders and providers.',
 	},
 	aquarius: {
 		name: 'Aquarius',
@@ -195,7 +195,7 @@ const astroFacts = {
 		icon: { zodiac: 'ti-zodiac-aquarius', sign: 'ti-wind' },
 		backSplash: { src: './assets/astro_backsplash/aquarius_backsplash.jpg' },
 		description:
-			'In astrology, Aquarians are known for being independent, creative, and forward-thinking. They are also known for being rule-breakers and activists who want to make the world a better place.',
+			'Innovative and independent, Aquarius values originality, intellect, and progress. Visionary and unconventional, they challenge norms and seek change. Social yet individualistic, they connect through ideas rather than emotions. Open-minded and humanitarian, they advocate for the greater good. Their unique perspective and futuristic thinking make them ahead of their time.',
 	},
 	pisces: {
 		name: 'Pisces',
@@ -209,7 +209,7 @@ const astroFacts = {
 		icon: { zodiac: 'ti-zodiac-pisces', sign: 'ti-ripple' },
 		backSplash: { src: './assets/astro_backsplash/pisces_backsplash.jpg' },
 		description:
-			'Pisces are known for being compassionate, creative, and intuitive. They are often described as the dreamers of the zodiac.',
+			'Dreamy and intuitive, Pisces is deeply emotional and creative. Compassionate and empathetic, they feel deeply for others. Imaginative and artistic, they escape into fantasy. Sensitive and spiritual, they seek connection beyond the material world. Their gentle, kind nature makes them natural healers, always guided by their emotions.',
 	},
 };
 
@@ -301,36 +301,6 @@ names(iconContainer[8], nameContainer[8], sagittarius);
 names(iconContainer[9], nameContainer[9], capricorn);
 names(iconContainer[10], nameContainer[10], aquarius);
 names(iconContainer[11], nameContainer[11], pisces);
-
-//const astroCurtain = getById('astro-curtain');
-//const headerIcon = getById('header-icon');
-//const curtainHeaderContainer = select('.curtain-header-container');
-//const curtainHeader = getById('curtain-header');
-
-////Generic Curtain lift function (main option click event)
-
-//for (let i of optionContainers) {
-//	i.addEventListener(click, function () {
-//		if (!astroCurtain.classList.contains('curtain-up')) {
-//			toggleClass(astroCurtain, 'curtain-up');
-//			toggleClass(curtainOptions, flexInactive);
-//			toggleClass(headerIcon, flexActive);
-//			toggleClass(headerIcon, leo.icon.zodiac);
-//			textContent(curtainHeader, leo.name);
-//		}
-//	});
-//}
-
-////Default Curtain Drop
-//curtainHeaderContainer.addEventListener(click, () => {
-//	if (astroCurtain.classList.contains('curtain-up')) {
-//		toggleClass(astroCurtain, 'curtain-up');
-//		toggleClass(curtainOptions, flexInactive);
-//		toggleClass(headerIcon, flexInactive);
-
-//		textContent(curtainHeader, 'Choose Your Sign...');
-//	}
-//});
 
 //Generate Astro Facts Vars and Function
 
@@ -444,3 +414,5 @@ toggleAstroFacts(sagittariusToggle, sagittarius);
 toggleAstroFacts(capricornToggle, capricorn);
 toggleAstroFacts(aquariusToggle, aquarius);
 toggleAstroFacts(piscesToggle, pisces);
+
+console.log(window.innerWidth);
