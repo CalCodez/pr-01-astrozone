@@ -375,7 +375,11 @@ astroResetButton.addEventListener(click, () => {
 		headerIcon.style.visibility = 'hidden';
 		headerIcon.classList.remove(...headerIcon.classList);
 
-		textContent(curtainHeader, 'Choose Your Sign');
+		if (window.innerWidth <= 521) {
+			textContent(curtainHeader, 'Choose');
+		} else {
+			textContent(curtainHeader, 'Choose Your Sign');
+		}
 		textContent(signDateContainer, '');
 		textContent(astroDescription, '');
 		textContent(signType, '');
@@ -415,4 +419,6 @@ toggleAstroFacts(capricornToggle, capricorn);
 toggleAstroFacts(aquariusToggle, aquarius);
 toggleAstroFacts(piscesToggle, pisces);
 
-console.log(window.innerWidth);
+if (window.innerWidth <= 521) {
+	textContent(curtainHeader, 'Choose');
+}

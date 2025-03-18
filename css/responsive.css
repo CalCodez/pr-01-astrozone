@@ -1,0 +1,115 @@
+@media (max-width: 768px) {
+	.backsplash-container {
+		width: 83%;
+	}
+
+	.reel-wrapper {
+		width: 45%;
+	}
+
+	.card-reel {
+		column-gap: 90px;
+	}
+
+	.astro-stage {
+		width: 100%;
+		height: fit-content;
+		flex-direction: column;
+		place-items: center;
+		margin-top: 100px;
+	}
+
+	h2 {
+		font-size: 40px;
+	}
+
+	.header-icon-container {
+		height: 60px;
+		width: 60px;
+	}
+
+	.header-icon-container i {
+		font-size: 40px;
+	}
+
+	.astro-stage > div {
+		width: 100%;
+	}
+
+	.astro-stage-left {
+		margin-top: 120px;
+		height: 500px;
+	}
+	.astro-stage-right {
+		height: 500px;
+	}
+
+	.astro-stage-right > div,
+	.astro-stage-left > div {
+		width: 60%;
+	}
+
+	.astro-sign-select-container {
+		width: 80%;
+		height: 60%;
+		position: absolute;
+		top: 20%;
+	}
+
+	.option-container {
+		width: 100px;
+		height: 100px;
+		gap: 5px;
+	}
+}
+
+@media (max-width: 581px) {
+	.header-container {
+		justify-content: center;
+	}
+	.backsplash-container {
+		width: 100%;
+		height: 80%;
+	}
+
+	.reel-wrapper {
+		width: 33%;
+	}
+
+	.reel-wrapper::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 10px;
+		height: 100%;
+		filter: blur(80px);
+		z-index: 3;
+		background: var(--main-bg);
+	}
+
+	.card-reel {
+		column-gap: 100px;
+	}
+	.astro-card {
+		height: 180px;
+		width: 120px;
+	}
+
+	.reel-control-container {
+		width: 200px;
+		margin-right: 5px;
+	}
+
+	.astro-stage {
+		width: 100%;
+		height: fit-content;
+		flex-direction: column;
+		place-items: center;
+		margin-top: 100px;
+	}
+
+	h2 {
+		font-size: 40px;
+	}
+}
