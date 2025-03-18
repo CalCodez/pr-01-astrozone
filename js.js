@@ -375,7 +375,7 @@ astroResetButton.addEventListener(click, () => {
 		headerIcon.style.visibility = 'hidden';
 		headerIcon.classList.remove(...headerIcon.classList);
 
-		if (window.innerWidth <= 521) {
+		if (window.innerWidth <= 581) {
 			textContent(curtainHeader, 'Choose');
 		} else {
 			textContent(curtainHeader, 'Choose Your Sign');
@@ -419,6 +419,6 @@ toggleAstroFacts(capricornToggle, capricorn);
 toggleAstroFacts(aquariusToggle, aquarius);
 toggleAstroFacts(piscesToggle, pisces);
 
-if (window.innerWidth <= 521) {
+if (window.innerWidth <= 581) {
 	textContent(curtainHeader, 'Choose');
 }

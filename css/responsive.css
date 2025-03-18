@@ -1,6 +1,21 @@
+@media (min-width: 768px) and (max-width: 1367px) {
+	.backsplash-container {
+		width: 60%;
+	}
+
+	.backsplash-container img {
+		object-fit: cover;
+	}
+
+	h2 {
+		font-size: 40px;
+	}
+}
+
 @media (max-width: 768px) {
 	.backsplash-container {
-		width: 83%;
+		width: 86%;
+		height: 83%;
 	}
 
 	.reel-wrapper {
@@ -111,5 +126,53 @@
 
 	h2 {
 		font-size: 40px;
+	}
+	.header-icon-container {
+		margin-right: 30px;
+	}
+}
+
+@media (max-width: 468px) {
+	.backsplash-container {
+		width: 100%;
+	}
+
+	.backsplash-container img {
+		object-fit: cover;
+	}
+
+	.reel-control-container {
+		margin-right: 50px;
+	}
+
+	h2 {
+		font-size: 25px;
+	}
+
+	.curtain-header-container i {
+		font-size: 2rem;
+	}
+
+	.header-icon-container {
+		width: 50px;
+		height: 50px;
+	}
+	.astro-stage-left,
+	.astro-stage-right {
+		width: 90%;
+	}
+
+	.astro-stage-left > div,
+	.astro-stage-right > div {
+		width: 100%;
+	}
+}
+
+@media (max-width: 380px) {
+	.reel-wrapper {
+		width: 42%;
+	}
+	.reel-control-container {
+		margin-top: 50px;
 	}
 }
