@@ -11,6 +11,7 @@
 	margin-top: 10px;
 	position: relative;
 	justify-content: flex-start;
+	display: none;
 }
 
 .backsplash-container {
@@ -146,6 +147,7 @@
 	box-shadow: 2px 2px 8px 2px var(--box-shadow);
 	align-items: flex-end;
 	justify-content: space-around;
+	display: none;
 }
 
 /* ++Facts Stage */
@@ -508,7 +510,200 @@
 	place-content: center;
 }
 
-.flex-active {
+/* ++Famous Astro Section */
+
+.famous-astros {
+	height: auto;
+	width: 100%;
+	border: 3px outset var(--box-shadow);
+	justify-content: center;
+	flex-wrap: wrap;
+	row-gap: 15px;
+	column-gap: 50px;
+}
+
+.famous-astros > div {
+	height: 520px;
+	width: 380px;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.famous-astros > div:nth-child(1) {
+	justify-content: space-around;
+}
+
+.famous-astro-symbol-container {
+	height: 50%;
+	width: 70%;
+	background: linear-gradient(
+		10deg,
+		var(--font-color-main),
+		var(--main-bg),
+		var(--font-color-main)
+	);
+	border-radius: 50%;
+	border: 5px solid var(--txt-shadow);
+	box-shadow: 2px 2px 8px 5px var(--box-shadow);
+}
+
+.famous-astro-symbol-container i {
+	font-size: 10rem;
+	color: var(--font-color-main);
+	font-size: 10rem;
+	background: -webkit-linear-gradient(
+		#9879f7,
+		#bbdcff,
+		#fdfdfd,
+		#b07ef0,
+		#bc68db,
+		#9879f7,
+		#c3d3fa,
+		#b6adc9,
+		#cf76e0
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 600;
+}
+
+.famous-astro-name-container {
+	width: 100%;
+	height: 10%;
+	background: linear-gradient(
+		10deg,
+		var(--font-color-main),
+		var(--main-bg),
+		var(--font-color-main)
+	);
+
+	border-radius: 20px;
+	border: 2px solid var(--txt-shadow);
+	box-shadow: 2px 2px 5px 1px var(--box-shadow);
+	place-content: center;
+}
+
+.famous-astro-name-container P {
+	background: -webkit-linear-gradient(
+		#9879f7,
+		#bbdcff,
+		#fdfdfd,
+		#b07ef0,
+		#bc68db,
+		#9879f7,
+		#c3d3fa,
+		#b6adc9,
+		#cf76e0
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	width: 100%;
+	height: 100%;
+	place-content: center;
+	text-align: center;
+	font-size: 2.5rem;
+	font-weight: 600;
+}
+
+.famous-astro-symbol-name-container {
+	width: 100%;
+	height: 10%;
+	background: linear-gradient(
+		10deg,
+		var(--font-color-main),
+		var(--main-bg),
+		var(--font-color-main)
+	);
+
+	border-radius: 20px;
+	border: 2px solid var(--txt-shadow);
+	box-shadow: 2px 2px 5px 1px var(--box-shadow);
+}
+
+.famous-astro-symbol-name-container p {
+	background: -webkit-linear-gradient(
+		#9879f7,
+		#bbdcff,
+		#fdfdfd,
+		#b07ef0,
+		#bc68db,
+		#9879f7,
+		#c3d3fa,
+		#b6adc9,
+		#cf76e0
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	width: 100%;
+	height: 100%;
+	place-content: center;
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+.famous-person-container {
+	width: 100%;
+	height: 18%;
+	border: 2px inset var(--box-shadow);
+	background: linear-gradient(
+		10deg,
+		var(--font-color-main),
+		var(--main-bg),
+		var(--font-color-main)
+	);
+
+	justify-content: space-between;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.famous-img-container {
+	width: 25%;
+	height: 100%;
+}
+
+.famous-img-container img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.famous-name-birthdate-container {
+	height: 100%;
+	width: 40%;
+	flex-direction: column;
+}
+
+.famous-name-birthdate-container > div {
+	width: 100%;
+	height: 50%;
+	color: var(--txt-shadow);
+	font-weight: 600;
+}
+
+.famous-name-birthdate-container > div:nth-child(1) {
+	text-shadow: 1px 1px 1px var(--font-color-main);
+}
+
+.famous-name-birthdate-container > div:nth-child(2) {
+	font-size: small;
+
+	color: var(--txt-shadow);
+}
+
+.knownFor-container {
+	place-content: center;
+	color: var(--txt-shadow);
+	text-align: center;
+}
+
+.knownFor-container {
+	height: 100%;
+	width: 40%;
+}
+
+.famous-astros .flex-active {
 	display: flex;
 }
 

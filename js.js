@@ -384,7 +384,7 @@ astroResetButton.addEventListener(click, () => {
 		textContent(astroDescription, '');
 		textContent(signType, '');
 
-		signTypeIcon.classList.remove(...signType.classList);
+		signTypeIcon.classList.remove(...signTypeIcon.classList);
 		textContent(SymbolNameContainer, '');
 
 		singSymbolIcon.classList.remove(...singSymbolIcon.classList);
