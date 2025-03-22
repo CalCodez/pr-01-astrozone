@@ -11,7 +11,6 @@
 	margin-top: 10px;
 	position: relative;
 	justify-content: flex-start;
-	display: none;
 }
 
 .backsplash-container {
@@ -147,7 +146,6 @@
 	box-shadow: 2px 2px 8px 2px var(--box-shadow);
 	align-items: flex-end;
 	justify-content: space-around;
-	display: none;
 }
 
 /* ++Facts Stage */
@@ -158,7 +156,6 @@
 	width: 320px;
 	flex-direction: column;
 	justify-content: space-around;
-	/*outline: var(--olB);*/
 	position: relative;
 	justify-content: space-around;
 	padding-bottom: 15px;
@@ -520,9 +517,12 @@
 	flex-wrap: wrap;
 	row-gap: 15px;
 	column-gap: 50px;
+	position: relative;
+	margin-top: 100px;
 }
 
-.famous-astros > div {
+.famous-wrapper-left,
+.famous-wrapper-right {
 	height: 520px;
 	width: 380px;
 	flex-direction: column;
@@ -703,7 +703,41 @@
 	width: 40%;
 }
 
-.famous-astros .flex-active {
+.famous-curtain {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: var(--main-bg);
+	z-index: 2;
+	left: 0;
+	flex-direction: column;
+	transition: width ease 0.5s;
+}
+
+.famous-curtain.curtain-open {
+	width: 380px;
+	transition: width ease 0.9s;
+}
+
+.famous-curtain-header-container {
+	width: 100%;
+	height: 100px;
+	outline: 1px solid white;
+	position: absolute;
+	top: 0;
+}
+
+.famous-select-container {
+	width: 380px;
+	height: fit-content;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	gap: 20px;
+	outline: var(--ol);
+	margin-top: 100px;
+}
+
+.flex-active {
 	display: flex;
 }
 

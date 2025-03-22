@@ -851,8 +851,19 @@ const famousAstro = {
 		celeb5: {
 			name: 'Will.i.am',
 			birthdate: 'March 15th',
-			knownFor: 'Rapper, Producer',
+			knownFor: ['Rapper', 'Producer'],
 			src: './assets/celebs/piscesCelebs/will_i_am.jpg',
 		},
 	},
 };
+
+const testToggle = select('.test-toggle');
+const famousCurtain = select('.famous-curtain');
+
+testToggle.addEventListener(click, () => {
+	if (!famousCurtain.classList.contains('curtain-open')) {
+		toggleClass(famousCurtain, 'curtain-open');
+	} else {
+		toggleClass(famousCurtain, 'curtain-open');
+	}
+});
