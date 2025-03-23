@@ -11,6 +11,7 @@
 	margin-top: 10px;
 	position: relative;
 	justify-content: flex-start;
+	display: none;
 }
 
 .backsplash-container {
@@ -146,6 +147,7 @@
 	box-shadow: 2px 2px 8px 2px var(--box-shadow);
 	align-items: flex-end;
 	justify-content: space-around;
+	display: none;
 }
 
 /* ++Facts Stage */
@@ -392,7 +394,7 @@
 	background-color: var(--main-bg);
 	position: absolute;
 	top: 0;
-	transition: height ease-in-out 0.5s;
+	transition: height ease 0.5s;
 	z-index: 2;
 }
 
@@ -401,7 +403,7 @@
 	background-color: var(--main-bg);
 	border-bottom-right-radius: 100px;
 	border-bottom-left-radius: 100px;
-	transition: height ease-in-out 0.5s;
+	transition: height ease 0.5s;
 }
 
 .curtain-header-container {
@@ -511,31 +513,73 @@
 
 .famous-astros {
 	height: auto;
-	width: 100%;
+	width: 80%;
 	border: 3px outset var(--box-shadow);
-	justify-content: center;
+	justify-content: space-between;
 	flex-wrap: wrap;
 	row-gap: 15px;
 	column-gap: 50px;
 	position: relative;
-	margin-top: 100px;
+	margin: 100px 0;
 }
 
-.famous-wrapper-left,
-.famous-wrapper-right {
-	height: 520px;
-	width: 380px;
+.famous-curtain {
+	width: 100%;
+	height: 100%;
+	/*position: absolute;*/
+	background-color: var(--main-bg);
 	flex-direction: column;
+	transition: width ease 2s;
+}
+
+.famous-curtain.curtain-open {
+	width: 380px;
+	transition: width ease 2s;
+}
+
+.famous-curtain-header-container {
+	width: 100%;
+	height: 100px;
+	top: 0;
+	place-content: center;
+	outline: var(--ol);
+	background: linear-gradient(
+		20deg,
+		var(--font-color-main),
+		var(--main-bg),
+		var(--font-color-main),
+		var(--main-bg),
+		var(--font-color-main)
+	);
+}
+
+.famous-curtain-header-container h2 {
+	text-shadow: 2px 2px 2px var(--main-bg);
+}
+
+.famous-select-container {
+	width: 380px;
+	height: 520px;
+	flex-wrap: wrap;
 	justify-content: space-around;
+	gap: 20px;
 }
 
 .famous-astros > div:nth-child(1) {
 	justify-content: space-around;
 }
 
+.famous-curtain-stats-container {
+	height: 520px;
+	width: 380px;
+	flex-direction: column;
+	row-gap: 50px;
+	display: none;
+}
+
 .famous-astro-symbol-container {
-	height: 50%;
-	width: 70%;
+	height: 30%;
+	width: 40%;
 	background: linear-gradient(
 		10deg,
 		var(--font-color-main),
@@ -548,9 +592,8 @@
 }
 
 .famous-astro-symbol-container i {
-	font-size: 10rem;
 	color: var(--font-color-main);
-	font-size: 10rem;
+	font-size: 6rem;
 	background: -webkit-linear-gradient(
 		#9879f7,
 		#bbdcff,
@@ -568,7 +611,7 @@
 }
 
 .famous-astro-name-container {
-	width: 100%;
+	width: 50%;
 	height: 10%;
 	background: linear-gradient(
 		10deg,
@@ -601,12 +644,12 @@
 	height: 100%;
 	place-content: center;
 	text-align: center;
-	font-size: 2.5rem;
+	font-size: 2rem;
 	font-weight: 600;
 }
 
 .famous-astro-symbol-name-container {
-	width: 100%;
+	width: 50%;
 	height: 10%;
 	background: linear-gradient(
 		10deg,
@@ -638,8 +681,18 @@
 	height: 100%;
 	place-content: center;
 	text-align: center;
-	font-size: 2rem;
+	font-size: 1.8rem;
 	font-weight: 600;
+}
+
+/* !!Famous People Container */
+
+.famous-wrapper {
+	height: 520px;
+	width: 380px;
+	flex-direction: column;
+	justify-content: space-around;
+	display: none;
 }
 
 .famous-person-container {
@@ -701,40 +754,6 @@
 .knownFor-container {
 	height: 100%;
 	width: 40%;
-}
-
-.famous-curtain {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	background-color: var(--main-bg);
-	z-index: 2;
-	left: 0;
-	flex-direction: column;
-	transition: width ease 0.5s;
-}
-
-.famous-curtain.curtain-open {
-	width: 380px;
-	transition: width ease 0.9s;
-}
-
-.famous-curtain-header-container {
-	width: 100%;
-	height: 100px;
-	outline: 1px solid white;
-	position: absolute;
-	top: 0;
-}
-
-.famous-select-container {
-	width: 380px;
-	height: fit-content;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	gap: 20px;
-	outline: var(--ol);
-	margin-top: 100px;
 }
 
 .flex-active {

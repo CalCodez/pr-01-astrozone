@@ -859,11 +859,28 @@ const famousAstro = {
 
 const testToggle = select('.test-toggle');
 const famousCurtain = select('.famous-curtain');
+const famousSelectContainer = select('.famous-select-container');
+const famousCurtainStats = select('.famous-curtain-stats-container');
+const famousWrapper = select('.famous-wrapper');
+const famousCurtainHeader = select('.famous-curtain-header-container');
+const curtainOpen = 'curtain-open';
 
 testToggle.addEventListener(click, () => {
-	if (!famousCurtain.classList.contains('curtain-open')) {
-		toggleClass(famousCurtain, 'curtain-open');
-	} else {
-		toggleClass(famousCurtain, 'curtain-open');
+	if (!famousCurtain.classList.contains(curtainOpen)) {
+		toggleClass(famousCurtain, curtainOpen);
+		toggleClass(famousSelectContainer, flexInactive);
+		toggleClass(famousCurtainStats, flexActive);
+		toggleClass(famousCurtainStats, 'slideInLeft');
+		toggleClass(famousWrapper, flexActive);
+		toggleClass(famousWrapper, 'slideInRight');
 	}
+
+	famousCurtainHeader.addEventListener(click, () => {
+		if (famousCurtain.classList.contains(curtainOpen)) {
+			toggleClass(famousCurtain, curtainOpen);
+			toggleClass(famousSelectContainer, flexInactive);
+			toggleClass(famousCurtainStats, flexActive);
+			toggleClass(famousWrapper, flexActive);
+		}
+	});
 });
