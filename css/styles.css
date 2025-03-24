@@ -521,6 +521,7 @@
 	column-gap: 50px;
 	position: relative;
 	margin: 100px 0;
+	background: var(--main-bg);
 }
 
 .famous-curtain {
@@ -536,7 +537,6 @@
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	z-index: -1;
 }
 
 .famous-curtain.curtain-open {
@@ -559,6 +559,7 @@
 	justify-content: flex-start;
 	flex-direction: column;
 	align-items: flex-start;
+	z-index: 2;
 }
 
 .famous-header-wrapper {
@@ -602,6 +603,7 @@
 	justify-content: space-around;
 	/*gap: 20px;*/
 	outline: var(--ol);
+	z-index: 2;
 }
 
 .famous-select {
@@ -759,13 +761,24 @@
 
 .famous-people-wrapper {
 	height: 100%;
-	width: 380px;
-	/*flex-direction: column;*/
+	width: 60%;
+	min-width: 380px;
+	flex-direction: column;
 	justify-content: space-between;
 	gap: 10px;
-	outline: var(--ol);
 	flex-wrap: wrap;
 	display: none;
+}
+
+.top-bottom-people-wrapper {
+	width: 100%;
+	height: fit-content;
+	justify-content: space-around;
+}
+
+.middle-people-wrapper {
+	width: 100%;
+	height: fit-content;
 }
 
 .famous-person-container {
