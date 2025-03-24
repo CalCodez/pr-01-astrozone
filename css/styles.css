@@ -529,20 +529,18 @@
 	/*position: absolute;*/
 	background-color: var(--main-bg);
 	flex-direction: column;
-	transition: width ease 2s;
+	transition: width ease 0.9s;
 }
 
 .famous-curtain.curtain-open {
 	width: 380px;
-	transition: width ease 2s;
+	transition: width ease 0.9s;
 }
 
 .famous-curtain-header-container {
 	width: 100%;
 	height: 100px;
-	top: 0;
 	place-content: center;
-	outline: var(--ol);
 	background: linear-gradient(
 		20deg,
 		var(--font-color-main),
@@ -551,10 +549,43 @@
 		var(--main-bg),
 		var(--font-color-main)
 	);
+	justify-content: flex-start;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.famous-header-wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 380px;
+	height: 100%;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .famous-curtain-header-container h2 {
 	text-shadow: 2px 2px 2px var(--main-bg);
+	margin-left: 0;
+}
+
+.fa-x {
+	color: var(--txt-shadow);
+	font-size: 1.2rem;
+	cursor: pointer;
+	margin-right: 20px;
+	font-weight: 800;
+	text-shadow: 2px 2px 2px var(--main-bg);
+
+	visibility: hidden;
+	text-align: center;
+}
+
+.famous-curtain.curtain-open .fa-x {
+	visibility: visible;
+}
+
+.fa-x:hover {
+	transform: scale(1.2);
 }
 
 .famous-select-container {
@@ -562,7 +593,39 @@
 	height: 520px;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	gap: 20px;
+	/*gap: 20px;*/
+	outline: var(--ol);
+}
+
+.famous-select {
+	width: 150px;
+	height: 40px;
+	background: linear-gradient(
+		20deg,
+		#9879f7,
+		#bbdcff,
+		#fdfdfd,
+		#b07ef0,
+		#bc68db,
+		#9879f7,
+		#c3d3fa,
+		#b6adc9,
+		#cf76e0
+	);
+	border-radius: 8px;
+	column-gap: 10px;
+	box-shadow: 1px 1px 3px 1px var(--box-shadow);
+	text-transform: uppercase;
+	font-weight: 600;
+	color: var(--font-color-main);
+}
+
+.famous-select i {
+	font-weight: 600;
+}
+
+.famous-select:hover {
+	transform: scale(1.1);
 }
 
 .famous-astros > div:nth-child(1) {
@@ -687,17 +750,20 @@
 
 /* !!Famous People Container */
 
-.famous-wrapper {
-	height: 520px;
+.famous-people-wrapper {
+	height: 100%;
 	width: 380px;
-	flex-direction: column;
-	justify-content: space-around;
+	/*flex-direction: column;*/
+	justify-content: space-between;
+	gap: 10px;
+	outline: var(--ol);
+	flex-wrap: wrap;
 	display: none;
 }
 
 .famous-person-container {
-	width: 100%;
-	height: 18%;
+	width: 150px;
+	height: 200px;
 	border: 2px inset var(--box-shadow);
 	background: linear-gradient(
 		10deg,
@@ -709,51 +775,34 @@
 	justify-content: space-between;
 	border-radius: 8px;
 	overflow: hidden;
+	flex-direction: column;
+	padding: 10px;
 }
 
 .famous-img-container {
-	width: 25%;
-	height: 100%;
+	width: 80%;
+	height: 60%;
+	outline: var(--ol);
+	border-radius: 50%;
 }
 
 .famous-img-container img {
 	object-fit: cover;
 	width: 100%;
 	height: 100%;
+	border-radius: 50%;
 }
 
-.famous-name-birthdate-container {
-	height: 100%;
-	width: 40%;
-	flex-direction: column;
-}
-
-.famous-name-birthdate-container > div {
+h4,
+h5,
+h6 {
+	color: var(--txt-shadow);
 	width: 100%;
-	height: 50%;
-	color: var(--txt-shadow);
-	font-weight: 600;
-}
-
-.famous-name-birthdate-container > div:nth-child(1) {
-	text-shadow: 1px 1px 1px var(--font-color-main);
-}
-
-.famous-name-birthdate-container > div:nth-child(2) {
-	font-size: small;
-
-	color: var(--txt-shadow);
-}
-
-.knownFor-container {
-	place-content: center;
-	color: var(--txt-shadow);
 	text-align: center;
 }
 
-.knownFor-container {
-	height: 100%;
-	width: 40%;
+h4 {
+	font-size: smaller;
 }
 
 .flex-active {

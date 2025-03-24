@@ -861,9 +861,10 @@ const testToggle = select('.test-toggle');
 const famousCurtain = select('.famous-curtain');
 const famousSelectContainer = select('.famous-select-container');
 const famousCurtainStats = select('.famous-curtain-stats-container');
-const famousWrapper = select('.famous-wrapper');
+const famousPeopleWrapper = select('.famous-people-wrapper');
 const famousCurtainHeader = select('.famous-curtain-header-container');
 const curtainOpen = 'curtain-open';
+const closeCurtain = getById('famous-curtain-toggle');
 
 testToggle.addEventListener(click, () => {
 	if (!famousCurtain.classList.contains(curtainOpen)) {
@@ -871,11 +872,14 @@ testToggle.addEventListener(click, () => {
 		toggleClass(famousSelectContainer, flexInactive);
 		toggleClass(famousCurtainStats, flexActive);
 		toggleClass(famousCurtainStats, 'slideInLeft');
-		toggleClass(famousWrapper, flexActive);
-		toggleClass(famousWrapper, 'slideInRight');
+
+		setTimeout(() => {
+			toggleClass(famousPeopleWrapper, flexActive);
+			toggleClass(famousPeopleWrapper, 'slideInDown');
+		}, 900);
 	}
 
-	famousCurtainHeader.addEventListener(click, () => {
+	closeCurtain.addEventListener(click, () => {
 		if (famousCurtain.classList.contains(curtainOpen)) {
 			toggleClass(famousCurtain, curtainOpen);
 			toggleClass(famousSelectContainer, flexInactive);
