@@ -884,7 +884,7 @@ testToggle.addEventListener(click, () => {
 			toggleClass(famousCurtain, curtainOpen);
 			toggleClass(famousSelectContainer, flexInactive);
 			toggleClass(famousCurtainStats, flexActive);
-			toggleClass(famousWrapper, flexActive);
+			toggleClass(famousPeopleWrapper, flexActive);
 		}
 	});
 });

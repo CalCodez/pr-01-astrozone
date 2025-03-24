@@ -526,10 +526,17 @@
 .famous-curtain {
 	width: 100%;
 	height: 100%;
-	/*position: absolute;*/
-	background-color: var(--main-bg);
+	position: relative;
 	flex-direction: column;
 	transition: width ease 0.9s;
+}
+
+.famous-curtain img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -1;
 }
 
 .famous-curtain.curtain-open {
