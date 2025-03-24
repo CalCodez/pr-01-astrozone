@@ -46,6 +46,38 @@ const astroFacts = {
 		backSplash: { src: './assets/astro_backsplash/aries_backsplash.jpg' },
 		description:
 			'Bold and energetic, Aries is a fiery leader driven by passion and ambition. Confident and competitive, they thrive on challenges and take initiative. Independent and courageous, they act quickly but can be impulsive. Their enthusiasm and determination make them natural pioneers, always ready to blaze new trails.',
+		celebs: {
+			celeb1: {
+				name: 'Halle Bailey',
+				birthdate: 'March 27th',
+				knownFor: 'Singer, Actress',
+				src: './assets/celebs/ariesCelebs/halle_bailey.jpg',
+			},
+			celeb2: {
+				name: 'Mariah Carey',
+				birthdate: 'March 27th',
+				knownFor: 'Singer, Songwriter, Actress',
+				src: './assets/celebs/ariesCelebs/mariah_carey.jpg',
+			},
+			celeb3: {
+				name: 'Chance The Rapper',
+				birthdate: 'April 16th',
+				knownFor: 'Rapper, Actor',
+				src: './assets/celebs/ariesCelebs/chance_the_rapper.jpg',
+			},
+			celeb4: {
+				name: 'Martian Lawrence',
+				birthdate: 'April 16th',
+				knownFor: 'Comedian, Actor',
+				src: './assets/celebs/ariesCelebs/martin_lawrence.jpg',
+			},
+			celeb5: {
+				name: 'Lil Nas X',
+				birthdate: 'April 9th',
+				knownFor: 'Rapper',
+				src: './assets/celebs/ariesCelebs/lil_nas_x.jpg',
+			},
+		},
 	},
 
 	taurus: {
@@ -61,6 +93,39 @@ const astroFacts = {
 		backSplash: { src: './assets/astro_backsplash/taurus_backsplash.jpg' },
 		description:
 			'Grounded and reliable, Taurus values stability, comfort, and perseverance. Patient and hardworking, they appreciate beauty, luxury, and sensual pleasures. Stubborn yet deeply loyal, they commit fully to relationships and goals. Practical and determined, they build strong foundations, seeking security in all aspects of life while embracing life’s simple joys.',
+
+		celebs: {
+			celeb1: {
+				name: 'Adele',
+				birthdate: 'May 5th',
+				knownFor: 'Singer',
+				src: './assets/celebs/taurusCelebs/adele.jpg',
+			},
+			celeb2: {
+				name: 'Kelly Clarkson',
+				birthdate: 'April 24th',
+				knownFor: 'Singer, Talk Show Host',
+				src: './assets/celebs/taurusCelebs/kelly_clarkson.jpg',
+			},
+			celeb3: {
+				name: 'Channing Tatum',
+				birthdate: 'April 26th',
+				knownFor: 'Actor, Dancer',
+				src: './assets/celebs/taurusCelebs/channing_tatum.jpg',
+			},
+			celeb4: {
+				name: 'Janet Jackson',
+				birthdate: 'May 16th',
+				knownFor: 'Singer, Dancer, Actress',
+				src: './assets/celebs/taurusCelebs/janet_jackson.jpg',
+			},
+			celeb5: {
+				name: 'Chris Brown',
+				birthdate: 'May 5th',
+				knownFor: 'Rapper, Singer',
+				src: './assets/celebs/taurusCelebs/chris_brown.jpg',
+			},
+		},
 	},
 
 	gemini: {
@@ -76,6 +141,39 @@ const astroFacts = {
 		backSplash: { src: './assets/astro_backsplash/gemini_backsplash.jpg' },
 		description:
 			'Curious and adaptable, Gemini thrives on communication and intellectual stimulation. Quick-witted and sociable, they easily connect with others. Playful and versatile, they enjoy variety and change. Ruled by Mercury, they excel in expressing ideas but can be restless. Their dual nature makes them both charming conversationalists and deep thinkers.',
+
+		celebs: {
+			celeb1: {
+				name: 'Angelina Jolie',
+				birthdate: 'June 4th',
+				knownFor: 'Actress',
+				src: './assets/celebs/geminiCelebs/angelina_jolie.jpg',
+			},
+			celeb2: {
+				name: 'Kanye West',
+				birthdate: 'June 8th',
+				knownFor: 'Rapper, Producer, Designer',
+				src: './assets/celebs/geminiCelebs/kanye_west.jpg',
+			},
+			celeb3: {
+				name: 'Chris Evans',
+				birthdate: 'June 13th',
+				knownFor: 'Actor',
+				src: './assets/celebs/geminiCelebs/chris_evans.jpg',
+			},
+			celeb4: {
+				name: 'Kendrick Lamar',
+				birthdate: 'June 17th',
+				knownFor: 'Rapper',
+				src: './assets/celebs/geminiCelebs/kendrick_lamar.jpg',
+			},
+			celeb5: {
+				name: 'Lauryn Hill',
+				birthdate: 'May 26th',
+				knownFor: 'Rapper, Singer, Actress',
+				src: './assets/celebs/geminiCelebs/lauryn_hill.jpg',
+			},
+		},
 	},
 
 	cancer: {
@@ -91,6 +189,43 @@ const astroFacts = {
 		backSplash: { src: './assets/astro_backsplash/cancer_backsplash.jpg' },
 		description:
 			'Deeply emotional and intuitive, Cancer is nurturing and protective. Loyal and sensitive, they value family and close relationships. Their strong intuition helps them connect with others, but they can be guarded. Compassionate and sentimental, they seek emotional security, creating a warm, caring environment wherever they go.',
+
+		celebs: {
+			celeb1: {
+				name: 'Ariana Grande',
+				birthdate: 'June 26th',
+				knownFor: 'Singer, Actress',
+				src: './assets/celebs/cancerCelebs/ariana_grande.jpg',
+			},
+
+			celeb2: {
+				name: 'Kevin Hart',
+				birthdate: 'July 6th',
+				knownFor: 'Comedian, Actor',
+				src: './assets/celebs/cancerCelebs/kevin_hart.jpg',
+			},
+
+			celeb3: {
+				name: 'Fantasia Barrino',
+				birthdate: 'June 30th',
+				knownFor: 'Singer, Actress',
+				src: './assets/celebs/cancerCelebs/fantasia_barrino.jpg',
+			},
+
+			celeb4: {
+				name: 'Solange Knowles',
+				birthdate: 'June 24th',
+				knownFor: 'Singer, Actress',
+				src: './assets/celebs/cancerCelebs/solange_knowles.jpg',
+			},
+
+			celeb5: {
+				name: 'Missy Elliot',
+				birthdate: 'July 1st',
+				knownFor: 'Rapper, Singer, Producer',
+				src: './assets/celebs/cancerCelebs/missy_elliot.jpg',
+			},
+		},
 	},
 
 	leo: {
@@ -106,6 +241,43 @@ const astroFacts = {
 		backSplash: { src: './assets/astro_backsplash/leo_backsplash.webp' },
 		description:
 			'Charismatic and confident, Leo shines with passion and creativity. Bold and ambitious, they love attention and thrive as leaders. Generous and warm-hearted, they inspire others with enthusiasm. Loyal and courageous, they defend loved ones fiercely. Their vibrant energy and determination make them natural stars, always striving for greatness.',
+
+		celebs: {
+			celeb1: {
+				name: 'Barack Obama',
+				birthdate: 'August 4th',
+				knownFor: '44th US President',
+				src: './assets/celebs/leoCelebs/barack_obama.jpg',
+			},
+
+			celeb2: {
+				name: 'Whitney Houston',
+				birthdate: 'August 9th',
+				knownFor: 'Singer, Actress',
+				src: './assets/celebs/leoCelebs/whitney_houston.jpg',
+			},
+
+			celeb3: {
+				name: 'Halle Berry',
+				birthdate: 'August 14th',
+				knownFor: 'Actress',
+				src: './assets/celebs/leoCelebs/halle_berry.jpg',
+			},
+
+			celeb4: {
+				name: 'Demi Lovato',
+				birthdate: 'August 20th',
+				knownFor: 'Singer, Actress',
+				src: './assets/celebs/leoCelebs/demi_lovato.jpg',
+			},
+
+			celeb5: {
+				name: 'Jennifer Lopez',
+				birthdate: 'July 24th',
+				knownFor: 'Singer, Actress, Dancer',
+				src: './assets/celebs/leoCelebs/jennifer_lopez.jpg',
+			},
+		},
 	},
 
 	virgo: {
@@ -122,6 +294,43 @@ const astroFacts = {
 		backSplash: { src: './assets/astro_backsplash/virgo_backsplash.jpg' },
 		description:
 			'Analytical and detail-oriented, Virgo values precision, logic, and service. Hardworking and practical, they seek efficiency and personal growth. Loyal and reliable, they thrive on structure and organization. Perfectionists by nature, they can be critical but always aim for excellence. Their grounded, methodical approach ensures success in everything they do.',
+
+		celebs: {
+			celeb1: {
+				name: 'Beyonce',
+				birthdate: 'September 4th',
+				knownFor: 'Singer, Dancer, Songwriter',
+				src: './assets/celebs/virgoCelebs/beyonce.jpg',
+			},
+
+			celeb2: {
+				name: 'Pink',
+				birthdate: 'September 8th',
+				knownFor: 'Singer, Songwriter',
+				src: './assets/celebs/virgoCelebs/pink.jpg',
+			},
+
+			celeb3: {
+				name: 'Taraji P. Henson',
+				birthdate: 'September 11th',
+				knownFor: 'Actress',
+				src: './assets/celebs/virgoCelebs/taraji_p_henson.jpg',
+			},
+
+			celeb4: {
+				name: 'Michael Jackson',
+				birthdate: 'August 29th',
+				knownFor: 'Singer, Dancer, Songwriter',
+				src: './assets/celebs/virgoCelebs/michael_jackson.jpg',
+			},
+
+			celeb5: {
+				name: 'Keke Palmer',
+				birthdate: 'August 26th',
+				knownFor: 'Actress, Singer',
+				src: './assets/celebs/virgoCelebs/keke_palmer.jpg',
+			},
+		},
 	},
 
 	libra: {
@@ -137,6 +346,43 @@ const astroFacts = {
 		backSplash: { src: './assets/astro_backsplash/libra_backsplash.jpg' },
 		description:
 			'Charming and diplomatic, Libra seeks balance, harmony, and fairness. Social and artistic, they appreciate beauty and deep connections. Intelligent and persuasive, they navigate relationships with grace. Indecisive at times, they strive to please others. Their natural sense of justice and elegance makes them skilled mediators and peacemakers.',
+
+		celebs: {
+			celeb1: {
+				name: 'Will Smith',
+				birthdate: 'September 25th',
+				knownFor: 'Actor, Rapper',
+				src: './assets/celebs/libraCelebs/will_smith.jpg',
+			},
+
+			celeb2: {
+				name: 'Cardi B',
+				birthdate: 'October 11th',
+				knownFor: 'Rapper, Tv Personality',
+				src: './assets/celebs/libraCelebs/cardi_b.jpg',
+			},
+
+			celeb3: {
+				name: 'Lil Wayne',
+				birthdate: 'Sep 27th',
+				knownFor: 'Rapper',
+				src: './assets/celebs/libraCelebs/lil_wayne.jpg',
+			},
+
+			celeb4: {
+				name: 'Eminem',
+				birthdate: 'October 17th',
+				knownFor: 'Rapper',
+				src: './assets/celebs/libraCelebs/eminem.jpg',
+			},
+
+			celeb5: {
+				name: 'Bruno Mars',
+				birthdate: 'October 8th',
+				knownFor: 'Singer, Songwriter',
+				src: './assets/celebs/libraCelebs/bruno_mars.jpg',
+			},
+		},
 	},
 
 	scorpio: {
@@ -152,6 +398,43 @@ const astroFacts = {
 		backSplash: { src: './assets/astro_backsplash/scorpio_backsplash.jpg' },
 		description:
 			'Intense and mysterious, Scorpio is deeply emotional and passionate. Loyal and determined, they value depth and authenticity. Magnetic and intuitive, they read people effortlessly. Protective and sometimes secretive, they guard their emotions fiercely. Their resilience and ambition make them powerful forces, unafraid to transform and rise from challenges.',
+
+		celebs: {
+			celeb1: {
+				name: 'Drake',
+				birthdate: 'October 24th',
+				knownFor: 'Rapper, Actor',
+				src: './assets/celebs/scorpioCelebs/drake.jpg',
+			},
+
+			celeb2: {
+				name: 'Ciara',
+				birthdate: 'October 25th',
+				knownFor: 'Singer, Dancer',
+				src: './assets/celebs/scorpioCelebs/ciara.jpg',
+			},
+
+			celeb3: {
+				name: 'Ryan Reynolds',
+				birthdate: 'October 23rd',
+				knownFor: 'Actor',
+				src: './assets/celebs/scorpioCelebs/ryan_reynolds.jpg',
+			},
+
+			celeb4: {
+				name: 'Gabrielle Union',
+				birthdate: 'October 29th',
+				knownFor: 'Actress',
+				src: './assets/celebs/scorpioCelebs/gabrielle_union.jpg',
+			},
+
+			celeb5: {
+				name: 'Leonardo DiCaprio',
+				birthdate: 'November 11th',
+				knownFor: 'Actor',
+				src: './assets/celebs/scorpioCelebs/leonardo_dicaprio.jpg',
+			},
+		},
 	},
 
 	sagittarius: {
@@ -167,6 +450,43 @@ const astroFacts = {
 		backSplash: { src: './assets/astro_backsplash/sagittarius_backsplash.jpg' },
 		description:
 			'Adventurous and optimistic, Sagittarius loves freedom, exploration, and new experiences. Independent and intellectual, they seek knowledge and truth. Honest and humorous, they uplift those around them. Restless and energetic, they resist constraints and embrace spontaneity. Their adventurous spirit and open-mindedness make them natural explorers and lifelong learners.',
+
+		celebs: {
+			celeb1: {
+				name: 'Jay-Z',
+				birthdate: 'December 4th',
+				knownFor: 'Rapper, Businessman ',
+				src: './assets/celebs/sagittariusCelebs/jay_z.jpg',
+			},
+
+			celeb2: {
+				name: 'Nicki Minaj',
+				birthdate: 'December 8th',
+				knownFor: 'Rapper',
+				src: './assets/celebs/sagittariusCelebs/nicki_minaj.jpg',
+
+				celeb3: {
+					name: 'Jamie Foxx',
+					birthdate: 'December 13th',
+					knownFor: 'Comedian, Actor, Singer',
+					src: './assets/celebs/sagittariusCelebs/jamie_foxx.jpg',
+				},
+
+				celeb4: {
+					name: 'Trey Songz',
+					birthdate: 'November 28th',
+					knownFor: 'Singer',
+					src: './assets/celebs/sagittariusCelebs/trey_songz.jpg',
+				},
+
+				celeb5: {
+					name: 'Brittney Spears',
+					birthdate: 'December 2nd',
+					knownFor: 'Singer, Dancer',
+					src: './assets/celebs/sagittariusCelebs/brittney_spears.jpg',
+				},
+			},
+		},
 	},
 
 	capricorn: {
@@ -182,6 +502,43 @@ const astroFacts = {
 		backSplash: { src: './assets/astro_backsplash/capricorn_backsplash.jpg' },
 		description:
 			'Ambitious and disciplined, Capricorn is hardworking and goal-oriented. Practical and responsible, they value structure and perseverance. Patient and determined, they steadily climb toward success. Reserved yet deeply loyal, they take commitments seriously. Their strategic mindset and resilience ensure long-term achievements, making them strong, dependable leaders and providers.',
+
+		celebs: {
+			celeb1: {
+				name: 'Michelle Obama',
+				birthdate: 'January 17th',
+				knownFor: '44th First Lady',
+				src: './assets/celebs/capricornCelebs/michelle_obama.jpg',
+			},
+
+			celeb2: {
+				name: 'Denzel Washington',
+				birthdate: 'December 28th',
+				knownFor: 'Actor',
+				src: './assets/celebs/capricornCelebs/denzel_washington.jpg',
+			},
+
+			celeb3: {
+				name: 'Zayn Malik',
+				birthdate: 'January 12th',
+				knownFor: 'Singer',
+				src: './assets/celebs/capricornCelebs/zayn_malik.jpg',
+			},
+
+			celeb4: {
+				name: 'LeBron James',
+				birthdate: 'December 30th',
+				knownFor: 'NBA',
+				src: './assets/celebs/capricornCelebs/lebron_james.jpg',
+			},
+
+			celeb5: {
+				name: 'Jim Carey',
+				birthdate: 'January 17th',
+				knownFor: 'Comedian, Actor',
+				src: './assets/celebs/capricornCelebs/jim_carey.jpg',
+			},
+		},
 	},
 	aquarius: {
 		name: 'Aquarius',
@@ -196,6 +553,43 @@ const astroFacts = {
 		backSplash: { src: './assets/astro_backsplash/aquarius_backsplash.jpg' },
 		description:
 			'Innovative and independent, Aquarius values originality, intellect, and progress. Visionary and unconventional, they challenge norms and seek change. Social yet individualistic, they connect through ideas rather than emotions. Open-minded and humanitarian, they advocate for the greater good. Their unique perspective and futuristic thinking make them ahead of their time.',
+
+		celebs: {
+			celeb1: {
+				name: 'Kelly Rowland',
+				birthdate: 'February 11th',
+				knownFor: 'Singer, Actress',
+				src: './assets/celebs/aquariusCelebs/kelly_rowland.jpg',
+			},
+
+			celeb2: {
+				name: 'Justin Timberlake',
+				birthdate: 'January 31st',
+				knownFor: 'Singer, Actor',
+				src: './assets/celebs/aquariusCelebs/justin_timberlake.jpg',
+			},
+
+			celeb3: {
+				name: 'Alicia Keys',
+				birthdate: 'January 2th',
+				knownFor: 'Singer',
+				src: './assets/celebs/aquariusCelebs/alicia_keys.jpg',
+			},
+
+			celeb4: {
+				name: 'The Weekend',
+				birthdate: 'February 16th',
+				knownFor: 'Singer',
+				src: './assets/celebs/aquariusCelebs/the_weekend.jpg',
+			},
+
+			celeb5: {
+				name: 'Oprah Winfrey',
+				birthdate: 'January 29th',
+				knownFor: 'Talk Show Host, Actress',
+				src: './assets/celebs/aquariusCelebs/oprah_winfrey.jpg',
+			},
+		},
 	},
 	pisces: {
 		name: 'Pisces',
@@ -210,6 +604,43 @@ const astroFacts = {
 		backSplash: { src: './assets/astro_backsplash/pisces_backsplash.jpg' },
 		description:
 			'Dreamy and intuitive, Pisces is deeply emotional and creative. Compassionate and empathetic, they feel deeply for others. Imaginative and artistic, they escape into fantasy. Sensitive and spiritual, they seek connection beyond the material world. Their gentle, kind nature makes them natural healers, always guided by their emotions.',
+
+		celebs: {
+			celeb1: {
+				name: 'Rihanna',
+				birthdate: 'February 20th',
+				knownFor: 'Singer, Designer, Actress',
+				src: './assets/celebs/piscesCelebs/rihanna.jpg',
+			},
+
+			celeb2: {
+				name: 'Justin Bieber',
+				birthdate: 'March 1st',
+				knownFor: 'Singer',
+				src: './assets/celebs/piscesCelebs/justin_bieber.jpg',
+			},
+
+			celeb3: {
+				name: 'Drew Barrymore',
+				birthdate: 'February 22nd',
+				knownFor: 'Actress, Talk Show Host',
+				src: './assets/celebs/piscesCelebs/drew_barrymore.jpg',
+			},
+
+			celeb4: {
+				name: 'Steph Curry',
+				birthdate: 'March 14th',
+				knownFor: 'NBA',
+				src: './assets/celebs/piscesCelebs/steph_curry.jpg',
+			},
+
+			celeb5: {
+				name: 'Will.i.am',
+				birthdate: 'March 15th',
+				knownFor: ['Rapper', 'Producer'],
+				src: './assets/celebs/piscesCelebs/will_i_am.jpg',
+			},
+		},
 	},
 };
 
@@ -423,439 +854,20 @@ if (window.innerWidth <= 581) {
 	textContent(curtainHeader, 'Choose');
 }
 
-const famousAstro = {
-	ariesCelebs: {
-		celeb1: {
-			name: 'Halle Bailey',
-			birthdate: 'March 27th',
-			knownFor: 'Singer, Actress',
-			src: './assets/celebs/ariesCelebs/halle_bailey.jpg',
-		},
-		celeb2: {
-			name: 'Mariah Carey',
-			birthdate: 'March 27th',
-			knownFor: 'Singer, Songwriter, Actress',
-			src: './assets/celebs/ariesCelebs/mariah_carey.jpg',
-		},
-		celeb3: {
-			name: 'Chance The Rapper',
-			birthdate: 'April 16th',
-			knownFor: 'Rapper, Actor',
-			src: './assets/celebs/ariesCelebs/chance_the_rapper.jpg',
-		},
-		celeb4: {
-			name: 'Martian Lawrence',
-			birthdate: 'April 16th',
-			knownFor: 'Comedian, Actor',
-			src: './assets/celebs/ariesCelebs/martin_lawrence.jpg',
-		},
-		celeb5: {
-			name: 'Lil Nas X',
-			birthdate: 'April 9th',
-			knownFor: 'Rapper',
-			src: './assets/celebs/ariesCelebs/lil_nas_x.jpg',
-		},
-	},
+//Famous Astro Vars and Function
 
-	taurusCelebs: {
-		celeb1: {
-			name: 'Adele',
-			birthdate: 'May 5th',
-			knownFor: 'Singer',
-			src: './assets/celebs/taurusCelebs/adele.jpg',
-		},
-		celeb2: {
-			name: 'Kelly Clarkson',
-			birthdate: 'April 24th',
-			knownFor: 'Singer, Talk Show Host',
-			src: './assets/celebs/taurusCelebs/kelly_clarkson.jpg',
-		},
-		celeb3: {
-			name: 'Channing Tatum',
-			birthdate: 'April 26th',
-			knownFor: 'Actor, Dancer',
-			src: './assets/celebs/taurusCelebs/channing_tatum.jpg',
-		},
-		celeb4: {
-			name: 'Janet Jackson',
-			birthdate: 'May 16th',
-			knownFor: 'Singer, Dancer, Actress',
-			src: './assets/celebs/taurusCelebs/janet_jackson.jpg',
-		},
-		celeb5: {
-			name: 'Chris Brown',
-			birthdate: 'May 5th',
-			knownFor: 'Rapper, Singer',
-			src: './assets/celebs/taurusCelebs/chris_brown.jpg',
-		},
-	},
-
-	geminiCelebs: {
-		celeb1: {
-			name: 'Angelina Jolie',
-			birthdate: 'June 4th',
-			knownFor: 'Actress',
-			src: './assets/celebs/geminiCelebs/angelina_jolie.jpg',
-		},
-		celeb2: {
-			name: 'Kanye West',
-			birthdate: 'June 8th',
-			knownFor: 'Rapper, Producer, Designer',
-			src: './assets/celebs/geminiCelebs/kanye_west.jpg',
-		},
-		celeb3: {
-			name: 'Chris Evans',
-			birthdate: 'June 13th',
-			knownFor: 'Actor',
-			src: './assets/celebs/geminiCelebs/chris_evans.jpg',
-		},
-		celeb4: {
-			name: 'Kendrick Lamar',
-			birthdate: 'June 17th',
-			knownFor: 'Rapper',
-			src: './assets/celebs/geminiCelebs/kendrick_lamar.jpg',
-		},
-		celeb5: {
-			name: 'Lauryn Hill',
-			birthdate: 'May 26th',
-			knownFor: 'Rapper, Singer, Actress',
-			src: './assets/celebs/geminiCelebs/lauryn_hill.jpg',
-		},
-	},
-
-	cancerCelebs: {
-		celeb1: {
-			name: 'Ariana Grande',
-			birthdate: 'June 26th',
-			knownFor: 'Singer, Actress',
-			src: './assets/celebs/cancerCelebs/ariana_grande.jpg',
-		},
-
-		celeb2: {
-			name: 'Kevin Hart',
-			birthdate: 'July 6th',
-			knownFor: 'Comedian, Actor',
-			src: './assets/celebs/cancerCelebs/kevin_hart.jpg',
-		},
-
-		celeb3: {
-			name: 'Fantasia Barrino',
-			birthdate: 'June 30th',
-			knownFor: 'Singer, Actress',
-			src: './assets/celebs/cancerCelebs/fantasia_barrino.jpg',
-		},
-
-		celeb4: {
-			name: 'Solange Knowles',
-			birthdate: 'June 24th',
-			knownFor: 'Singer, Actress',
-			src: './assets/celebs/cancerCelebs/solange_knowles.jpg',
-		},
-
-		celeb5: {
-			name: 'Missy Elliot',
-			birthdate: 'July 1st',
-			knownFor: 'Rapper, Singer, Producer',
-			src: './assets/celebs/cancerCelebs/missy_elliot.jpg',
-		},
-	},
-
-	leoCelebs: {
-		celeb1: {
-			name: 'Barack Obama',
-			birthdate: 'August 4th',
-			knownFor: '44th US President',
-			src: './assets/celebs/leoCelebs/barack_obama.jpg',
-		},
-
-		celeb2: {
-			name: 'Whitney Houston',
-			birthdate: 'August 9th',
-			knownFor: 'Singer, Actress',
-			src: './assets/celebs/leoCelebs/whitney_houston.jpg',
-		},
-
-		celeb3: {
-			name: 'Halle Berry',
-			birthdate: 'August 14th',
-			knownFor: 'Actress',
-			src: './assets/celebs/leoCelebs/halle_berry.jpg',
-		},
-
-		celeb4: {
-			name: 'Demi Lovato',
-			birthdate: 'August 20th',
-			knownFor: 'Singer, Actress',
-			src: './assets/celebs/leoCelebs/demi_lovato.jpg',
-		},
-
-		celeb5: {
-			name: 'Jennifer Lopez',
-			birthdate: 'July 24th',
-			knownFor: 'Singer, Actress, Dancer',
-			src: './assets/celebs/leoCelebs/jennifer_lopez.jpg',
-		},
-	},
-
-	virgoCelebs: {
-		celeb1: {
-			name: 'Beyonce',
-			birthdate: 'September 4th',
-			knownFor: 'Singer, Dancer, Songwriter',
-			src: './assets/celebs/virgoCelebs/beyonce.jpg',
-		},
-
-		celeb2: {
-			name: 'Pink',
-			birthdate: 'September 8th',
-			knownFor: 'Singer, Songwriter',
-			src: './assets/celebs/virgoCelebs/pink.jpg',
-		},
-
-		celeb3: {
-			name: 'Taraji P. Henson',
-			birthdate: 'September 11th',
-			knownFor: 'Actress',
-			src: './assets/celebs/virgoCelebs/taraji_p_henson.jpg',
-		},
-
-		celeb4: {
-			name: 'Michael Jackson',
-			birthdate: 'August 29th',
-			knownFor: 'Singer, Dancer, Songwriter',
-			src: './assets/celebs/virgoCelebs/michael_jackson.jpg',
-		},
-
-		celeb5: {
-			name: 'Keke Palmer',
-			birthdate: 'August 26th',
-			knownFor: 'Actress, Singer',
-			src: './assets/celebs/virgoCelebs/keke_palmer.jpg',
-		},
-	},
-
-	libraCelebs: {
-		celeb1: {
-			name: 'Will Smith',
-			birthdate: 'September 25th',
-			knownFor: 'Actor, Rapper',
-			src: './assets/celebs/libraCelebs/will_smith.jpg',
-		},
-
-		celeb2: {
-			name: 'Cardi B',
-			birthdate: 'October 11th',
-			knownFor: 'Rapper, Tv Personality',
-			src: './assets/celebs/libraCelebs/cardi_b.jpg',
-		},
-
-		celeb3: {
-			name: 'Lil Wayne',
-			birthdate: 'Sep 27th',
-			knownFor: 'Rapper',
-			src: './assets/celebs/libraCelebs/lil_wayne.jpg',
-		},
-
-		celeb4: {
-			name: 'Eminem',
-			birthdate: 'October 17th',
-			knownFor: 'Rapper',
-			src: './assets/celebs/libraCelebs/eminem.jpg',
-		},
-
-		celeb5: {
-			name: 'Bruno Mars',
-			birthdate: 'October 8th',
-			knownFor: 'Singer, Songwriter',
-			src: './assets/celebs/libraCelebs/bruno_mars.jpg',
-		},
-	},
-
-	scorpioCelebs: {
-		celeb1: {
-			name: 'Drake',
-			birthdate: 'October 24th',
-			knownFor: 'Rapper, Actor',
-			src: './assets/celebs/scorpioCelebs/drake.jpg',
-		},
-
-		celeb2: {
-			name: 'Ciara',
-			birthdate: 'October 25th',
-			knownFor: 'Singer, Dancer',
-			src: './assets/celebs/scorpioCelebs/ciara.jpg',
-		},
-
-		celeb3: {
-			name: 'Ryan Reynolds',
-			birthdate: 'October 23rd',
-			knownFor: 'Actor',
-			src: './assets/celebs/scorpioCelebs/ryan_reynolds.jpg',
-		},
-
-		celeb4: {
-			name: 'Gabrielle Union',
-			birthdate: 'October 29th',
-			knownFor: 'Actress',
-			src: './assets/celebs/scorpioCelebs/gabrielle_union.jpg',
-		},
-
-		celeb5: {
-			name: 'Leonardo DiCaprio',
-			birthdate: 'November 11th',
-			knownFor: 'Actor',
-			src: './assets/celebs/scorpioCelebs/leonardo_dicaprio.jpg',
-		},
-	},
-
-	sagittariusCelebs: {
-		celeb1: {
-			name: 'Jay-Z',
-			birthdate: 'December 4th',
-			knownFor: 'Rapper, Businessman ',
-			src: './assets/celebs/sagittariusCelebs/jay_z.jpg',
-		},
-
-		celeb2: {
-			name: 'Nicki Minaj',
-			birthdate: 'December 8th',
-			knownFor: 'Rapper',
-			src: './assets/celebs/sagittariusCelebs/nicki_minaj.jpg',
-
-			celeb3: {
-				name: 'Jamie Foxx',
-				birthdate: 'December 13th',
-				knownFor: 'Comedian, Actor, Singer',
-				src: './assets/celebs/sagittariusCelebs/jamie_foxx.jpg',
-			},
-
-			celeb4: {
-				name: 'Trey Songz',
-				birthdate: 'November 28th',
-				knownFor: 'Singer',
-				src: './assets/celebs/sagittariusCelebs/trey_songz.jpg',
-			},
-
-			celeb5: {
-				name: 'Brittney Spears',
-				birthdate: 'December 2nd',
-				knownFor: 'Singer, Dancer',
-				src: './assets/celebs/sagittariusCelebs/brittney_spears.jpg',
-			},
-		},
-	},
-
-	capricornCelebs: {
-		celeb1: {
-			name: 'Michelle Obama',
-			birthdate: 'January 17th',
-			knownFor: '44th First Lady',
-			src: './assets/celebs/capricornCelebs/michelle_obama.jpg',
-		},
-
-		celeb2: {
-			name: 'Denzel Washington',
-			birthdate: 'December 28th',
-			knownFor: 'Actor',
-			src: './assets/celebs/capricornCelebs/denzel_washington.jpg',
-		},
-
-		celeb3: {
-			name: 'Zayn Malik',
-			birthdate: 'January 12th',
-			knownFor: 'Singer',
-			src: './assets/celebs/capricornCelebs/zayn_malik.jpg',
-		},
-
-		celeb4: {
-			name: 'LeBron James',
-			birthdate: 'December 30th',
-			knownFor: 'NBA',
-			src: './assets/celebs/capricornCelebs/lebron_james.jpg',
-		},
-
-		celeb5: {
-			name: 'Jim Carey',
-			birthdate: 'January 17th',
-			knownFor: 'Comedian, Actor',
-			src: './assets/celebs/capricornCelebs/jim_carey.jpg',
-		},
-	},
-
-	aquariusCelebs: {
-		celeb1: {
-			name: 'Kelly Rowland',
-			birthdate: 'February 11th',
-			knownFor: 'Singer, Actress',
-			src: './assets/celebs/aquariusCelebs/kelly_rowland.jpg',
-		},
-
-		celeb2: {
-			name: 'Justin Timberlake',
-			birthdate: 'January 31st',
-			knownFor: 'Singer, Actor',
-			src: './assets/celebs/aquariusCelebs/justin_timberlake.jpg',
-		},
-
-		celeb3: {
-			name: 'Alicia Keys',
-			birthdate: 'January 2th',
-			knownFor: 'Singer',
-			src: './assets/celebs/aquariusCelebs/alicia_keys.jpg',
-		},
-
-		celeb4: {
-			name: 'The Weekend',
-			birthdate: 'February 16th',
-			knownFor: 'Singer',
-			src: './assets/celebs/aquariusCelebs/the_weekend.jpg',
-		},
-
-		celeb5: {
-			name: 'Oprah Winfrey',
-			birthdate: 'January 29th',
-			knownFor: 'Talk Show Host, Actress',
-			src: './assets/celebs/aquariusCelebs/oprah_winfrey.jpg',
-		},
-	},
-
-	piscesCeleb: {
-		celeb1: {
-			name: 'Rihanna',
-			birthdate: 'February 20th',
-			knownFor: 'Singer, Designer, Actress',
-			src: './assets/celebs/piscesCelebs/rihanna.jpg',
-		},
-
-		celeb2: {
-			name: 'Justin Bieber',
-			birthdate: 'March 1st',
-			knownFor: 'Singer',
-			src: './assets/celebs/piscesCelebs/justin_bieber.jpg',
-		},
-
-		celeb3: {
-			name: 'Drew Barrymore',
-			birthdate: 'February 22nd',
-			knownFor: 'Actress, Talk Show Host',
-			src: './assets/celebs/piscesCelebs/drew_barrymore.jpg',
-		},
-
-		celeb4: {
-			name: 'Steph Curry',
-			birthdate: 'March 14th',
-			knownFor: 'NBA',
-			src: './assets/celebs/piscesCelebs/steph_curry.jpg',
-		},
-
-		celeb5: {
-			name: 'Will.i.am',
-			birthdate: 'March 15th',
-			knownFor: ['Rapper', 'Producer'],
-			src: './assets/celebs/piscesCelebs/will_i_am.jpg',
-		},
-	},
-};
+const ariesCelebs = aries.celebs;
+const taurusCelebs = taurus.celebs;
+const geminiCelebs = gemini.celebs;
+const cancerCelebs = cancer.celebs;
+const leoCelebs = leo.celebs;
+const virgoCelebs = virgo.celebs;
+const libraCelebs = libra.celebs;
+const scorpioCelebs = scorpio.celebs;
+const sagittariusCelebs = sagittarius.celebs;
+const capricornCelebs = capricorn.celebs;
+const aquariusCelebs = aquarius.celebs;
+const piscesCeleb = pisces.celebs;
 
 const testToggle = select('.test-toggle');
 const famousCurtain = select('.famous-curtain');
@@ -889,3 +901,14 @@ testToggle.addEventListener(click, () => {
 		}
 	});
 });
+
+//const test = Object.entries(ariesCelebs);
+
+//for (const [key, value] of Object.entries(astroFacts)) {
+//	//console.log(key, value);
+//	for (const [key1, value2] of Object.entries(value.celebs)) {
+//		if (key == 'aries' && key1 == 'celeb1') {
+//			console.log(key1, value2.birthdate);
+//		}
+//	}
+//}
