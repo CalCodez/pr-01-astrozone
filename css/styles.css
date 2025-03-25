@@ -11,7 +11,7 @@
 	margin-top: 10px;
 	position: relative;
 	justify-content: flex-start;
-	display: none;
+	/*display: none;*/
 }
 
 .backsplash-container {
@@ -147,7 +147,7 @@
 	box-shadow: 2px 2px 8px 2px var(--box-shadow);
 	align-items: flex-end;
 	justify-content: space-around;
-	display: none;
+	/*display: none;*/
 }
 
 /* ++Facts Stage */
