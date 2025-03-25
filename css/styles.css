@@ -532,7 +532,7 @@
 	transition: width ease 0.9s;
 }
 
-.famous-curtain img {
+.famous-curtain > img {
 	object-fit: cover;
 	width: 100%;
 	height: 100%;
@@ -601,9 +601,8 @@
 	height: 520px;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	/*gap: 20px;*/
-	outline: var(--ol);
 	z-index: 2;
+	/*display: none;*/
 }
 
 .famous-select {
@@ -647,26 +646,30 @@
 	flex-direction: column;
 	row-gap: 50px;
 	display: none;
+	justify-content: space-evenly;
+	position: relative;
 }
 
-.famous-astro-symbol-container {
-	height: 30%;
-	width: 40%;
+.stats-img-container {
+	width: 90%;
+	height: 50%;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 2px 2px 8px 2px var(--box-shadow);
+}
+
+.stats-img-container > img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.stats-astro-name-span,
+.stats-symbol-span {
+	width: 70%;
+	height: 10%;
 	background: linear-gradient(
 		10deg,
-		var(--font-color-main),
-		var(--main-bg),
-		var(--font-color-main)
-	);
-	border-radius: 50%;
-	border: 5px solid var(--txt-shadow);
-	box-shadow: 2px 2px 8px 5px var(--box-shadow);
-}
-
-.famous-astro-symbol-container i {
-	color: var(--font-color-main);
-	font-size: 6rem;
-	background: -webkit-linear-gradient(
 		#9879f7,
 		#bbdcff,
 		#fdfdfd,
@@ -677,84 +680,13 @@
 		#b6adc9,
 		#cf76e0
 	);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	font-weight: 600;
-}
-
-.famous-astro-name-container {
-	width: 50%;
-	height: 10%;
-	background: linear-gradient(
-		10deg,
-		var(--font-color-main),
-		var(--main-bg),
-		var(--font-color-main)
-	);
-
 	border-radius: 20px;
 	border: 2px solid var(--txt-shadow);
 	box-shadow: 2px 2px 5px 1px var(--box-shadow);
 	place-content: center;
-}
-
-.famous-astro-name-container P {
-	background: -webkit-linear-gradient(
-		#9879f7,
-		#bbdcff,
-		#fdfdfd,
-		#b07ef0,
-		#bc68db,
-		#9879f7,
-		#c3d3fa,
-		#b6adc9,
-		#cf76e0
-	);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	width: 100%;
-	height: 100%;
-	place-content: center;
 	text-align: center;
-	font-size: 2rem;
 	font-weight: 600;
-}
-
-.famous-astro-symbol-name-container {
-	width: 50%;
-	height: 10%;
-	background: linear-gradient(
-		10deg,
-		var(--font-color-main),
-		var(--main-bg),
-		var(--font-color-main)
-	);
-
-	border-radius: 20px;
-	border: 2px solid var(--txt-shadow);
-	box-shadow: 2px 2px 5px 1px var(--box-shadow);
-}
-
-.famous-astro-symbol-name-container p {
-	background: -webkit-linear-gradient(
-		#9879f7,
-		#bbdcff,
-		#fdfdfd,
-		#b07ef0,
-		#bc68db,
-		#9879f7,
-		#c3d3fa,
-		#b6adc9,
-		#cf76e0
-	);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	width: 100%;
-	height: 100%;
-	place-content: center;
-	text-align: center;
-	font-size: 1.8rem;
-	font-weight: 600;
+	font-size: 1.5rem;
 }
 
 /* !!Famous People Container */
@@ -806,7 +738,7 @@
 	border-radius: 50%;
 }
 
-.famous-img-container img {
+.famous-img-container > img {
 	object-fit: cover;
 	width: 100%;
 	height: 100%;

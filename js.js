@@ -883,7 +883,6 @@ testToggle.addEventListener(click, () => {
 		toggleClass(famousCurtain, curtainOpen);
 		toggleClass(famousSelectContainer, flexInactive);
 		toggleClass(famousCurtainStats, flexActive);
-		toggleClass(famousCurtainStats, 'slideInLeft');
 
 		setTimeout(() => {
 			toggleClass(famousPeopleWrapper, flexActive);
@@ -897,7 +896,6 @@ testToggle.addEventListener(click, () => {
 			toggleClass(famousSelectContainer, flexInactive);
 			toggleClass(famousCurtainStats, flexActive);
 			toggleClass(famousPeopleWrapper, flexActive);
-			toggleClass(famousCurtainStats, 'slideInLeft');
 		}
 	});
 });

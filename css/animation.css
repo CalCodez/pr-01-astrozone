@@ -60,7 +60,8 @@
 	}
 }
 
-.backsplash-container img {
+.backsplash-container img,
+.stats-img-container img {
 	-webkit-animation-name: zoomIn;
 	animation-name: zoomIn;
 	-webkit-animation-duration: 0.9s;
