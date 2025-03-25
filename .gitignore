@@ -4,5 +4,7 @@
 *.log
 *.md
 
-assets\astro_stats_imgs
+*assets\astro_stats_imgs
 ./assets/astro_stats_imgs
+
+\
