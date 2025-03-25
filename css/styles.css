@@ -11,7 +11,7 @@
 	margin-top: 10px;
 	position: relative;
 	justify-content: flex-start;
-	/*display: none;*/
+	display: none;
 }
 
 .backsplash-container {
@@ -147,7 +147,7 @@
 	box-shadow: 2px 2px 8px 2px var(--box-shadow);
 	align-items: flex-end;
 	justify-content: space-around;
-	/*display: none;*/
+	display: none;
 }
 
 /* ++Facts Stage */
@@ -680,9 +680,9 @@
 		#b6adc9,
 		#cf76e0
 	);
-	border-radius: 20px;
-	border: 2px solid var(--txt-shadow);
-	box-shadow: 2px 2px 5px 1px var(--box-shadow);
+	border-radius: 8px;
+	border: 5px outset var(--txt-shadow);
+	box-shadow: 1px 1px 5px 1px var(--box-shadow);
 	place-content: center;
 	text-align: center;
 	font-weight: 600;
