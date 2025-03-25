@@ -10,6 +10,31 @@
 	--box-shadow: #ff00ff;
 	--txt-shadow: #b4cfec;
 	--font-color-main: #800080;
+
+	--conic: conic-gradient(
+		#9879f7,
+		#bbdcff,
+		#fdfdfd,
+		#b07ef0,
+		#bc68db,
+		#9879f7,
+		#c3d3fa,
+		#b6adc9,
+		#cf76e0
+	);
+
+	--linear: linear-gradient(
+		20deg,
+		#9879f7,
+		#bbdcff,
+		#fdfdfd,
+		#b07ef0,
+		#bc68db,
+		#9879f7,
+		#c3d3fa,
+		#b6adc9,
+		#cf76e0
+	);
 }
 
 * {
