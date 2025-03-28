@@ -44,7 +44,7 @@ const astroFacts = {
 		color: { name: 'Red', hex: '#ff0000' },
 		icon: { zodiac: 'ti-zodiac-aries', sign: 'ti-flame' },
 		backSplash: { src: './assets/astro_backsplash/aries_backsplash.jpg' },
-		statsImg: { src: './assets/astro_stats_imgs/aries.jpg' },
+		statsImg: { src: './assets/astro_stats_imgs/aries.png' },
 		description:
 			'Bold and energetic, Aries is a fiery leader driven by passion and ambition. Confident and competitive, they thrive on challenges and take initiative. Independent and courageous, they act quickly but can be impulsive. Their enthusiasm and determination make them natural pioneers, always ready to blaze new trails.',
 		celebs: {
@@ -92,7 +92,7 @@ const astroFacts = {
 		color: { name: 'Green', hex: '#008000' },
 		icon: { zodiac: 'ti-zodiac-taurus', sign: 'ti-world' },
 		backSplash: { src: './assets/astro_backsplash/taurus_backsplash.jpg' },
-		statsImg: { src: './assets/astro_stats_imgs/taurus.jpg' },
+		statsImg: { src: './assets/astro_stats_imgs/taurus.png' },
 		description:
 			'Grounded and reliable, Taurus values stability, comfort, and perseverance. Patient and hardworking, they appreciate beauty, luxury, and sensual pleasures. Stubborn yet deeply loyal, they commit fully to relationships and goals. Practical and determined, they build strong foundations, seeking security in all aspects of life while embracing life’s simple joys.',
 
@@ -141,7 +141,7 @@ const astroFacts = {
 		color: { name: 'Yellow', hex: '#ffff00' },
 		icon: { zodiac: 'ti-zodiac-gemini', sign: 'ti-wind' },
 		backSplash: { src: './assets/astro_backsplash/gemini_backsplash.jpg' },
-		statsImg: { src: './assets/astro_stats_imgs/gemini.jpg' },
+		statsImg: { src: './assets/astro_stats_imgs/gemini.png' },
 		description:
 			'Curious and adaptable, Gemini thrives on communication and intellectual stimulation. Quick-witted and sociable, they easily connect with others. Playful and versatile, they enjoy variety and change. Ruled by Mercury, they excel in expressing ideas but can be restless. Their dual nature makes them both charming conversationalists and deep thinkers.',
 
@@ -190,7 +190,7 @@ const astroFacts = {
 		color: { name: 'Sliver', hex: '#c0c0c0' },
 		icon: { zodiac: 'ti-zodiac-cancer', sign: 'ti-ripple' },
 		backSplash: { src: './assets/astro_backsplash/cancer_backsplash.jpg' },
-		statsImg: { src: './assets/astro_stats_imgs/cancer.jpg' },
+		statsImg: { src: './assets/astro_stats_imgs/cancer.png' },
 		description:
 			'Deeply emotional and intuitive, Cancer is nurturing and protective. Loyal and sensitive, they value family and close relationships. Their strong intuition helps them connect with others, but they can be guarded. Compassionate and sentimental, they seek emotional security, creating a warm, caring environment wherever they go.',
 
@@ -243,7 +243,7 @@ const astroFacts = {
 		color: { name: 'Orange', hex: '#ffa500' },
 		icon: { zodiac: 'ti-zodiac-leo', sign: 'ti-flame' },
 		backSplash: { src: './assets/astro_backsplash/leo_backsplash.webp' },
-		statsImg: { src: './assets/astro_stats_imgs/leo.jpg' },
+		statsImg: { src: './assets/astro_stats_imgs/leo.png' },
 		description:
 			'Charismatic and confident, Leo shines with passion and creativity. Bold and ambitious, they love attention and thrive as leaders. Generous and warm-hearted, they inspire others with enthusiasm. Loyal and courageous, they defend loved ones fiercely. Their vibrant energy and determination make them natural stars, always striving for greatness.',
 
@@ -296,7 +296,7 @@ const astroFacts = {
 		color: { name: 'Blue', hex: '#0000ff' },
 		icon: { zodiac: 'ti-zodiac-virgo', sign: 'ti-world' },
 		backSplash: { src: './assets/astro_backsplash/virgo_backsplash.jpg' },
-		statsImg: { src: './assets/astro_stats_imgs/virgo.jpg' },
+		statsImg: { src: './assets/astro_stats_imgs/virgo.png' },
 		description:
 			'Analytical and detail-oriented, Virgo values precision, logic, and service. Hardworking and practical, they seek efficiency and personal growth. Loyal and reliable, they thrive on structure and organization. Perfectionists by nature, they can be critical but always aim for excellence. Their grounded, methodical approach ensures success in everything they do.',
 
@@ -349,7 +349,7 @@ const astroFacts = {
 		color: { name: 'Pink', hex: '#ffc0cb' },
 		icon: { zodiac: 'ti-zodiac-libra', sign: 'ti-wind' },
 		backSplash: { src: './assets/astro_backsplash/libra_backsplash.jpg' },
-		statsImg: { src: './assets/astro_stats_imgs/libra.jpg' },
+		statsImg: { src: './assets/astro_stats_imgs/libra.png' },
 
 		description:
 			'Charming and diplomatic, Libra seeks balance, harmony, and fairness. Social and artistic, they appreciate beauty and deep connections. Intelligent and persuasive, they navigate relationships with grace. Indecisive at times, they strive to please others. Their natural sense of justice and elegance makes them skilled mediators and peacemakers.',
@@ -403,7 +403,7 @@ const astroFacts = {
 		color: { name: 'Black', hex: '#000000' },
 		icon: { zodiac: 'ti-zodiac-scorpio', sign: 'ti-ripple' },
 		backSplash: { src: './assets/astro_backsplash/scorpio_backsplash.jpg' },
-		statsImg: { src: './assets/astro_stats_imgs/scorpio.jpg' },
+		statsImg: { src: './assets/astro_stats_imgs/scorpio.png' },
 		description:
 			'Intense and mysterious, Scorpio is deeply emotional and passionate. Loyal and determined, they value depth and authenticity. Magnetic and intuitive, they read people effortlessly. Protective and sometimes secretive, they guard their emotions fiercely. Their resilience and ambition make them powerful forces, unafraid to transform and rise from challenges.',
 
@@ -456,7 +456,7 @@ const astroFacts = {
 		color: { name: 'Purple', hex: '#800080' },
 		icon: { zodiac: 'ti-zodiac-sagittarius', sign: 'ti-flame' },
 		backSplash: { src: './assets/astro_backsplash/sagittarius_backsplash.jpg' },
-		statsImg: { src: './assets/astro_stats_imgs/sagittarius.jpg' },
+		statsImg: { src: './assets/astro_stats_imgs/sagittarius.png' },
 
 		description:
 			'Adventurous and optimistic, Sagittarius loves freedom, exploration, and new experiences. Independent and intellectual, they seek knowledge and truth. Honest and humorous, they uplift those around them. Restless and energetic, they resist constraints and embrace spontaneity. Their adventurous spirit and open-mindedness make them natural explorers and lifelong learners.',
@@ -510,7 +510,7 @@ const astroFacts = {
 		color: { name: 'Brown', hex: '#a52a2a' },
 		icon: { zodiac: 'ti-zodiac-capricorn', sign: 'ti-world' },
 		backSplash: { src: './assets/astro_backsplash/capricorn_backsplash.jpg' },
-		statsImg: { src: './assets/astro_stats_imgs/capricorn.jpg' },
+		statsImg: { src: './assets/astro_stats_imgs/capricorn.png' },
 
 		description:
 			'Ambitious and disciplined, Capricorn is hardworking and goal-oriented. Practical and responsible, they value structure and perseverance. Patient and determined, they steadily climb toward success. Reserved yet deeply loyal, they take commitments seriously. Their strategic mindset and resilience ensure long-term achievements, making them strong, dependable leaders and providers.',
@@ -563,7 +563,7 @@ const astroFacts = {
 		color: { name: 'Blue', hex: '#0000ff' },
 		icon: { zodiac: 'ti-zodiac-aquarius', sign: 'ti-wind' },
 		backSplash: { src: './assets/astro_backsplash/aquarius_backsplash.jpg' },
-		statsImg: { src: './assets/astro_stats_imgs/aquarius.jpg' },
+		statsImg: { src: './assets/astro_stats_imgs/aquarius.png' },
 
 		description:
 			'Innovative and independent, Aquarius values originality, intellect, and progress. Visionary and unconventional, they challenge norms and seek change. Social yet individualistic, they connect through ideas rather than emotions. Open-minded and humanitarian, they advocate for the greater good. Their unique perspective and futuristic thinking make them ahead of their time.',
@@ -616,7 +616,7 @@ const astroFacts = {
 		color: { name: 'Light Green', hex: '#90ee90' },
 		icon: { zodiac: 'ti-zodiac-pisces', sign: 'ti-ripple' },
 		backSplash: { src: './assets/astro_backsplash/pisces_backsplash.jpg' },
-		statsImg: { src: './assets/astro_stats_imgs/pisces.jpg' },
+		statsImg: { src: './assets/astro_stats_imgs/pisces.png' },
 
 		description:
 			'Dreamy and intuitive, Pisces is deeply emotional and creative. Compassionate and empathetic, they feel deeply for others. Imaginative and artistic, they escape into fantasy. Sensitive and spiritual, they seek connection beyond the material world. Their gentle, kind nature makes them natural healers, always guided by their emotions.',
