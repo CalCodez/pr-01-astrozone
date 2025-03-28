@@ -918,6 +918,38 @@ const [
 	piscesSelect,
 ] = famousSelect;
 
+function famousImg(arr, obj) {
+	arr[0].src = obj.celeb1.src;
+	arr[1].src = obj.celeb2.src;
+	arr[2].src = obj.celeb3.src;
+	arr[3].src = obj.celeb4.src;
+	arr[4].src = obj.celeb5.src;
+}
+
+function famousNames(arr, obj) {
+	textContent(arr[0], obj.celeb1.name);
+	textContent(arr[1], obj.celeb2.name);
+	textContent(arr[2], obj.celeb3.name);
+	textContent(arr[3], obj.celeb4.name);
+	textContent(arr[4], obj.celeb5.name);
+}
+
+function famousBirthdays(arr, obj) {
+	textContent(arr[0], obj.celeb1.birthdate);
+	textContent(arr[1], obj.celeb2.birthdate);
+	textContent(arr[2], obj.celeb3.birthdate);
+	textContent(arr[3], obj.celeb4.birthdate);
+	textContent(arr[4], obj.celeb5.birthdate);
+}
+
+function famousKnown(arr, obj) {
+	textContent(arr[0], obj.celeb1.knownFor);
+	textContent(arr[1], obj.celeb2.knownFor);
+	textContent(arr[2], obj.celeb3.knownFor);
+	textContent(arr[3], obj.celeb4.knownFor);
+	textContent(arr[4], obj.celeb5.knownFor);
+}
+
 const toggleFamousAstro = (
 	toggler,
 	obj1,
@@ -942,34 +974,10 @@ const toggleFamousAstro = (
 			textContent(astroNameSpan, obj1.name);
 			textContent(statsSymbolName, obj1.symbol);
 
-			const [img1, img2, img3, img4, img5] = arr1;
-			img1.src = obj2.celeb1.src;
-			img2.src = obj2.celeb2.src;
-			img3.src = obj2.celeb3.src;
-			img4.src = obj2.celeb4.src;
-			img5.src = obj2.celeb5.src;
-
-			const [name1, name2, name3, name4, name5] = arr2;
-			textContent(name1, obj2.celeb1.name);
-			textContent(name2, obj2.celeb2.name);
-			textContent(name3, obj2.celeb3.name);
-			textContent(name4, obj2.celeb4.name);
-			textContent(name5, obj2.celeb5.name);
-
-			const [date1, date2, date3, date4, date5] = arr3;
-			textContent(date1, obj2.celeb1.birthdate);
-			textContent(date2, obj2.celeb2.birthdate);
-			textContent(date3, obj2.celeb3.birthdate);
-			textContent(date4, obj2.celeb4.birthdate);
-			textContent(date5, obj2.celeb5.birthdate);
-
-			const [known1, known2, known3, known4, known5] = arr4;
-
-			textContent(known1, obj2.celeb1.knownFor);
-			textContent(known2, obj2.celeb2.knownFor);
-			textContent(known3, obj2.celeb3.knownFor);
-			textContent(known4, obj2.celeb4.knownFor);
-			textContent(known5, obj2.celeb5.knownFor);
+			famousImg(arr1, obj2);
+			famousNames(arr2, obj2);
+			famousBirthdays(arr3, obj2);
+			famousKnown(arr4, obj2);
 		}
 	});
 
