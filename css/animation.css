@@ -61,7 +61,8 @@
 }
 
 .backsplash-container img,
-.stats-img-container img {
+.stats-img-container img,
+.card-zoom {
 	-webkit-animation-name: zoomIn;
 	animation-name: zoomIn;
 	-webkit-animation-duration: 0.9s;
@@ -131,7 +132,8 @@
 	}
 }
 
-.curtain-header-container .ti {
+.curtain-header-container .ti,
+.card-bounce {
 	-webkit-animation-name: bounceIn;
 	animation-name: bounceIn;
 	-webkit-animation-duration: 0.75s;

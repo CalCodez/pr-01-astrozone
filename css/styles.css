@@ -11,7 +11,7 @@
 	margin-top: 10px;
 	position: relative;
 	justify-content: flex-start;
-	display: none;
+	/*display: none;*/
 }
 
 .backsplash-container {
@@ -128,7 +128,7 @@
 	box-shadow: 2px 2px 8px 2px var(--box-shadow);
 	align-items: flex-end;
 	justify-content: space-around;
-	display: none;
+	/*display: none;*/
 }
 
 /* ++Facts Stage */
@@ -512,7 +512,7 @@
 
 .famous-curtain.curtain-open {
 	width: 380px;
-	transition: width ease 0.9s;
+	transition: width ease 0.5s;
 }
 
 .famous-curtain-header-container {
@@ -547,24 +547,15 @@
 	margin-left: 0;
 }
 
-.fa-x {
-	color: var(--txt-shadow);
-	font-size: 1.2rem;
-	cursor: pointer;
-	margin-right: 20px;
-	font-weight: 800;
-	text-shadow: 2px 2px 2px var(--main-bg);
-
+#famous-curtain-btn {
+	width: 50%;
+	height: 50px;
+	background: var(--conic);
+	color: var(--font-color-main);
+	font-size: 1.2em;
+	border-radius: 8px;
+	box-shadow: 2px 2px 8px 1px var(--box-shadow);
 	visibility: hidden;
-	text-align: center;
-}
-
-.famous-curtain.curtain-open .fa-x {
-	visibility: visible;
-}
-
-.fa-x:hover {
-	transform: scale(1.2);
 }
 
 .famous-select-container {
@@ -651,15 +642,15 @@
 	gap: 10px;
 	flex-wrap: wrap;
 	display: none;
-	outline: var(--ol);
+	/*outline: var(--ol);*/
 }
 
 .famous-person-container {
 	width: 320px;
-	height: 130px;
+	height: 150px;
 	border: 2px inset var(--box-shadow);
 	background: var(--conic);
-
+	display: none;
 	justify-content: space-evenly;
 	border-radius: 8px;
 	overflow: hidden;
@@ -667,8 +658,7 @@
 
 .famous-img-container {
 	width: 40%;
-	height: 100%;
-	outline: var(--olR);
+	height: 90%;
 	border-radius: 50%;
 }
 
@@ -683,8 +673,8 @@
 	height: 100%;
 	width: 50%;
 	flex-direction: column;
-	outline: var(--olR);
-	justify-content: space-around;
+	row-gap: 10px;
+	/*justify-content: flex-start;*/
 }
 
 h4,
@@ -693,11 +683,10 @@ h6 {
 	color: var(--font-color-main);
 	width: 100%;
 	text-align: center;
-	outline: var(--olB);
 }
 
 h4 {
-	font-size: smaller;
+	font-size: large;
 }
 
 .flex-active {

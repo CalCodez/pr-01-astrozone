@@ -10,6 +10,10 @@
 	h2 {
 		font-size: 40px;
 	}
+
+	.famous-astros {
+		width: 100%;
+	}
 }
 
 @media (max-width: 768px) {
@@ -75,6 +79,24 @@
 		width: 100px;
 		height: 100px;
 		gap: 5px;
+	}
+
+	.famous-astros {
+		width: 100%;
+		justify-content: center;
+	}
+
+	.famous-header-wrapper {
+		width: 100%;
+	}
+
+	.famous-curtain.curtain-open {
+		outline: var(--olR);
+		width: 100%;
+	}
+	.famous-people-wrapper {
+		outline: var(--ol);
+		width: 100%;
 	}
 }
 

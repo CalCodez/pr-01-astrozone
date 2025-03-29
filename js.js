@@ -959,14 +959,13 @@ const capricornCelebs = capricorn.celebs;
 const aquariusCelebs = aquarius.celebs;
 const piscesCelebs = pisces.celebs;
 
-const testToggle = select('.test-toggle');
 const famousCurtain = select('.famous-curtain');
 const famousSelectContainer = select('.famous-select-container');
 const famousCurtainStats = select('.famous-curtain-stats-container');
 const famousPeopleWrapper = select('.famous-people-wrapper');
 const famousCurtainHeader = select('.famous-curtain-header-container');
 const curtainOpen = 'curtain-open';
-const closeCurtain = getById('famous-curtain-toggle');
+const closeCurtain = getById('famous-curtain-btn');
 
 const statsContainerImg = getById('stats-container-img');
 const astroNameSpan = select('.stats-astro-name-span');
@@ -976,6 +975,10 @@ const famousName = selectAll('.famous-name');
 const famousBirthdate = selectAll('.famous-birthdate');
 const famousKnownFor = selectAll('.famous-knownFor');
 const famousSelect = selectAll('.famous-select');
+const famousHeader = getById('famous-header');
+
+const famousPersonContainer = selectAll('.famous-person-container');
+console.log(famousPersonContainer);
 
 const [
 	ariesSelect,
@@ -1042,11 +1045,20 @@ const toggleFamousAstro = (
 			toggleClass(famousCurtain, curtainOpen);
 			toggleClass(famousSelectContainer, flexInactive);
 			toggleClass(famousCurtainStats, flexActive);
+			famousHeader.style.display = 'none';
+			closeCurtain.style.visibility = 'visible';
 
 			setTimeout(() => {
 				toggleClass(famousPeopleWrapper, flexActive);
-				toggleClass(famousPeopleWrapper, 'slideInRight');
-			}, 900);
+			}, 500);
+
+			setTimeout(() => {
+				for (let card of famousPersonContainer) {
+					toggleClass(card, flexActive);
+
+					toggleClass(card, 'card-zoom');
+				}
+			}, 500);
 
 			statsContainerImg.src = obj1.statsImg.src;
 			textContent(astroNameSpan, obj1.name);
@@ -1065,7 +1077,13 @@ const toggleFamousAstro = (
 			toggleClass(famousSelectContainer, flexInactive);
 			toggleClass(famousCurtainStats, flexActive);
 			toggleClass(famousPeopleWrapper, flexActive);
-			toggleClass(famousPeopleWrapper, 'slideInRight');
+			famousHeader.style.display = 'block';
+			closeCurtain.style.visibility = 'hidden';
+
+			for (let card of famousPersonContainer) {
+				toggleClass(card, flexActive);
+				toggleClass(card, 'card-zoom');
+			}
 		}
 	});
 };
