@@ -78,6 +78,12 @@ const astroFacts = {
 				knownFor: 'Rapper',
 				src: './assets/celebs/ariesCelebs/lil_nas_x.jpg',
 			},
+			celeb6: {
+				name: 'Lady GaGA',
+				birthdate: 'March 28th',
+				knownFor: 'Singer, Dancer, Actress',
+				src: './assets/celebs/ariesCelebs/lady_gaga.jpg',
+			},
 		},
 	},
 
@@ -127,6 +133,12 @@ const astroFacts = {
 				knownFor: 'Rapper, Singer',
 				src: './assets/celebs/taurusCelebs/chris_brown.jpg',
 			},
+			celeb6: {
+				name: 'Rami Malek',
+				birthdate: 'May 12th',
+				knownFor: 'Actor',
+				src: './assets/celebs/taurusCelebs/rami_malek.jpg',
+			},
 		},
 	},
 
@@ -175,6 +187,12 @@ const astroFacts = {
 				birthdate: 'May 26th',
 				knownFor: 'Rapper, Singer, Actress',
 				src: './assets/celebs/geminiCelebs/lauryn_hill.jpg',
+			},
+			celeb6: {
+				name: 'Naomi Campbell',
+				birthdate: 'May 22nd',
+				knownFor: 'Model, Actress',
+				src: './assets/celebs/geminiCelebs/naomi_campbell.jpg',
 			},
 		},
 	},
@@ -229,6 +247,12 @@ const astroFacts = {
 				knownFor: 'Rapper, Singer, Producer',
 				src: './assets/celebs/cancerCelebs/missy_elliot.jpg',
 			},
+			celeb6: {
+				name: 'Vin Diesel',
+				birthdate: 'July 18th',
+				knownFor: 'Actor',
+				src: './assets/celebs/cancerCelebs/vin_diesel.jpg',
+			},
 		},
 	},
 
@@ -282,6 +306,12 @@ const astroFacts = {
 				knownFor: 'Singer, Actress, Dancer',
 				src: './assets/celebs/leoCelebs/jennifer_lopez.jpg',
 			},
+			celeb6: {
+				name: 'Jason Momoa',
+				birthdate: 'August 1st',
+				knownFor: 'Actor',
+				src: './assets/celebs/leoCelebs/jason_momoa.jpg',
+			},
 		},
 	},
 
@@ -334,6 +364,12 @@ const astroFacts = {
 				birthdate: 'August 26th',
 				knownFor: 'Actress, Singer',
 				src: './assets/celebs/virgoCelebs/keke_palmer.jpg',
+			},
+			celeb6: {
+				name: 'Paul Walker',
+				birthdate: 'September 12th',
+				knownFor: 'Actress, Singer',
+				src: './assets/celebs/virgoCelebs/paul_walker.jpg',
 			},
 		},
 	},
@@ -389,6 +425,12 @@ const astroFacts = {
 				knownFor: 'Singer, Songwriter',
 				src: './assets/celebs/libraCelebs/bruno_mars.jpg',
 			},
+			celeb6: {
+				name: 'Ashanti',
+				birthdate: 'October 13th',
+				knownFor: 'Singer, Songwriter, Actress',
+				src: './assets/celebs/libraCelebs/ashanti.jpg',
+			},
 		},
 	},
 
@@ -442,6 +484,12 @@ const astroFacts = {
 				knownFor: 'Actor',
 				src: './assets/celebs/scorpioCelebs/leonardo_dicaprio.jpg',
 			},
+			celeb6: {
+				name: 'Tyga',
+				birthdate: 'November 19th',
+				knownFor: 'Rapper',
+				src: './assets/celebs/scorpioCelebs/tyga.jpg',
+			},
 		},
 	},
 
@@ -474,27 +522,33 @@ const astroFacts = {
 				birthdate: 'December 8th',
 				knownFor: 'Rapper',
 				src: './assets/celebs/sagittariusCelebs/nicki_minaj.jpg',
+			},
 
-				celeb3: {
-					name: 'Jamie Foxx',
-					birthdate: 'December 13th',
-					knownFor: 'Comedian, Actor, Singer',
-					src: './assets/celebs/sagittariusCelebs/jamie_foxx.jpg',
-				},
+			celeb3: {
+				name: 'Jamie Foxx',
+				birthdate: 'December 13th',
+				knownFor: 'Comedian, Actor, Singer',
+				src: './assets/celebs/sagittariusCelebs/jamie_foxx.jpg',
+			},
 
-				celeb4: {
-					name: 'Trey Songz',
-					birthdate: 'November 28th',
-					knownFor: 'Singer',
-					src: './assets/celebs/sagittariusCelebs/trey_songz.jpg',
-				},
+			celeb4: {
+				name: 'Trey Songz',
+				birthdate: 'November 28th',
+				knownFor: 'Singer',
+				src: './assets/celebs/sagittariusCelebs/trey_songz.jpg',
+			},
 
-				celeb5: {
-					name: 'Brittney Spears',
-					birthdate: 'December 2nd',
-					knownFor: 'Singer, Dancer',
-					src: './assets/celebs/sagittariusCelebs/brittney_spears.jpg',
-				},
+			celeb5: {
+				name: 'Brittney Spears',
+				birthdate: 'December 2nd',
+				knownFor: 'Singer, Dancer',
+				src: './assets/celebs/sagittariusCelebs/brittney_spears.jpg',
+			},
+			celeb6: {
+				name: 'Tina Turner',
+				birthdate: 'November 28th',
+				knownFor: 'Singe',
+				src: './assets/celebs/sagittariusCelebs/tina_turner.jpg',
 			},
 		},
 	},
@@ -550,8 +604,15 @@ const astroFacts = {
 				knownFor: 'Comedian, Actor',
 				src: './assets/celebs/capricornCelebs/jim_carey.jpg',
 			},
+			celeb6: {
+				name: 'John Legend',
+				birthdate: 'December 28th',
+				knownFor: 'Singer, Songwriter',
+				src: './assets/celebs/capricornCelebs/john_legend.jpg',
+			},
 		},
 	},
+
 	aquarius: {
 		name: 'Aquarius',
 		sign: 'Air',
@@ -603,8 +664,15 @@ const astroFacts = {
 				knownFor: 'Talk Show Host, Actress',
 				src: './assets/celebs/aquariusCelebs/oprah_winfrey.jpg',
 			},
+			celeb6: {
+				name: 'Michael B. Jordan',
+				birthdate: 'February 9th',
+				knownFor: 'Talk Show Host, Actress',
+				src: './assets/celebs/aquariusCelebs/michael_b_jordan.jpg',
+			},
 		},
 	},
+
 	pisces: {
 		name: 'Pisces',
 		sign: 'Water',
@@ -653,8 +721,14 @@ const astroFacts = {
 			celeb5: {
 				name: 'Will.i.am',
 				birthdate: 'March 15th',
-				knownFor: ['Rapper', 'Producer'],
+				knownFor: 'Rapper, Producer',
 				src: './assets/celebs/piscesCelebs/will_i_am.jpg',
+			},
+			celeb6: {
+				name: 'Erykah Badu',
+				birthdate: 'February 26th',
+				knownFor: 'Singer, Songwriter',
+				src: './assets/celebs/piscesCelebs/erykah_badu.jpg',
 			},
 		},
 	},
@@ -924,6 +998,7 @@ function famousImg(arr, obj) {
 	arr[2].src = obj.celeb3.src;
 	arr[3].src = obj.celeb4.src;
 	arr[4].src = obj.celeb5.src;
+	arr[5].src = obj.celeb6.src;
 }
 
 function famousNames(arr, obj) {
@@ -932,6 +1007,7 @@ function famousNames(arr, obj) {
 	textContent(arr[2], obj.celeb3.name);
 	textContent(arr[3], obj.celeb4.name);
 	textContent(arr[4], obj.celeb5.name);
+	textContent(arr[5], obj.celeb6.name);
 }
 
 function famousBirthdays(arr, obj) {
@@ -940,6 +1016,7 @@ function famousBirthdays(arr, obj) {
 	textContent(arr[2], obj.celeb3.birthdate);
 	textContent(arr[3], obj.celeb4.birthdate);
 	textContent(arr[4], obj.celeb5.birthdate);
+	textContent(arr[5], obj.celeb6.birthdate);
 }
 
 function famousKnown(arr, obj) {
@@ -948,6 +1025,7 @@ function famousKnown(arr, obj) {
 	textContent(arr[2], obj.celeb3.knownFor);
 	textContent(arr[3], obj.celeb4.knownFor);
 	textContent(arr[4], obj.celeb5.knownFor);
+	textContent(arr[5], obj.celeb6.knownFor);
 }
 
 const toggleFamousAstro = (
