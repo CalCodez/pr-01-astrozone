@@ -166,6 +166,17 @@
 	.astro-stage-right > div {
 		width: 100%;
 	}
+
+	.famous-astros {
+		width: fit-content;
+		justify-content: center;
+	}
+
+	.famous-people-wrapper {
+		width: 100%;
+		outline: var(--olR);
+		height: auto;
+	}
 }
 
 @media (max-width: 380px) {
