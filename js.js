@@ -1046,18 +1046,28 @@ const toggleFamousAstro = (
 			toggleClass(famousSelectContainer, flexInactive);
 			toggleClass(famousCurtainStats, flexActive);
 			famousHeader.style.display = 'none';
-			closeCurtain.style.visibility = 'visible';
+			astroNameSpan.style.visibility = 'visible';
+
+			setTimeout(() => {
+				toggleClass(astroNameSpan, 'zoomOut');
+			}, 300);
 
 			setTimeout(() => {
 				toggleClass(famousPeopleWrapper, flexActive);
+				statsSymbolName.style.visibility = 'visible';
+				toggleClass(statsSymbolName, 'card-zoom');
 			}, 500);
 
 			setTimeout(() => {
 				for (let card of famousPersonContainer) {
 					toggleClass(card, flexActive);
-
 					toggleClass(card, 'card-zoom');
+					closeCurtain.style.visibility = 'visible';
 				}
+			}, 500);
+
+			setTimeout(() => {
+				toggleClass(closeCurtain, 'curtain-toggle');
 			}, 500);
 
 			statsContainerImg.src = obj1.statsImg.src;
@@ -1077,13 +1087,24 @@ const toggleFamousAstro = (
 			toggleClass(famousSelectContainer, flexInactive);
 			toggleClass(famousCurtainStats, flexActive);
 			toggleClass(famousPeopleWrapper, flexActive);
-			famousHeader.style.display = 'block';
+
+			setTimeout(() => {
+				famousHeader.style.display = 'block';
+			}, 300);
+
 			closeCurtain.style.visibility = 'hidden';
 
 			for (let card of famousPersonContainer) {
 				toggleClass(card, flexActive);
 				toggleClass(card, 'card-zoom');
 			}
+			setTimeout(() => {
+				toggleClass(closeCurtain, 'curtain-toggle');
+			}, 500);
+			astroNameSpan.style.visibility = 'hidden';
+			statsSymbolName.style.visibility = 'hidden';
+			toggleClass(astroNameSpan, 'zoomOut');
+			toggleClass(statsSymbolName, 'card-zoom');
 		}
 	});
 };
@@ -1101,3 +1122,5 @@ toggleFamousAstro(sagittariusSelect, sagittarius, sagittariusCelebs);
 toggleFamousAstro(capricornSelect, capricorn, capricornCelebs);
 toggleFamousAstro(aquariusSelect, aquarius, aquariusCelebs);
 toggleFamousAstro(piscesSelect, pisces, piscesCelebs);
+
+console.log(window.innerWidth);

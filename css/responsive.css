@@ -11,8 +11,21 @@
 		font-size: 40px;
 	}
 
-	.famous-astros {
+	.famous-header-wrapper {
 		width: 100%;
+	}
+}
+
+@media (max-width: 1025px) {
+	.astro-stage {
+		width: 95vw;
+	}
+	.famous-astros {
+		width: 95vw;
+	}
+
+	.famous-people-wrapper {
+		width: fit-content;
 	}
 }
 
@@ -31,7 +44,7 @@
 	}
 
 	.astro-stage {
-		width: 100%;
+		width: 95vw;
 		height: fit-content;
 		flex-direction: column;
 		place-items: center;
@@ -65,7 +78,7 @@
 
 	.astro-stage-right > div,
 	.astro-stage-left > div {
-		width: 60%;
+		width: 90%;
 	}
 
 	.astro-sign-select-container {
@@ -81,21 +94,29 @@
 		gap: 5px;
 	}
 
+	.birthstone-container {
+		height: 40%;
+	}
+
+	.month-1-container div:nth-child(3),
+	.month-2-container div:nth-child(3) {
+		width: 20%;
+	}
+
 	.famous-astros {
-		width: 100%;
+		width: 90%;
 		justify-content: center;
 	}
 
 	.famous-header-wrapper {
 		width: 100%;
+		text-align: center;
 	}
 
 	.famous-curtain.curtain-open {
-		outline: var(--olR);
 		width: 100%;
 	}
 	.famous-people-wrapper {
-		outline: var(--ol);
 		width: 100%;
 	}
 }
@@ -152,15 +173,26 @@
 	.header-icon-container {
 		margin-right: 30px;
 	}
+
+	.famous-curtain-header-container h2 {
+		text-shadow: 1.5px 1.5px 1.5px var(--txt-shadow);
+		width: 98%;
+		text-align: center;
+		font-size: 2rem;
+	}
+
+	.famous-people-wrapper {
+		height: auto;
+	}
 }
 
 @media (max-width: 468px) {
-	.backsplash-container {
-		width: 100%;
+	.astro-gallery-section {
+		height: 50vh;
 	}
 
-	.backsplash-container img {
-		object-fit: cover;
+	.backsplash-container {
+		height: 100%;
 	}
 
 	.reel-control-container {
@@ -181,7 +213,7 @@
 	}
 	.astro-stage-left,
 	.astro-stage-right {
-		width: 90%;
+		width: 100%;
 	}
 
 	.astro-stage-left > div,
@@ -189,23 +221,37 @@
 		width: 100%;
 	}
 
-	.famous-astros {
-		width: fit-content;
-		justify-content: center;
-	}
-
 	.famous-people-wrapper {
 		width: 100%;
-		outline: var(--olR);
 		height: auto;
 	}
 }
 
-@media (max-width: 380px) {
+@media (max-width: 381px) {
+	.astro-gallery-section {
+		height: 40vh;
+	}
+
+	.backsplash-container > img {
+		object-fit: cover;
+	}
+
 	.reel-wrapper {
 		width: 42%;
 	}
 	.reel-control-container {
 		margin-top: 50px;
+	}
+
+	.famous-astros {
+		width: 100%;
+	}
+
+	.famous-select-container {
+		width: 300px;
+	}
+
+	.famous-select {
+		width: 120px;
 	}
 }

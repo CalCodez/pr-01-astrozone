@@ -61,7 +61,6 @@
 }
 
 .backsplash-container img,
-.stats-img-container img,
 .card-zoom {
 	-webkit-animation-name: zoomIn;
 	animation-name: zoomIn;
@@ -91,7 +90,8 @@
 	}
 }
 
-.option-container {
+.option-container,
+.stats-img-container {
 	-webkit-animation-name: zoomInUp;
 	animation-name: zoomInUp;
 	-webkit-animation-duration: 1s;
@@ -133,7 +133,7 @@
 }
 
 .curtain-header-container .ti,
-.card-bounce {
+.curtain-toggle {
 	-webkit-animation-name: bounceIn;
 	animation-name: bounceIn;
 	-webkit-animation-duration: 0.75s;
@@ -220,33 +220,38 @@
 	}
 }
 
-.slideInDown {
-	-webkit-animation-name: slideInDown;
-	animation-name: slideInDown;
-	-webkit-animation-duration: 1s;
-	animation-duration: 1s;
+.zoomOut {
+	-webkit-animation-name: zoomOut;
+	animation-name: zoomOut;
+	-webkit-animation-duration: 0.9s;
+	animation-duration: 0.9s;
 	-webkit-animation-fill-mode: both;
 	animation-fill-mode: both;
 }
-@-webkit-keyframes slideInDown {
+@-webkit-keyframes zoomOut {
 	0% {
-		-webkit-transform: translateY(-100%);
-		transform: translateY(-100%);
-		visibility: visible;
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+		-webkit-transform: scale3d(0.3, 0.3, 0.3);
+		transform: scale3d(0.3, 0.3, 0.3);
 	}
 	100% {
-		-webkit-transform: translateY(0);
-		transform: translateY(0);
+		opacity: 1;
 	}
 }
-@keyframes slideInDown {
+@keyframes zoomOut {
 	0% {
-		-webkit-transform: translateY(-100%);
-		transform: translateY(-100%);
-		visibility: visible;
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+		-webkit-transform: scale3d(0.3, 0.3, 0.3);
+		transform: scale3d(0.3, 0.3, 0.3);
 	}
 	100% {
-		-webkit-transform: translateY(0);
-		transform: translateY(0);
+		opacity: 1;
 	}
 }
