@@ -573,11 +573,12 @@
 	background: var(--linear);
 	border-radius: 8px;
 	column-gap: 10px;
-	box-shadow: 1px 1px 3px 1px var(--box-shadow);
+	box-shadow: 1px 1px 4px 1px var(--box-shadow);
 	text-transform: uppercase;
 	font-weight: 600;
 	color: var(--font-color-main);
 	cursor: pointer;
+	border: 4px ridge var(--box-shadow);
 }
 
 .famous-select i {
