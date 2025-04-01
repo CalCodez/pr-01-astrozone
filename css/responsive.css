@@ -1,9 +1,10 @@
 @media (min-width: 768px) and (max-width: 1367px) {
 	.backsplash-container {
 		width: 60%;
+		height: 80%;
 	}
 
-	.backsplash-container img {
+	.backsplash-container > img {
 		object-fit: cover;
 	}
 
@@ -30,6 +31,13 @@
 }
 
 @media (max-width: 768px) {
+	#menu-toggler {
+		right: 10px;
+	}
+	.fixed-menu {
+		right: 0;
+	}
+
 	.backsplash-container {
 		width: 86%;
 		height: 83%;
@@ -78,7 +86,7 @@
 
 	.astro-stage-right > div,
 	.astro-stage-left > div {
-		width: 90%;
+		width: 60%;
 	}
 
 	.astro-sign-select-container {
@@ -167,6 +175,11 @@
 		margin-top: 100px;
 	}
 
+	.astro-stage-left > div,
+	.astro-stage-right > div {
+		width: 80%;
+	}
+
 	h2 {
 		font-size: 40px;
 	}
@@ -228,6 +241,17 @@
 }
 
 @media (max-width: 381px) {
+	#curtain-header-img {
+		display: none;
+	}
+
+	#curtain-header {
+		width: 100%;
+	}
+
+	.astro-curtain.curtain-up > .curtain-header-container {
+		column-gap: 30px;
+	}
 	.astro-gallery-section {
 		height: 40vh;
 	}
@@ -248,10 +272,6 @@
 	}
 
 	.famous-select-container {
-		width: 300px;
-	}
-
-	.famous-select {
-		width: 120px;
+		width: 315px;
 	}
 }

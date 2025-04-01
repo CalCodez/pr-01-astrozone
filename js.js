@@ -918,14 +918,10 @@ astroResetButton.addEventListener(click, () => {
 		headerIcon.style.visibility = 'hidden';
 		headerIcon.classList.remove(...headerIcon.classList);
 
-		if (window.innerWidth <= 581) {
-			textContent(curtainHeader, 'Choose');
-		} else {
-			textContent(curtainHeader, 'Choose Your Sign');
-		}
 		textContent(signDateContainer, '');
 		textContent(astroDescription, '');
 		textContent(signType, '');
+		textContent(curtainHeader, 'Astro Facts');
 
 		signTypeIcon.classList.remove(...signTypeIcon.classList);
 		textContent(SymbolNameContainer, '');
