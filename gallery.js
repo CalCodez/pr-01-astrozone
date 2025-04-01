@@ -21,7 +21,6 @@ const splash = (obj) => {
 				backSplashContainer.append(newImg);
 			}
 		}
-
 		for (let card of astroCards) {
 			if (!card.classList.contains(left) || !card.classList.contains(right)) {
 				toggleClass(card, right);
@@ -34,7 +33,6 @@ const splash = (obj) => {
 
 	prevBtn.addEventListener(click, () => {
 		const lastCard = cardReel.lastElementChild;
-
 		cardReel.prepend(lastCard);
 		for (let img of obj) {
 			if (cardReel.firstElementChild.id == img.name) {
@@ -42,7 +40,6 @@ const splash = (obj) => {
 				backSplashContainer.append(newImg);
 			}
 		}
-
 		for (let card of astroCards) {
 			if (!card.classList.contains(left) || !card.classList.contains(right)) {
 				toggleClass(card, left);

@@ -67,6 +67,7 @@ const astroFacts = {
 		icon: { zodiac: 'ti-zodiac-aries', sign: 'ti-flame' },
 		backSplash: { src: './assets/astro_backsplash/aries_backsplash.jpg' },
 		statsImg: { src: './assets/astro_stats_imgs/aries.png' },
+		stageImg: { src: './assets/stage_image/aries.jpg' },
 		description:
 			'Bold and energetic, Aries is a fiery leader driven by passion and ambition. Confident and competitive, they thrive on challenges and take initiative. Independent and courageous, they act quickly but can be impulsive. Their enthusiasm and determination make them natural pioneers, always ready to blaze new trails.',
 		celebs: {
@@ -121,6 +122,7 @@ const astroFacts = {
 		icon: { zodiac: 'ti-zodiac-taurus', sign: 'ti-world' },
 		backSplash: { src: './assets/astro_backsplash/taurus_backsplash.jpg' },
 		statsImg: { src: './assets/astro_stats_imgs/taurus.png' },
+		stageImg: { src: './assets/stage_image/taurus.jpg' },
 		description:
 			'Grounded and reliable, Taurus values stability, comfort, and perseverance. Patient and hardworking, they appreciate beauty, luxury, and sensual pleasures. Stubborn yet deeply loyal, they commit fully to relationships and goals. Practical and determined, they build strong foundations, seeking security in all aspects of life while embracing life’s simple joys.',
 
@@ -176,6 +178,7 @@ const astroFacts = {
 		icon: { zodiac: 'ti-zodiac-gemini', sign: 'ti-wind' },
 		backSplash: { src: './assets/astro_backsplash/gemini_backsplash.jpg' },
 		statsImg: { src: './assets/astro_stats_imgs/gemini.png' },
+		stageImg: { src: './assets/stage_image/gemini.jpg' },
 		description:
 			'Curious and adaptable, Gemini thrives on communication and intellectual stimulation. Quick-witted and sociable, they easily connect with others. Playful and versatile, they enjoy variety and change. Ruled by Mercury, they excel in expressing ideas but can be restless. Their dual nature makes them both charming conversationalists and deep thinkers.',
 
@@ -231,6 +234,7 @@ const astroFacts = {
 		icon: { zodiac: 'ti-zodiac-cancer', sign: 'ti-ripple' },
 		backSplash: { src: './assets/astro_backsplash/cancer_backsplash.jpg' },
 		statsImg: { src: './assets/astro_stats_imgs/cancer.png' },
+		stageImg: { src: './assets/stage_image/cancer.jpg' },
 		description:
 			'Deeply emotional and intuitive, Cancer is nurturing and protective. Loyal and sensitive, they value family and close relationships. Their strong intuition helps them connect with others, but they can be guarded. Compassionate and sentimental, they seek emotional security, creating a warm, caring environment wherever they go.',
 
@@ -290,6 +294,7 @@ const astroFacts = {
 		icon: { zodiac: 'ti-zodiac-leo', sign: 'ti-flame' },
 		backSplash: { src: './assets/astro_backsplash/leo_backsplash.webp' },
 		statsImg: { src: './assets/astro_stats_imgs/leo.png' },
+		stageImg: { src: './assets/stage_image/leo.jpg' },
 		description:
 			'Charismatic and confident, Leo shines with passion and creativity. Bold and ambitious, they love attention and thrive as leaders. Generous and warm-hearted, they inspire others with enthusiasm. Loyal and courageous, they defend loved ones fiercely. Their vibrant energy and determination make them natural stars, always striving for greatness.',
 
@@ -349,6 +354,7 @@ const astroFacts = {
 		icon: { zodiac: 'ti-zodiac-virgo', sign: 'ti-world' },
 		backSplash: { src: './assets/astro_backsplash/virgo_backsplash.jpg' },
 		statsImg: { src: './assets/astro_stats_imgs/virgo.png' },
+		stageImg: { src: './assets/stage_image/virgo.jpg' },
 		description:
 			'Analytical and detail-oriented, Virgo values precision, logic, and service. Hardworking and practical, they seek efficiency and personal growth. Loyal and reliable, they thrive on structure and organization. Perfectionists by nature, they can be critical but always aim for excellence. Their grounded, methodical approach ensures success in everything they do.',
 
@@ -408,7 +414,7 @@ const astroFacts = {
 		icon: { zodiac: 'ti-zodiac-libra', sign: 'ti-wind' },
 		backSplash: { src: './assets/astro_backsplash/libra_backsplash.jpg' },
 		statsImg: { src: './assets/astro_stats_imgs/libra.png' },
-
+		stageImg: { src: './assets/stage_image/libra.jpg' },
 		description:
 			'Charming and diplomatic, Libra seeks balance, harmony, and fairness. Social and artistic, they appreciate beauty and deep connections. Intelligent and persuasive, they navigate relationships with grace. Indecisive at times, they strive to please others. Their natural sense of justice and elegance makes them skilled mediators and peacemakers.',
 
@@ -468,6 +474,7 @@ const astroFacts = {
 		icon: { zodiac: 'ti-zodiac-scorpio', sign: 'ti-ripple' },
 		backSplash: { src: './assets/astro_backsplash/scorpio_backsplash.jpg' },
 		statsImg: { src: './assets/astro_stats_imgs/scorpio.png' },
+		stageImg: { src: './assets/stage_image/scorpio.jpg' },
 		description:
 			'Intense and mysterious, Scorpio is deeply emotional and passionate. Loyal and determined, they value depth and authenticity. Magnetic and intuitive, they read people effortlessly. Protective and sometimes secretive, they guard their emotions fiercely. Their resilience and ambition make them powerful forces, unafraid to transform and rise from challenges.',
 
@@ -527,7 +534,7 @@ const astroFacts = {
 		icon: { zodiac: 'ti-zodiac-sagittarius', sign: 'ti-flame' },
 		backSplash: { src: './assets/astro_backsplash/sagittarius_backsplash.jpg' },
 		statsImg: { src: './assets/astro_stats_imgs/sagittarius.png' },
-
+		stageImg: { src: './assets/stage_image/sagittarius.jpg' },
 		description:
 			'Adventurous and optimistic, Sagittarius loves freedom, exploration, and new experiences. Independent and intellectual, they seek knowledge and truth. Honest and humorous, they uplift those around them. Restless and energetic, they resist constraints and embrace spontaneity. Their adventurous spirit and open-mindedness make them natural explorers and lifelong learners.',
 
@@ -587,7 +594,7 @@ const astroFacts = {
 		icon: { zodiac: 'ti-zodiac-capricorn', sign: 'ti-world' },
 		backSplash: { src: './assets/astro_backsplash/capricorn_backsplash.jpg' },
 		statsImg: { src: './assets/astro_stats_imgs/capricorn.png' },
-
+		stageImg: { src: './assets/stage_image/capricorn.jpg' },
 		description:
 			'Ambitious and disciplined, Capricorn is hardworking and goal-oriented. Practical and responsible, they value structure and perseverance. Patient and determined, they steadily climb toward success. Reserved yet deeply loyal, they take commitments seriously. Their strategic mindset and resilience ensure long-term achievements, making them strong, dependable leaders and providers.',
 
@@ -647,7 +654,7 @@ const astroFacts = {
 		icon: { zodiac: 'ti-zodiac-aquarius', sign: 'ti-wind' },
 		backSplash: { src: './assets/astro_backsplash/aquarius_backsplash.jpg' },
 		statsImg: { src: './assets/astro_stats_imgs/aquarius.png' },
-
+		stageImg: { src: './assets/stage_image/aquarius.jpg' },
 		description:
 			'Innovative and independent, Aquarius values originality, intellect, and progress. Visionary and unconventional, they challenge norms and seek change. Social yet individualistic, they connect through ideas rather than emotions. Open-minded and humanitarian, they advocate for the greater good. Their unique perspective and futuristic thinking make them ahead of their time.',
 
@@ -707,7 +714,7 @@ const astroFacts = {
 		icon: { zodiac: 'ti-zodiac-pisces', sign: 'ti-ripple' },
 		backSplash: { src: './assets/astro_backsplash/pisces_backsplash.jpg' },
 		statsImg: { src: './assets/astro_stats_imgs/pisces.png' },
-
+		stageImg: { src: './assets/stage_image/pisces.jpg' },
 		description:
 			'Dreamy and intuitive, Pisces is deeply emotional and creative. Compassionate and empathetic, they feel deeply for others. Imaginative and artistic, they escape into fantasy. Sensitive and spiritual, they seek connection beyond the material world. Their gentle, kind nature makes them natural healers, always guided by their emotions.',
 
@@ -787,7 +794,6 @@ const arrOfSigns = [
 ];
 
 //Static Options Container
-
 const curtainOptions = getById('curtain-options');
 
 for (let i = 0; i < 12; i++) {
@@ -846,12 +852,10 @@ names(iconContainer[10], nameContainer[10], aquarius);
 names(iconContainer[11], nameContainer[11], pisces);
 
 //Generate Astro Facts Vars and Function
-
 const astroCurtain = getById('astro-curtain');
 const headerIcon = getById('header-icon');
 const curtainHeaderContainer = select('.curtain-header-container');
 const curtainHeader = getById('curtain-header');
-
 const signDateContainer = select('.sign-date-container');
 const astroDescription = select('.astro-description-container');
 const signType = select('.sign-type-container');
@@ -870,6 +874,7 @@ const planetName = select('.planet-name-container');
 const planetImg = getById('planet-img');
 const astroTraitsContainer = select('.astro-traits-container');
 const astroResetButton = getById('astro-reset-button');
+const stageImg = select('.astro-stage-img');
 
 const toggleAstroFacts = (toggler, obj) => {
 	toggler.addEventListener(click, () => {
@@ -884,6 +889,11 @@ const toggleAstroFacts = (toggler, obj) => {
 			textContent(signDateContainer, obj.date);
 			textContent(astroDescription, obj.description);
 			textContent(signType, obj.sign);
+
+			setTimeout(() => {
+				stageImg.src = obj.stageImg.src;
+				toggleClass(stageImg, 'card-zoom');
+			}, 100);
 
 			addClass(signTypeIcon, 'ti');
 			toggleClass(signTypeIcon, obj.icon.sign);
@@ -900,7 +910,6 @@ const toggleAstroFacts = (toggler, obj) => {
 			colorSpan.style.backgroundColor = obj.color.hex;
 			textContent(planetName, obj.planet.name);
 			planetImg.src = obj.planet.src;
-
 			obj.traits.map((trait) => {
 				const li = createElement('li');
 				textContent(li, trait);
@@ -915,28 +924,18 @@ astroResetButton.addEventListener(click, () => {
 		astroResetButton.style.visibility = 'hidden';
 		toggleClass(curtainOptions, flexInactive);
 		toggleClass(astroCurtain, 'curtain-up');
+		toggleClass(stageImg, 'card-zoom');
+		stageImg.src = '';
+
 		headerIcon.style.visibility = 'hidden';
 		headerIcon.classList.remove(...headerIcon.classList);
 
-		textContent(signDateContainer, '');
-		textContent(astroDescription, '');
-		textContent(signType, '');
 		textContent(curtainHeader, 'Astro Facts');
 
 		signTypeIcon.classList.remove(...signTypeIcon.classList);
 		textContent(SymbolNameContainer, '');
 
 		singSymbolIcon.classList.remove(...singSymbolIcon.classList);
-		textContent(month1Name, '');
-		textContent(month1Birthstone, '');
-		month1Img.src = '';
-		textContent(month2Name, '');
-		textContent(month2Birthstone, '');
-		month2Img.src = '';
-		textContent(colorName, '');
-		colorSpan.style.backgroundColor = '';
-		textContent(planetName, '');
-		planetImg.src = '';
 
 		const traitItems = astroTraitsContainer.querySelectorAll('li');
 		for (let traits of traitItems) {
@@ -963,7 +962,6 @@ if (window.innerWidth <= 581) {
 }
 
 //Famous Astro Vars and Function
-
 const ariesCelebs = aries.celebs;
 const taurusCelebs = taurus.celebs;
 const geminiCelebs = gemini.celebs;
@@ -976,7 +974,6 @@ const sagittariusCelebs = sagittarius.celebs;
 const capricornCelebs = capricorn.celebs;
 const aquariusCelebs = aquarius.celebs;
 const piscesCelebs = pisces.celebs;
-
 const famousCurtain = select('.famous-curtain');
 const famousSelectContainer = select('.famous-select-container');
 const famousCurtainStats = select('.famous-curtain-stats-container');
@@ -984,7 +981,6 @@ const famousPeopleWrapper = select('.famous-people-wrapper');
 const famousCurtainHeader = select('.famous-curtain-header-container');
 const curtainOpen = 'curtain-open';
 const closeCurtain = getById('famous-curtain-btn');
-
 const statsContainerImg = getById('stats-container-img');
 const astroNameSpan = select('.stats-astro-name-span');
 const statsSymbolName = select('.stats-symbol-span');
@@ -1091,7 +1087,6 @@ const toggleFamousAstro = (
 			statsContainerImg.src = obj1.statsImg.src;
 			textContent(astroNameSpan, obj1.name);
 			textContent(statsSymbolName, obj1.symbol);
-
 			famousImg(arr1, obj2);
 			famousNames(arr2, obj2);
 			famousBirthdays(arr3, obj2);
@@ -1116,9 +1111,11 @@ const toggleFamousAstro = (
 				toggleClass(card, flexActive);
 				toggleClass(card, 'card-zoom');
 			}
+
 			setTimeout(() => {
 				toggleClass(closeCurtain, 'curtain-toggle');
 			}, 500);
+
 			astroNameSpan.style.visibility = 'hidden';
 			statsSymbolName.style.visibility = 'hidden';
 			toggleClass(astroNameSpan, 'zoomOut');
@@ -1126,7 +1123,6 @@ const toggleFamousAstro = (
 		}
 	});
 };
-toggleFamousAstro(ariesSelect, aries, ariesCelebs);
 
 toggleFamousAstro(ariesSelect, aries, ariesCelebs);
 toggleFamousAstro(taurusSelect, taurus, taurusCelebs);
