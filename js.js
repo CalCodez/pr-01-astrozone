@@ -15,6 +15,28 @@ const keyup = 'keyup';
 const flexActive = 'flex-active';
 const flexInactive = 'flex-inactive';
 
+//Mobile Menu Vars and Function
+
+const mobileMenu = select('.fixed-menu');
+const menuToggle = getById('menu-toggler');
+menuToggle.addEventListener(click, () => {
+	if (!mobileMenu.classList.contains(flexActive)) {
+		toggleClass(mobileMenu, flexActive);
+	} else {
+		toggleClass(mobileMenu, flexActive);
+	}
+	mobileMenu.addEventListener(click, () => {
+		if (mobileMenu.classList.contains(flexActive)) {
+			toggleClass(mobileMenu, flexActive);
+		}
+	});
+	window.addEventListener(keyup, (e) => {
+		if (e.key === 'Escape' && mobileMenu.classList.contains(flexActive)) {
+			toggleClass(mobileMenu, flexActive);
+		}
+	});
+});
+
 const stones = {
 	jan: { month: 'January', stone: 'Garnet', src: './assets/birthstones/garnet.jpg' },
 	feb: { month: 'February', stone: 'Amethyst', src: './assets/birthstones/amethyst.jpg' },
