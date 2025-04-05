@@ -171,9 +171,10 @@
 	margin-top: 100px;
 	position: relative;
 	background: var(--conic);
-	box-shadow: 2px 2px 8px 2px var(--box-shadow);
+	/*box-shadow: 2px 2px 8px 2px var(--box-shadow);*/
 	align-items: flex-end;
 	justify-content: space-around;
+	border: 3px outset var(--box-shadow);
 }
 
 .astro-stage > img {
@@ -210,7 +211,7 @@
 	place-content: center;
 	border: 2px outset var(--main-bg);
 	border-radius: 2px;
-	box-shadow: 1px 1px 8px 1px var(--box-shadow);
+	box-shadow: 1px 1px 3px 1px var(--box-shadow);
 	border-radius: 8px;
 	background-color: var(--main-bg);
 	opacity: 0.9;
@@ -224,7 +225,7 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	border-radius: 2px;
-	box-shadow: 1px 1px 8px 1px var(--box-shadow);
+	box-shadow: 1px 1px 3px 1px var(--box-shadow);
 	place-content: center;
 	font-weight: 600;
 	background-color: var(--main-bg);
@@ -254,7 +255,7 @@
 	flex-direction: column;
 	justify-content: space-evenly;
 	border-radius: 2px;
-	box-shadow: 1px 1px 8px 1px var(--box-shadow);
+	box-shadow: 1px 1px 3px 1px var(--box-shadow);
 }
 
 .sign-container,
@@ -303,7 +304,7 @@
 	width: 320px;
 	flex-direction: column;
 	justify-content: space-between;
-	box-shadow: 1px 1px 8px 1px var(--box-shadow);
+	box-shadow: 1px 1px 3px 1px var(--box-shadow);
 	background-color: var(--main-bg);
 	opacity: 0.9;
 }
@@ -352,7 +353,7 @@
 .astro-color-container {
 	width: 320px;
 	height: 20%;
-	box-shadow: 1px 1px 8px 1px var(--box-shadow);
+	box-shadow: 1px 1px 3px 1px var(--box-shadow);
 	flex-direction: column;
 	background-color: var(--main-bg);
 	opacity: 0.9;
@@ -385,7 +386,7 @@
 .astro-planet-container {
 	width: 320px;
 	height: 30%;
-	box-shadow: 1px 1px 8px 1px var(--box-shadow);
+	box-shadow: 1px 1px 3px 1px var(--box-shadow);
 	flex-direction: column;
 }
 
@@ -420,7 +421,7 @@
 .astro-traits-container {
 	width: 320px;
 	height: 40%;
-	box-shadow: 1px 1px 8px 1px var(--box-shadow);
+	box-shadow: 1px 1px 3px 1px var(--box-shadow);
 
 	flex-direction: column;
 	justify-content: flex-start;

@@ -57,12 +57,15 @@ a {
 }
 
 html {
+	background-image: url(/assets/main_bg.jpg);
 	background-color: var(--main-bg);
 	padding: 5px;
 	justify-content: center;
-	background-image: url(/assets/main_bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	display: flex;
+	width: 100%;
+	overflow-x: hidden;
 }
 
 body {
